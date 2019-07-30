@@ -1,0 +1,3440 @@
+[
+  {
+    "Name": "Abilene Christian University"
+  },
+  {
+    "Name": "Academy of Art University"
+  },
+  {
+    "Name": "Adams State University"
+  },
+  {
+    "Name": "Adelphi University"
+  },
+  {
+    "Name": "Adrian College"
+  },
+  {
+    "Name": "Agnes Scott College"
+  },
+  {
+    "Name": "Air Force Academy"
+  },
+  {
+    "Name": "Alabama A&M University"
+  },
+  {
+    "Name": "Alabama State University"
+  },
+  {
+    "Name": "Albany State University"
+  },
+  {
+    "Name": "Albertus Magnus College"
+  },
+  {
+    "Name": "Albion College"
+  },
+  {
+    "Name": "Albright College"
+  },
+  {
+    "Name": "Alcorn State University"
+  },
+  {
+    "Name": "Alderson-Broaddus University"
+  },
+  {
+    "Name": "Alfred State College"
+  },
+  {
+    "Name": "Alfred University"
+  },
+  {
+    "Name": "Allegheny College"
+  },
+  {
+    "Name": "Alma College"
+  },
+  {
+    "Name": "Alvernia University"
+  },
+  {
+    "Name": "Alverno College"
+  },
+  {
+    "Name": "American International College"
+  },
+  {
+    "Name": "American University"
+  },
+  {
+    "Name": "American University of Puerto Rico"
+  },
+  {
+    "Name": "Amherst College"
+  },
+  {
+    "Name": "Anderson University (Ind.)"
+  },
+  {
+    "Name": "Anderson University (S.C.)"
+  },
+  {
+    "Name": "Angelo State University"
+  },
+  {
+    "Name": "Anna Maria College"
+  },
+  {
+    "Name": "Appalachian State University"
+  },
+  {
+    "Name": "Arcadia University"
+  },
+  {
+    "Name": "Arizona State University"
+  },
+  {
+    "Name": "Arkansas State University"
+  },
+  {
+    "Name": "Arkansas Tech University"
+  },
+  {
+    "Name": "Armstrong State University"
+  },
+  {
+    "Name": "Army West Point"
+  },
+  {
+    "Name": "Ashland University"
+  },
+  {
+    "Name": "Assumption College"
+  },
+  {
+    "Name": "Auburn University"
+  },
+  {
+    "Name": "Augsburg University"
+  },
+  {
+    "Name": "Augusta University"
+  },
+  {
+    "Name": "Augustana College (IL)"
+  },
+  {
+    "Name": "Augustana University (SD)"
+  },
+  {
+    "Name": "Aurora University"
+  },
+  {
+    "Name": "Austin College"
+  },
+  {
+    "Name": "Austin Peay State University"
+  },
+  {
+    "Name": "Averett University"
+  },
+  {
+    "Name": "Azusa Pacific University"
+  },
+  {
+    "Name": "Babson College"
+  },
+  {
+    "Name": "Baldwin Wallace University"
+  },
+  {
+    "Name": "Ball State University"
+  },
+  {
+    "Name": "Bard College"
+  },
+  {
+    "Name": "Barry University"
+  },
+  {
+    "Name": "Barton College"
+  },
+  {
+    "Name": "Baruch College"
+  },
+  {
+    "Name": "Bates College"
+  },
+  {
+    "Name": "Bay Path University"
+  },
+  {
+    "Name": "Baylor University"
+  },
+  {
+    "Name": "Becker College"
+  },
+  {
+    "Name": "Bellarmine University"
+  },
+  {
+    "Name": "Belmont Abbey College"
+  },
+  {
+    "Name": "Belmont University"
+  },
+  {
+    "Name": "Beloit College"
+  },
+  {
+    "Name": "Bemidji State University"
+  },
+  {
+    "Name": "Benedict College"
+  },
+  {
+    "Name": "Benedictine University"
+  },
+  {
+    "Name": "Bentley University"
+  },
+  {
+    "Name": "Berry College"
+  },
+  {
+    "Name": "Bethany College"
+  },
+  {
+    "Name": "Bethany Lutheran College"
+  },
+  {
+    "Name": "Bethel University"
+  },
+  {
+    "Name": "Bethune-Cookman University"
+  },
+  {
+    "Name": "Binghamton University"
+  },
+  {
+    "Name": "Birmingham-Southern College"
+  },
+  {
+    "Name": "Black Hills State University"
+  },
+  {
+    "Name": "Blackburn College"
+  },
+  {
+    "Name": "Bloomfield College"
+  },
+  {
+    "Name": "Bloomsburg University"
+  },
+  {
+    "Name": "Bluefield State College"
+  },
+  {
+    "Name": "Bluffton University"
+  },
+  {
+    "Name": "Boise State University"
+  },
+  {
+    "Name": "Boston College"
+  },
+  {
+    "Name": "Boston University"
+  },
+  {
+    "Name": "Bowdoin College"
+  },
+  {
+    "Name": "Bowie State University"
+  },
+  {
+    "Name": "Bowling Green State University"
+  },
+  {
+    "Name": "Bradley University"
+  },
+  {
+    "Name": "Brandeis University"
+  },
+  {
+    "Name": "Brevard College"
+  },
+  {
+    "Name": "Bridgewater College"
+  },
+  {
+    "Name": "Bridgewater State University"
+  },
+  {
+    "Name": "Brigham Young University"
+  },
+  {
+    "Name": "Brooklyn College"
+  },
+  {
+    "Name": "Brown University"
+  },
+  {
+    "Name": "Bryant University"
+  },
+  {
+    "Name": "Bryn Athyn College"
+  },
+  {
+    "Name": "Bryn Mawr College"
+  },
+  {
+    "Name": "Bucknell University"
+  },
+  {
+    "Name": "Buena Vista University"
+  },
+  {
+    "Name": "Buffalo State College"
+  },
+  {
+    "Name": "Butler University"
+  },
+  {
+    "Name": "BYU-Hawaii"
+  },
+  {
+    "Name": "Cabrini University"
+  },
+  {
+    "Name": "Cairn University"
+  },
+  {
+    "Name": "Cal Poly"
+  },
+  {
+    "Name": "Cal Poly-Pomona"
+  },
+  {
+    "Name": "Cal State-Dominguez Hills"
+  },
+  {
+    "Name": "Cal State-East Bay"
+  },
+  {
+    "Name": "Cal State-Fullerton"
+  },
+  {
+    "Name": "Cal State-Los Angeles"
+  },
+  {
+    "Name": "Cal State-Monterey Bay"
+  },
+  {
+    "Name": "Cal State-Northridge"
+  },
+  {
+    "Name": "Cal State-San Bernardino"
+  },
+  {
+    "Name": "Cal State-Stanislaus"
+  },
+  {
+    "Name": "Caldwell University"
+  },
+  {
+    "Name": "California Baptist University"
+  },
+  {
+    "Name": "California Institute of Technology"
+  },
+  {
+    "Name": "California Lutheran University"
+  },
+  {
+    "Name": "California State University, Chico"
+  },
+  {
+    "Name": "California University of Pennsylvania"
+  },
+  {
+    "Name": "Calvin College"
+  },
+  {
+    "Name": "Cameron University"
+  },
+  {
+    "Name": "Campbell University"
+  },
+  {
+    "Name": "Canisius College"
+  },
+  {
+    "Name": "Capital University"
+  },
+  {
+    "Name": "Carleton College"
+  },
+  {
+    "Name": "Carnegie Mellon University"
+  },
+  {
+    "Name": "Carroll University"
+  },
+  {
+    "Name": "Carson-Newman College"
+  },
+  {
+    "Name": "Carthage College"
+  },
+  {
+    "Name": "Case Western Reserve University"
+  },
+  {
+    "Name": "Castleton University"
+  },
+  {
+    "Name": "Catawba College"
+  },
+  {
+    "Name": "Catholic University"
+  },
+  {
+    "Name": "Cazenovia College"
+  },
+  {
+    "Name": "Cedar Crest College"
+  },
+  {
+    "Name": "Cedarville University"
+  },
+  {
+    "Name": "Centenary College of Louisiana"
+  },
+  {
+    "Name": "Centenary University (N.J.)"
+  },
+  {
+    "Name": "Central College (Iowa)"
+  },
+  {
+    "Name": "Central Connecticut State University"
+  },
+  {
+    "Name": "Central Michigan University"
+  },
+  {
+    "Name": "Central State University"
+  },
+  {
+    "Name": "Central Washington University"
+  },
+  {
+    "Name": "Centre College"
+  },
+  {
+    "Name": "Chadron State College"
+  },
+  {
+    "Name": "Chaminade University"
+  },
+  {
+    "Name": "Chapman University"
+  },
+  {
+    "Name": "Charleston Southern University"
+  },
+  {
+    "Name": "Chatham University"
+  },
+  {
+    "Name": "Chestnut Hill College"
+  },
+  {
+    "Name": "Cheyney University of Pennsylvania"
+  },
+  {
+    "Name": "Chicago State University"
+  },
+  {
+    "Name": "Chowan University"
+  },
+  {
+    "Name": "Christian Brothers University"
+  },
+  {
+    "Name": "Christopher Newport University"
+  },
+  {
+    "Name": "City College of New York"
+  },
+  {
+    "Name": "Claflin University"
+  },
+  {
+    "Name": "Claremont-Mudd-Scripps Colleges"
+  },
+  {
+    "Name": "Clarion University of Pennsylvania"
+  },
+  {
+    "Name": "Clark Atlanta University"
+  },
+  {
+    "Name": "Clark University"
+  },
+  {
+    "Name": "Clarke University"
+  },
+  {
+    "Name": "Clarks Summit University"
+  },
+  {
+    "Name": "Clarkson University"
+  },
+  {
+    "Name": "Clayton State University"
+  },
+  {
+    "Name": "Clemson University"
+  },
+  {
+    "Name": "Cleveland State University"
+  },
+  {
+    "Name": "Coastal Carolina University"
+  },
+  {
+    "Name": "Coe College"
+  },
+  {
+    "Name": "Coker College"
+  },
+  {
+    "Name": "Colby College"
+  },
+  {
+    "Name": "Colby-Sawyer College"
+  },
+  {
+    "Name": "Colgate University"
+  },
+  {
+    "Name": "College at Brockport"
+  },
+  {
+    "Name": "College of Charleston"
+  },
+  {
+    "Name": "College of Mount Saint Vincent"
+  },
+  {
+    "Name": "College of New Rochelle"
+  },
+  {
+    "Name": "College of Saint Benedict"
+  },
+  {
+    "Name": "College of Saint Elizabeth"
+  },
+  {
+    "Name": "College of St. Scholastica"
+  },
+  {
+    "Name": "College of Staten Island"
+  },
+  {
+    "Name": "College of the Holy Cross"
+  },
+  {
+    "Name": "College of William and Mary"
+  },
+  {
+    "Name": "College of Wooster"
+  },
+  {
+    "Name": "Colorado Christian University"
+  },
+  {
+    "Name": "Colorado College"
+  },
+  {
+    "Name": "Colorado Mesa University"
+  },
+  {
+    "Name": "Colorado School of Mines"
+  },
+  {
+    "Name": "Colorado State University"
+  },
+  {
+    "Name": "Colorado State University-Pueblo"
+  },
+  {
+    "Name": "Columbia University-Barnard College"
+  },
+  {
+    "Name": "Columbus State University"
+  },
+  {
+    "Name": "Concord University"
+  },
+  {
+    "Name": "Concordia College-Moorhead"
+  },
+  {
+    "Name": "Concordia College-New York"
+  },
+  {
+    "Name": "Concordia University Chicago"
+  },
+  {
+    "Name": "Concordia University Texas"
+  },
+  {
+    "Name": "Concordia University Wisconsin"
+  },
+  {
+    "Name": "Concordia University, St. Paul"
+  },
+  {
+    "Name": "Connecticut College"
+  },
+  {
+    "Name": "Converse College"
+  },
+  {
+    "Name": "Coppin State University"
+  },
+  {
+    "Name": "Cornell College"
+  },
+  {
+    "Name": "Cornell University"
+  },
+  {
+    "Name": "Covenant College"
+  },
+  {
+    "Name": "Creighton University"
+  },
+  {
+    "Name": "Crown College"
+  },
+  {
+    "Name": "CSU Bakersfield"
+  },
+  {
+    "Name": "Curry College"
+  },
+  {
+    "Name": "D'Youville College"
+  },
+  {
+    "Name": "Daemen College"
+  },
+  {
+    "Name": "Dallas Baptist University"
+  },
+  {
+    "Name": "Daniel Webster College"
+  },
+  {
+    "Name": "Dartmouth College"
+  },
+  {
+    "Name": "Davidson College"
+  },
+  {
+    "Name": "Davis and Elkins College"
+  },
+  {
+    "Name": "Defiance College"
+  },
+  {
+    "Name": "Delaware State University"
+  },
+  {
+    "Name": "Delaware Valley College"
+  },
+  {
+    "Name": "Delta State University"
+  },
+  {
+    "Name": "Denison University"
+  },
+  {
+    "Name": "DePaul University"
+  },
+  {
+    "Name": "DePauw University"
+  },
+  {
+    "Name": "DeSales University"
+  },
+  {
+    "Name": "Dickinson College"
+  },
+  {
+    "Name": "Dixie State University"
+  },
+  {
+    "Name": "Dominican College (N.Y.)"
+  },
+  {
+    "Name": "Dominican University (Ill.)"
+  },
+  {
+    "Name": "Dominican University of California"
+  },
+  {
+    "Name": "Dowling College"
+  },
+  {
+    "Name": "Drake University"
+  },
+  {
+    "Name": "Drew University"
+  },
+  {
+    "Name": "Drexel University"
+  },
+  {
+    "Name": "Drury University"
+  },
+  {
+    "Name": "Duke University"
+  },
+  {
+    "Name": "Duquesne University"
+  },
+  {
+    "Name": "Earlham College"
+  },
+  {
+    "Name": "East Carolina University"
+  },
+  {
+    "Name": "East Central University"
+  },
+  {
+    "Name": "East Stroudsburg University"
+  },
+  {
+    "Name": "East Tennessee State University"
+  },
+  {
+    "Name": "East Texas Baptist University"
+  },
+  {
+    "Name": "Eastern Connecticut State University"
+  },
+  {
+    "Name": "Eastern Illinois University"
+  },
+  {
+    "Name": "Eastern Kentucky University"
+  },
+  {
+    "Name": "Eastern Mennonite University"
+  },
+  {
+    "Name": "Eastern Michigan University"
+  },
+  {
+    "Name": "Eastern Nazarene College"
+  },
+  {
+    "Name": "Eastern New Mexico University"
+  },
+  {
+    "Name": "Eastern Oregon University"
+  },
+  {
+    "Name": "Eastern University"
+  },
+  {
+    "Name": "Eastern Washington University"
+  },
+  {
+    "Name": "Eckerd College"
+  },
+  {
+    "Name": "Edgewood College"
+  },
+  {
+    "Name": "Edinboro University"
+  },
+  {
+    "Name": "Elizabeth City State University"
+  },
+  {
+    "Name": "Elizabethtown College"
+  },
+  {
+    "Name": "Elmhurst College"
+  },
+  {
+    "Name": "Elmira College"
+  },
+  {
+    "Name": "Elms College"
+  },
+  {
+    "Name": "Elon University"
+  },
+  {
+    "Name": "Embry-Riddle University"
+  },
+  {
+    "Name": "Emerson College"
+  },
+  {
+    "Name": "Emmanuel College (Ga.)"
+  },
+  {
+    "Name": "Emmanuel College (Mass.)"
+  },
+  {
+    "Name": "Emory and Henry College"
+  },
+  {
+    "Name": "Emory University"
+  },
+  {
+    "Name": "Emporia State University"
+  },
+  {
+    "Name": "Endicott College"
+  },
+  {
+    "Name": "Erskine College"
+  },
+  {
+    "Name": "Eureka College"
+  },
+  {
+    "Name": "Evergreen St."
+  },
+  {
+    "Name": "Fairfield University"
+  },
+  {
+    "Name": "Fairleigh Dickinson Univ., Florham"
+  },
+  {
+    "Name": "Fairleigh Dickinson University"
+  },
+  {
+    "Name": "Fairmont State University"
+  },
+  {
+    "Name": "Farmingdale State College"
+  },
+  {
+    "Name": "Fayetteville State University"
+  },
+  {
+    "Name": "Felician College"
+  },
+  {
+    "Name": "Ferris State University"
+  },
+  {
+    "Name": "Ferrum College"
+  },
+  {
+    "Name": "Finlandia University"
+  },
+  {
+    "Name": "Fisk University"
+  },
+  {
+    "Name": "Fitchburg State University"
+  },
+  {
+    "Name": "Flagler College"
+  },
+  {
+    "Name": "Florida A&M University"
+  },
+  {
+    "Name": "Florida Atlantic University"
+  },
+  {
+    "Name": "Florida Gulf Coast University"
+  },
+  {
+    "Name": "Florida International University"
+  },
+  {
+    "Name": "Florida Southern College"
+  },
+  {
+    "Name": "Florida State University"
+  },
+  {
+    "Name": "Florida Tech"
+  },
+  {
+    "Name": "Fontbonne University"
+  },
+  {
+    "Name": "Fordham University"
+  },
+  {
+    "Name": "Fort Hays State University"
+  },
+  {
+    "Name": "Fort Lewis College"
+  },
+  {
+    "Name": "Fort Valley State University"
+  },
+  {
+    "Name": "Fort Wayne"
+  },
+  {
+    "Name": "Framingham State University"
+  },
+  {
+    "Name": "Francis Marion University"
+  },
+  {
+    "Name": "Franciscan Univ. of Steubenville"
+  },
+  {
+    "Name": "Franklin & Marshall College"
+  },
+  {
+    "Name": "Franklin College"
+  },
+  {
+    "Name": "Franklin Pierce University"
+  },
+  {
+    "Name": "Fresno Pacific University"
+  },
+  {
+    "Name": "Fresno State"
+  },
+  {
+    "Name": "Frostburg State University"
+  },
+  {
+    "Name": "Furman University"
+  },
+  {
+    "Name": "Gallaudet University"
+  },
+  {
+    "Name": "Gannon University"
+  },
+  {
+    "Name": "Gardner-Webb University"
+  },
+  {
+    "Name": "Geneva College"
+  },
+  {
+    "Name": "George Fox University"
+  },
+  {
+    "Name": "George Mason University"
+  },
+  {
+    "Name": "George Washington University"
+  },
+  {
+    "Name": "Georgetown University"
+  },
+  {
+    "Name": "Georgia College"
+  },
+  {
+    "Name": "Georgia Southern University"
+  },
+  {
+    "Name": "Georgia Southwestern State Univ."
+  },
+  {
+    "Name": "Georgia State University"
+  },
+  {
+    "Name": "Georgia Tech"
+  },
+  {
+    "Name": "Georgian Court University"
+  },
+  {
+    "Name": "Gettysburg College"
+  },
+  {
+    "Name": "Glenville State College"
+  },
+  {
+    "Name": "Goldey-Beacom College"
+  },
+  {
+    "Name": "Gonzaga University"
+  },
+  {
+    "Name": "Gordon College"
+  },
+  {
+    "Name": "Goucher College"
+  },
+  {
+    "Name": "Grambling State University"
+  },
+  {
+    "Name": "Grand Canyon University"
+  },
+  {
+    "Name": "Grand Valley State University"
+  },
+  {
+    "Name": "Green Mountain College"
+  },
+  {
+    "Name": "Greensboro College"
+  },
+  {
+    "Name": "Greenville University"
+  },
+  {
+    "Name": "Grinnell College"
+  },
+  {
+    "Name": "Grove City College"
+  },
+  {
+    "Name": "Guilford College"
+  },
+  {
+    "Name": "Gustavus Adolphus College"
+  },
+  {
+    "Name": "Gwynedd-Mercy College"
+  },
+  {
+    "Name": "Hamilton College"
+  },
+  {
+    "Name": "Hamline University"
+  },
+  {
+    "Name": "Hampden-Sydney College"
+  },
+  {
+    "Name": "Hampton University"
+  },
+  {
+    "Name": "Hanover College"
+  },
+  {
+    "Name": "Hardin-Simmons University"
+  },
+  {
+    "Name": "Harding University"
+  },
+  {
+    "Name": "Hartwick College"
+  },
+  {
+    "Name": "Harvard University"
+  },
+  {
+    "Name": "Haverford College"
+  },
+  {
+    "Name": "Hawaii Pacific University"
+  },
+  {
+    "Name": "Heidelberg University"
+  },
+  {
+    "Name": "Henderson State University"
+  },
+  {
+    "Name": "Hendrix College"
+  },
+  {
+    "Name": "High Point University"
+  },
+  {
+    "Name": "Hilbert College"
+  },
+  {
+    "Name": "Hillsdale College"
+  },
+  {
+    "Name": "Hiram College"
+  },
+  {
+    "Name": "Hobart College"
+  },
+  {
+    "Name": "Hofstra University"
+  },
+  {
+    "Name": "Hollins University"
+  },
+  {
+    "Name": "Holy Family University"
+  },
+  {
+    "Name": "Holy Names University"
+  },
+  {
+    "Name": "Hood College"
+  },
+  {
+    "Name": "Hope College"
+  },
+  {
+    "Name": "Houghton College"
+  },
+  {
+    "Name": "Houston Baptist University"
+  },
+  {
+    "Name": "Howard Payne University"
+  },
+  {
+    "Name": "Howard University"
+  },
+  {
+    "Name": "Humboldt State University"
+  },
+  {
+    "Name": "Hunter College"
+  },
+  {
+    "Name": "Huntingdon College"
+  },
+  {
+    "Name": "Husson University"
+  },
+  {
+    "Name": "Idaho State University"
+  },
+  {
+    "Name": "Illinois College"
+  },
+  {
+    "Name": "Illinois State University"
+  },
+  {
+    "Name": "Illinois Tech"
+  },
+  {
+    "Name": "Illinois Wesleyan University"
+  },
+  {
+    "Name": "Immaculata University"
+  },
+  {
+    "Name": "Indiana State University"
+  },
+  {
+    "Name": "Indiana University of Pennsylvania"
+  },
+  {
+    "Name": "Indiana University, Bloomington"
+  },
+  {
+    "Name": "Iona College"
+  },
+  {
+    "Name": "Iowa State University"
+  },
+  {
+    "Name": "Iowa Wesleyan University"
+  },
+  {
+    "Name": "Ithaca College"
+  },
+  {
+    "Name": "IUPUI"
+  },
+  {
+    "Name": "Jackson State University"
+  },
+  {
+    "Name": "Jacksonville State University"
+  },
+  {
+    "Name": "Jacksonville University"
+  },
+  {
+    "Name": "James Madison University"
+  },
+  {
+    "Name": "John Carroll University"
+  },
+  {
+    "Name": "John Jay College of Criminal Justice"
+  },
+  {
+    "Name": "Johns Hopkins University"
+  },
+  {
+    "Name": "Johnson and Wales University"
+  },
+  {
+    "Name": "Johnson C. Smith University"
+  },
+  {
+    "Name": "Johnson State College"
+  },
+  {
+    "Name": "Juniata College"
+  },
+  {
+    "Name": "Kalamazoo College"
+  },
+  {
+    "Name": "Kansas State University"
+  },
+  {
+    "Name": "Kean University"
+  },
+  {
+    "Name": "Keene State College"
+  },
+  {
+    "Name": "Kennesaw State University"
+  },
+  {
+    "Name": "Kent State University"
+  },
+  {
+    "Name": "Kentucky State University"
+  },
+  {
+    "Name": "Kentucky Wesleyan College"
+  },
+  {
+    "Name": "Kenyon College"
+  },
+  {
+    "Name": "Keuka College"
+  },
+  {
+    "Name": "Keystone College"
+  },
+  {
+    "Name": "King University"
+  },
+  {
+    "Name": "King's College"
+  },
+  {
+    "Name": "Knox College"
+  },
+  {
+    "Name": "Kutztown University"
+  },
+  {
+    "Name": "La Roche College"
+  },
+  {
+    "Name": "La Salle University"
+  },
+  {
+    "Name": "La Sierra University"
+  },
+  {
+    "Name": "Lafayette College"
+  },
+  {
+    "Name": "LaGrange College"
+  },
+  {
+    "Name": "Lake Erie College"
+  },
+  {
+    "Name": "Lake Forest College"
+  },
+  {
+    "Name": "Lake Superior State University"
+  },
+  {
+    "Name": "Lakeland College"
+  },
+  {
+    "Name": "Lamar University"
+  },
+  {
+    "Name": "Lambuth University"
+  },
+  {
+    "Name": "Lancaster Bible College"
+  },
+  {
+    "Name": "Lander University"
+  },
+  {
+    "Name": "Lane College"
+  },
+  {
+    "Name": "Langston University"
+  },
+  {
+    "Name": "Lasell College"
+  },
+  {
+    "Name": "Lawrence University"
+  },
+  {
+    "Name": "Le Moyne College"
+  },
+  {
+    "Name": "Lebanon Valley College"
+  },
+  {
+    "Name": "Lee University"
+  },
+  {
+    "Name": "Lees-McRae College"
+  },
+  {
+    "Name": "Lehigh University"
+  },
+  {
+    "Name": "Lehman College"
+  },
+  {
+    "Name": "LeMoyne-Owen College"
+  },
+  {
+    "Name": "Lenoir-Rhyne University"
+  },
+  {
+    "Name": "Lesley University"
+  },
+  {
+    "Name": "LeTourneau University"
+  },
+  {
+    "Name": "Lewis & Clark College"
+  },
+  {
+    "Name": "Lewis University"
+  },
+  {
+    "Name": "Lewis-Clark St."
+  },
+  {
+    "Name": "Liberty University"
+  },
+  {
+    "Name": "Limestone College"
+  },
+  {
+    "Name": "Lincoln Christian College & Seminary"
+  },
+  {
+    "Name": "Lincoln Memorial University"
+  },
+  {
+    "Name": "Lincoln University (Mo.)"
+  },
+  {
+    "Name": "Lindenwood University"
+  },
+  {
+    "Name": "Linfield College"
+  },
+  {
+    "Name": "Lipscomb University"
+  },
+  {
+    "Name": "Little Rock"
+  },
+  {
+    "Name": "LIU Post"
+  },
+  {
+    "Name": "Livingstone College"
+  },
+  {
+    "Name": "Lock Haven University"
+  },
+  {
+    "Name": "Long Beach State University"
+  },
+  {
+    "Name": "Long Island University-Brooklyn"
+  },
+  {
+    "Name": "Longwood University"
+  },
+  {
+    "Name": "Loras College"
+  },
+  {
+    "Name": "Louisiana College"
+  },
+  {
+    "Name": "Louisiana State University"
+  },
+  {
+    "Name": "Louisiana Tech University"
+  },
+  {
+    "Name": "Loyola Marymount University"
+  },
+  {
+    "Name": "Loyola University Chicago"
+  },
+  {
+    "Name": "Loyola University Maryland"
+  },
+  {
+    "Name": "Lubbock Christian University"
+  },
+  {
+    "Name": "Luther College"
+  },
+  {
+    "Name": "Lycoming College"
+  },
+  {
+    "Name": "Lynchburg College"
+  },
+  {
+    "Name": "Lyndon State College"
+  },
+  {
+    "Name": "Lynn University"
+  },
+  {
+    "Name": "Macalester College"
+  },
+  {
+    "Name": "MacMurray College"
+  },
+  {
+    "Name": "Maine Maritime Academy"
+  },
+  {
+    "Name": "Malone University"
+  },
+  {
+    "Name": "Manchester University"
+  },
+  {
+    "Name": "Manhattan College"
+  },
+  {
+    "Name": "Manhattanville College"
+  },
+  {
+    "Name": "Mansfield Univ. of Pennsylvania"
+  },
+  {
+    "Name": "Maranatha Baptist University"
+  },
+  {
+    "Name": "Marian University"
+  },
+  {
+    "Name": "Marietta College"
+  },
+  {
+    "Name": "Marist College"
+  },
+  {
+    "Name": "Marquette University"
+  },
+  {
+    "Name": "Mars Hill University"
+  },
+  {
+    "Name": "Marshall University"
+  },
+  {
+    "Name": "Martin Luther College"
+  },
+  {
+    "Name": "Mary Baldwin College"
+  },
+  {
+    "Name": "Marymount University"
+  },
+  {
+    "Name": "Maryville College"
+  },
+  {
+    "Name": "Maryville University of Saint Louis"
+  },
+  {
+    "Name": "Marywood University"
+  },
+  {
+    "Name": "Massachusetts College of Liberal Arts"
+  },
+  {
+    "Name": "Massachusetts Maritime Academy"
+  },
+  {
+    "Name": "McDaniel College"
+  },
+  {
+    "Name": "McKendree University"
+  },
+  {
+    "Name": "McMurry University"
+  },
+  {
+    "Name": "McNeese State University"
+  },
+  {
+    "Name": "Medaille College"
+  },
+  {
+    "Name": "Medgar Evers College"
+  },
+  {
+    "Name": "Menlo College"
+  },
+  {
+    "Name": "Mercer University"
+  },
+  {
+    "Name": "Mercy College"
+  },
+  {
+    "Name": "Mercyhurst College"
+  },
+  {
+    "Name": "Meredith College"
+  },
+  {
+    "Name": "Merrimack College"
+  },
+  {
+    "Name": "Messiah College"
+  },
+  {
+    "Name": "Methodist University"
+  },
+  {
+    "Name": "Metropolitan St. University of Denver"
+  },
+  {
+    "Name": "Miami University (Ohio)"
+  },
+  {
+    "Name": "Michigan State University"
+  },
+  {
+    "Name": "Michigan Technological University"
+  },
+  {
+    "Name": "Middle Tennessee State University"
+  },
+  {
+    "Name": "Middlebury College"
+  },
+  {
+    "Name": "Midwestern State University"
+  },
+  {
+    "Name": "Miles College"
+  },
+  {
+    "Name": "Millersville University"
+  },
+  {
+    "Name": "Millikin University"
+  },
+  {
+    "Name": "Mills College"
+  },
+  {
+    "Name": "Millsaps College"
+  },
+  {
+    "Name": "Milwaukee School of Engineering"
+  },
+  {
+    "Name": "Minnesota State Univ.-Moorhead"
+  },
+  {
+    "Name": "Minnesota State University-Mankato"
+  },
+  {
+    "Name": "Minot State University"
+  },
+  {
+    "Name": "Misericordia University"
+  },
+  {
+    "Name": "Mississippi College"
+  },
+  {
+    "Name": "Mississippi State University"
+  },
+  {
+    "Name": "Mississippi Valley State University"
+  },
+  {
+    "Name": "Missouri S&T"
+  },
+  {
+    "Name": "Missouri Southern St. University"
+  },
+  {
+    "Name": "Missouri State University"
+  },
+  {
+    "Name": "Missouri Western St. University"
+  },
+  {
+    "Name": "MIT"
+  },
+  {
+    "Name": "Mitchell College"
+  },
+  {
+    "Name": "Molloy College"
+  },
+  {
+    "Name": "Monmouth College"
+  },
+  {
+    "Name": "Monmouth University"
+  },
+  {
+    "Name": "Montana St. University Billings"
+  },
+  {
+    "Name": "Montana State University-Bozeman"
+  },
+  {
+    "Name": "Montclair State University"
+  },
+  {
+    "Name": "Moravian College"
+  },
+  {
+    "Name": "Morehead State University"
+  },
+  {
+    "Name": "Morehouse College"
+  },
+  {
+    "Name": "Morgan State University"
+  },
+  {
+    "Name": "Morningside College"
+  },
+  {
+    "Name": "Morris Brown College"
+  },
+  {
+    "Name": "Morrisville State College"
+  },
+  {
+    "Name": "Mount Aloysius College"
+  },
+  {
+    "Name": "Mount Holyoke College"
+  },
+  {
+    "Name": "Mount Ida College"
+  },
+  {
+    "Name": "Mount Mary College"
+  },
+  {
+    "Name": "Mount Olive College"
+  },
+  {
+    "Name": "Mount Saint Mary College"
+  },
+  {
+    "Name": "Mount St. Joseph University"
+  },
+  {
+    "Name": "Mount St. Mary's University"
+  },
+  {
+    "Name": "Mount Union College"
+  },
+  {
+    "Name": "Muhlenberg College"
+  },
+  {
+    "Name": "Murray State University"
+  },
+  {
+    "Name": "Muskingum University"
+  },
+  {
+    "Name": "Nazareth College"
+  },
+  {
+    "Name": "Nebraska Wesleyan University"
+  },
+  {
+    "Name": "Neumann University"
+  },
+  {
+    "Name": "New England College"
+  },
+  {
+    "Name": "New Jersey City University"
+  },
+  {
+    "Name": "New Jersey Institute of Technology"
+  },
+  {
+    "Name": "New Mexico Highlands University"
+  },
+  {
+    "Name": "New Mexico State University"
+  },
+  {
+    "Name": "New York Institute of Technology"
+  },
+  {
+    "Name": "New York University"
+  },
+  {
+    "Name": "Newberry College"
+  },
+  {
+    "Name": "Newbury College"
+  },
+  {
+    "Name": "Newman University"
+  },
+  {
+    "Name": "Niagara University"
+  },
+  {
+    "Name": "Nicholls State University"
+  },
+  {
+    "Name": "Nichols College"
+  },
+  {
+    "Name": "Norfolk State University"
+  },
+  {
+    "Name": "North Carolina A&T State University"
+  },
+  {
+    "Name": "North Carolina Central University"
+  },
+  {
+    "Name": "North Carolina State University"
+  },
+  {
+    "Name": "North Carolina Wesleyan College"
+  },
+  {
+    "Name": "North Central College"
+  },
+  {
+    "Name": "North Central University"
+  },
+  {
+    "Name": "North Dakota State University"
+  },
+  {
+    "Name": "North Greenville University"
+  },
+  {
+    "Name": "North Park University"
+  },
+  {
+    "Name": "Northeastern Illinois"
+  },
+  {
+    "Name": "Northeastern State University"
+  },
+  {
+    "Name": "Northeastern University"
+  },
+  {
+    "Name": "Northern Arizona University"
+  },
+  {
+    "Name": "Northern Illinois University"
+  },
+  {
+    "Name": "Northern Kentucky University"
+  },
+  {
+    "Name": "Northern Michigan University"
+  },
+  {
+    "Name": "Northern State University"
+  },
+  {
+    "Name": "Northland College"
+  },
+  {
+    "Name": "Northwest Missouri State University"
+  },
+  {
+    "Name": "Northwest Nazarene University"
+  },
+  {
+    "Name": "Northwestern Oklahoma State Univ."
+  },
+  {
+    "Name": "Northwestern State University"
+  },
+  {
+    "Name": "Northwestern University"
+  },
+  {
+    "Name": "Northwood University (Michigan)"
+  },
+  {
+    "Name": "Norwich University"
+  },
+  {
+    "Name": "Notre Dame College (Ohio)"
+  },
+  {
+    "Name": "Notre Dame de Namur"
+  },
+  {
+    "Name": "Notre Dame of Maryland University"
+  },
+  {
+    "Name": "Nova Southeastern University"
+  },
+  {
+    "Name": "Nyack College"
+  },
+  {
+    "Name": "NYC College of Technology"
+  },
+  {
+    "Name": "NYU Poly"
+  },
+  {
+    "Name": "Oakland City University"
+  },
+  {
+    "Name": "Oakland University"
+  },
+  {
+    "Name": "Oberlin College"
+  },
+  {
+    "Name": "Occidental College"
+  },
+  {
+    "Name": "Oglethorpe University"
+  },
+  {
+    "Name": "Ohio Dominican University"
+  },
+  {
+    "Name": "Ohio Northern University"
+  },
+  {
+    "Name": "Ohio University"
+  },
+  {
+    "Name": "Ohio Valley University"
+  },
+  {
+    "Name": "Ohio Wesleyan University"
+  },
+  {
+    "Name": "Oklahoma Christian University"
+  },
+  {
+    "Name": "Oklahoma Panhandle State Univ."
+  },
+  {
+    "Name": "Oklahoma State University"
+  },
+  {
+    "Name": "Old Dominion University"
+  },
+  {
+    "Name": "Olivet College"
+  },
+  {
+    "Name": "Oral Roberts University"
+  },
+  {
+    "Name": "Oregon State University"
+  },
+  {
+    "Name": "Otterbein University"
+  },
+  {
+    "Name": "Ouachita Baptist University"
+  },
+  {
+    "Name": "Pace University"
+  },
+  {
+    "Name": "Pacific Lutheran University"
+  },
+  {
+    "Name": "Pacific University"
+  },
+  {
+    "Name": "Paine College"
+  },
+  {
+    "Name": "Palm Beach Atlantic University"
+  },
+  {
+    "Name": "Penn College of Technology"
+  },
+  {
+    "Name": "Penn State Abington"
+  },
+  {
+    "Name": "Penn State Altoona"
+  },
+  {
+    "Name": "Penn State Behrend"
+  },
+  {
+    "Name": "Penn State Berks College"
+  },
+  {
+    "Name": "Penn State Harrisburg"
+  },
+  {
+    "Name": "Penn State University"
+  },
+  {
+    "Name": "Pepperdine University"
+  },
+  {
+    "Name": "Pfeiffer University"
+  },
+  {
+    "Name": "Piedmont College"
+  },
+  {
+    "Name": "Pine Manor College"
+  },
+  {
+    "Name": "Pittsburg State University"
+  },
+  {
+    "Name": "Plattsburgh State University"
+  },
+  {
+    "Name": "Plymouth State University"
+  },
+  {
+    "Name": "Point Loma"
+  },
+  {
+    "Name": "Pomona-Pitzer Colleges"
+  },
+  {
+    "Name": "Portland State University"
+  },
+  {
+    "Name": "Post University"
+  },
+  {
+    "Name": "Prairie View A&M University"
+  },
+  {
+    "Name": "Presbyterian College"
+  },
+  {
+    "Name": "Presentation College"
+  },
+  {
+    "Name": "Princeton University"
+  },
+  {
+    "Name": "Principia College"
+  },
+  {
+    "Name": "Providence College"
+  },
+  {
+    "Name": "SUNY Purchase College"
+  },
+  {
+    "Name": "Purdue University"
+  },
+  {
+    "Name": "Queens College"
+  },
+  {
+    "Name": "Queens University of Charlotte"
+  },
+  {
+    "Name": "Quincy University"
+  },
+  {
+    "Name": "Quinnipiac University"
+  },
+  {
+    "Name": "Radford University"
+  },
+  {
+    "Name": "Ramapo College"
+  },
+  {
+    "Name": "Randolph College"
+  },
+  {
+    "Name": "Randolph-Macon College"
+  },
+  {
+    "Name": "Regis College"
+  },
+  {
+    "Name": "Regis University"
+  },
+  {
+    "Name": "Reneau University"
+  },
+  {
+    "Name": "Rensselaer Polytechnic Institute"
+  },
+  {
+    "Name": "Rhode Island College"
+  },
+  {
+    "Name": "Rhodes College"
+  },
+  {
+    "Name": "Rice University"
+  },
+  {
+    "Name": "Rider University"
+  },
+  {
+    "Name": "Ripon College"
+  },
+  {
+    "Name": "Rivier College"
+  },
+  {
+    "Name": "Roanoke College"
+  },
+  {
+    "Name": "Robert Morris University"
+  },
+  {
+    "Name": "Roberts Wesleyan College"
+  },
+  {
+    "Name": "Rochester Institute of Technology"
+  },
+  {
+    "Name": "Rockford College"
+  },
+  {
+    "Name": "Rockhurst University"
+  },
+  {
+    "Name": "Roger Williams University"
+  },
+  {
+    "Name": "Rogers State University"
+  },
+  {
+    "Name": "Rollins College"
+  },
+  {
+    "Name": "Rose-Hulman Institute of Technology"
+  },
+  {
+    "Name": "Rosemont College"
+  },
+  {
+    "Name": "Rowan University"
+  },
+  {
+    "Name": "Rust College"
+  },
+  {
+    "Name": "Rutgers University"
+  },
+  {
+    "Name": "Rutgers University, Camden"
+  },
+  {
+    "Name": "Rutgers University, Newark"
+  },
+  {
+    "Name": "Sacramento State University"
+  },
+  {
+    "Name": "Sacred Heart University"
+  },
+  {
+    "Name": "Saginaw Valley State University"
+  },
+  {
+    "Name": "Saint Anselm College"
+  },
+  {
+    "Name": "Saint Francis University"
+  },
+  {
+    "Name": "Saint Joseph's College (Ind.)"
+  },
+  {
+    "Name": "Saint Joseph's College (Maine)"
+  },
+  {
+    "Name": "Saint Joseph's University"
+  },
+  {
+    "Name": "Saint Leo University"
+  },
+  {
+    "Name": "Saint Louis University"
+  },
+  {
+    "Name": "Saint Martin's University"
+  },
+  {
+    "Name": "Saint Mary's College (IN)"
+  },
+  {
+    "Name": "Saint Mary's University (Minn.)"
+  },
+  {
+    "Name": "Saint Michael's College"
+  },
+  {
+    "Name": "Saint Peter's University"
+  },
+  {
+    "Name": "Saint Vincent College"
+  },
+  {
+    "Name": "Salem College"
+  },
+  {
+    "Name": "Salem State University"
+  },
+  {
+    "Name": "Salem University"
+  },
+  {
+    "Name": "Salisbury University"
+  },
+  {
+    "Name": "Salve Regina University"
+  },
+  {
+    "Name": "Sam Houston State University"
+  },
+  {
+    "Name": "Samford University"
+  },
+  {
+    "Name": "San Diego State University"
+  },
+  {
+    "Name": "San Francisco State University"
+  },
+  {
+    "Name": "San Jose State University"
+  },
+  {
+    "Name": "Santa Clara University"
+  },
+  {
+    "Name": "Sarah Lawrence College"
+  },
+  {
+    "Name": "Savannah College of Art & Design"
+  },
+  {
+    "Name": "Savannah State University"
+  },
+  {
+    "Name": "Schreiner University"
+  },
+  {
+    "Name": "Seattle Pacific University"
+  },
+  {
+    "Name": "Seattle University"
+  },
+  {
+    "Name": "Seton Hall University"
+  },
+  {
+    "Name": "Seton Hill University"
+  },
+  {
+    "Name": "Shaw University"
+  },
+  {
+    "Name": "Shenandoah University"
+  },
+  {
+    "Name": "Shepherd University"
+  },
+  {
+    "Name": "Shippensburg University"
+  },
+  {
+    "Name": "Shorter University"
+  },
+  {
+    "Name": "Siena College"
+  },
+  {
+    "Name": "Simmons College"
+  },
+  {
+    "Name": "Simon Fraser University"
+  },
+  {
+    "Name": "Simpson College"
+  },
+  {
+    "Name": "Skidmore College"
+  },
+  {
+    "Name": "Slippery Rock University"
+  },
+  {
+    "Name": "Smith College"
+  },
+  {
+    "Name": "Sonoma State University"
+  },
+  {
+    "Name": "South Carolina State University"
+  },
+  {
+    "Name": "South Dakota (Mines)"
+  },
+  {
+    "Name": "South Dakota State University"
+  },
+  {
+    "Name": "Southampton Campus of LIU"
+  },
+  {
+    "Name": "Southeast Missouri State University"
+  },
+  {
+    "Name": "Southeastern Louisiana University"
+  },
+  {
+    "Name": "Southeastern Oklahoma State Univ."
+  },
+  {
+    "Name": "Southern Arkansas University"
+  },
+  {
+    "Name": "Southern Connecticut St. University"
+  },
+  {
+    "Name": "Southern Illinois Univ.-Edwardsville"
+  },
+  {
+    "Name": "Southern Illinois University"
+  },
+  {
+    "Name": "Southern Methodist University"
+  },
+  {
+    "Name": "Southern Nazarene University"
+  },
+  {
+    "Name": "Southern New Hampshire University"
+  },
+  {
+    "Name": "Southern University"
+  },
+  {
+    "Name": "Southern Utah University"
+  },
+  {
+    "Name": "Southern Vermont College"
+  },
+  {
+    "Name": "Southern Virginia University"
+  },
+  {
+    "Name": "Southern Wesleyan University"
+  },
+  {
+    "Name": "Southwest Baptist University"
+  },
+  {
+    "Name": "Southwest Minnesota St. University"
+  },
+  {
+    "Name": "Southwestern Oklahoma State Univ."
+  },
+  {
+    "Name": "Southwestern University"
+  },
+  {
+    "Name": "Spalding University"
+  },
+  {
+    "Name": "Spelman College"
+  },
+  {
+    "Name": "Spring Hill College"
+  },
+  {
+    "Name": "Springfield College"
+  },
+  {
+    "Name": "St. Andrews Presbyterian College"
+  },
+  {
+    "Name": "St. Augustine's University"
+  },
+  {
+    "Name": "St. Bonaventure University"
+  },
+  {
+    "Name": "St. Catherine University"
+  },
+  {
+    "Name": "St. Cloud State University"
+  },
+  {
+    "Name": "St. Edward's University"
+  },
+  {
+    "Name": "St. Francis College Brooklyn"
+  },
+  {
+    "Name": "St. John Fisher College"
+  },
+  {
+    "Name": "St. John's University (Minn.)"
+  },
+  {
+    "Name": "St. John's University (N.Y.)"
+  },
+  {
+    "Name": "St. Joseph's College (Brooklyn)"
+  },
+  {
+    "Name": "St. Joseph's College (Long Island)"
+  },
+  {
+    "Name": "St. Lawrence University"
+  },
+  {
+    "Name": "St. Mary's College (CA)"
+  },
+  {
+    "Name": "St. Mary's College (MD)"
+  },
+  {
+    "Name": "St. Mary's University (Texas)"
+  },
+  {
+    "Name": "St. Norbert College"
+  },
+  {
+    "Name": "St. Olaf College"
+  },
+  {
+    "Name": "St. Paul's College"
+  },
+  {
+    "Name": "St. Thomas Aquinas College"
+  },
+  {
+    "Name": "St. Thomas University"
+  },
+  {
+    "Name": "Stanford University"
+  },
+  {
+    "Name": "Stephen F. Austin State University"
+  },
+  {
+    "Name": "Stephens College"
+  },
+  {
+    "Name": "Stetson University"
+  },
+  {
+    "Name": "Stevens Institute of Technology"
+  },
+  {
+    "Name": "Stevenson University"
+  },
+  {
+    "Name": "Stillman College"
+  },
+  {
+    "Name": "Stockton University"
+  },
+  {
+    "Name": "Stonehill College"
+  },
+  {
+    "Name": "Stony Brook University"
+  },
+  {
+    "Name": "Suffolk University"
+  },
+  {
+    "Name": "Sul Ross State University"
+  },
+  {
+    "Name": "SUNY Fredonia"
+  },
+  {
+    "Name": "SUNY Canton"
+  },
+  {
+    "Name": "SUNY Maritime College"
+  },
+  {
+    "Name": "SUNY New Paltz"
+  },
+  {
+    "Name": "SUNY Oneonta"
+  },
+  {
+    "Name": "SUNY Polytechnic Institute"
+  },
+  {
+    "Name": "SUNY Cobleskill"
+  },
+  {
+    "Name": "SUNY Cortland"
+  },
+  {
+    "Name": "SUNY Geneseo"
+  },
+  {
+    "Name": "SUNY Old Westbury"
+  },
+  {
+    "Name": "SUNY Oswego"
+  },
+  {
+    "Name": "SUNY Potsdam"
+  },
+  {
+    "Name": "Susquehanna University"
+  },
+  {
+    "Name": "Swarthmore College"
+  },
+  {
+    "Name": "Sweet Briar College"
+  },
+  {
+    "Name": "Syracuse University"
+  },
+  {
+    "Name": "Tarleton State University"
+  },
+  {
+    "Name": "Temple University"
+  },
+  {
+    "Name": "Tennessee State University"
+  },
+  {
+    "Name": "Tennessee Technological University"
+  },
+  {
+    "Name": "Texas A&M International University"
+  },
+  {
+    "Name": "Texas A&M University"
+  },
+  {
+    "Name": "Texas A&M-Commerce"
+  },
+  {
+    "Name": "Texas A&M-Corpus Christi"
+  },
+  {
+    "Name": "Texas A&M-Kingsville"
+  },
+  {
+    "Name": "Texas Christian University"
+  },
+  {
+    "Name": "Texas Lutheran University"
+  },
+  {
+    "Name": "Texas of the Permian Basin"
+  },
+  {
+    "Name": "Texas Southern University"
+  },
+  {
+    "Name": "Texas State University"
+  },
+  {
+    "Name": "Texas Tech University"
+  },
+  {
+    "Name": "Texas Wesleyan University"
+  },
+  {
+    "Name": "Texas Woman's University"
+  },
+  {
+    "Name": "The Citadel"
+  },
+  {
+    "Name": "The College of New Jersey"
+  },
+  {
+    "Name": "The College of Saint Rose"
+  },
+  {
+    "Name": "The Lincoln University (Pa.)"
+  },
+  {
+    "Name": "The Ohio State University"
+  },
+  {
+    "Name": "The Sage Colleges"
+  },
+  {
+    "Name": "The University of Southern Mississippi"
+  },
+  {
+    "Name": "The University of the South"
+  },
+  {
+    "Name": "The University of Tulsa"
+  },
+  {
+    "Name": "Thiel College"
+  },
+  {
+    "Name": "Thomas College"
+  },
+  {
+    "Name": "Thomas Jefferson University"
+  },
+  {
+    "Name": "Thomas More College"
+  },
+  {
+    "Name": "Tiffin University"
+  },
+  {
+    "Name": "Towson University"
+  },
+  {
+    "Name": "Transylvania University"
+  },
+  {
+    "Name": "Trevecca Nazarene University"
+  },
+  {
+    "Name": "Trine University"
+  },
+  {
+    "Name": "Trinity College (CT)"
+  },
+  {
+    "Name": "Trinity University (Texas)"
+  },
+  {
+    "Name": "Trinity Washington University"
+  },
+  {
+    "Name": "Troy University"
+  },
+  {
+    "Name": "Truman State University"
+  },
+  {
+    "Name": "Tufts University"
+  },
+  {
+    "Name": "Tulane University"
+  },
+  {
+    "Name": "Tusculum College"
+  },
+  {
+    "Name": "Tuskegee University"
+  },
+  {
+    "Name": "U.S. Coast Guard Academy"
+  },
+  {
+    "Name": "U.S. Merchant Marine Academy"
+  },
+  {
+    "Name": "U.S. Naval Academy"
+  },
+  {
+    "Name": "UAB"
+  },
+  {
+    "Name": "UC Davis"
+  },
+  {
+    "Name": "UC Irvine"
+  },
+  {
+    "Name": "UC Riverside"
+  },
+  {
+    "Name": "UC San Diego"
+  },
+  {
+    "Name": "UC Santa Barbara"
+  },
+  {
+    "Name": "UC Santa Cruz"
+  },
+  {
+    "Name": "UCLA"
+  },
+  {
+    "Name": "UMass Boston"
+  },
+  {
+    "Name": "UMass Dartmouth"
+  },
+  {
+    "Name": "UMass Lowell"
+  },
+  {
+    "Name": "UMBC"
+  },
+  {
+    "Name": "UMKC"
+  },
+  {
+    "Name": "UNC Asheville"
+  },
+  {
+    "Name": "UNC Charlotte"
+  },
+  {
+    "Name": "UNC Greensboro"
+  },
+  {
+    "Name": "UNC Pembroke"
+  },
+  {
+    "Name": "UNC Wilmington"
+  },
+  {
+    "Name": "Union College (N.Y.)"
+  },
+  {
+    "Name": "Union University (Tenn.)"
+  },
+  {
+    "Name": "Univ. of Colorado-Colorado Springs"
+  },
+  {
+    "Name": "Univ. of the Sciences in Philadelphia"
+  },
+  {
+    "Name": "Univ. of Wisconsin-Stevens Point"
+  },
+  {
+    "Name": "University at Albany"
+  },
+  {
+    "Name": "University at Buffalo"
+  },
+  {
+    "Name": "University of Akron"
+  },
+  {
+    "Name": "University of Alabama"
+  },
+  {
+    "Name": "University of Alabama-Huntsville"
+  },
+  {
+    "Name": "University of Alaska-Anchorage"
+  },
+  {
+    "Name": "University of Alaska-Fairbanks"
+  },
+  {
+    "Name": "University of Arizona"
+  },
+  {
+    "Name": "University of Arkansas"
+  },
+  {
+    "Name": "University of Arkansas-Fort Smith"
+  },
+  {
+    "Name": "University of Arkansas-Monticello"
+  },
+  {
+    "Name": "University of Arkansas-Pine Bluff"
+  },
+  {
+    "Name": "University of Bridgeport"
+  },
+  {
+    "Name": "University of California"
+  },
+  {
+    "Name": "University of Central Arkansas"
+  },
+  {
+    "Name": "University of Central Florida"
+  },
+  {
+    "Name": "University of Central Missouri"
+  },
+  {
+    "Name": "University of Central Oklahoma"
+  },
+  {
+    "Name": "University of Charleston"
+  },
+  {
+    "Name": "University of Chicago"
+  },
+  {
+    "Name": "University of Cincinnati"
+  },
+  {
+    "Name": "University of Colorado"
+  },
+  {
+    "Name": "University of Connecticut"
+  },
+  {
+    "Name": "University of Dallas"
+  },
+  {
+    "Name": "University of Dayton"
+  },
+  {
+    "Name": "University of Delaware"
+  },
+  {
+    "Name": "University of Denver"
+  },
+  {
+    "Name": "University of Detroit Mercy"
+  },
+  {
+    "Name": "University of Dubuque"
+  },
+  {
+    "Name": "University of Evansville"
+  },
+  {
+    "Name": "University of Findlay"
+  },
+  {
+    "Name": "University of Florida"
+  },
+  {
+    "Name": "University of Georgia"
+  },
+  {
+    "Name": "University of Hartford"
+  },
+  {
+    "Name": "University of Hawaii at Hilo"
+  },
+  {
+    "Name": "University of Hawaii, Manoa"
+  },
+  {
+    "Name": "University of Houston"
+  },
+  {
+    "Name": "University of Idaho"
+  },
+  {
+    "Name": "University of Illinois"
+  },
+  {
+    "Name": "University of Illinois-Chicago"
+  },
+  {
+    "Name": "University of Illinois-Springfield"
+  },
+  {
+    "Name": "University of Indianapolis"
+  },
+  {
+    "Name": "University of Iowa"
+  },
+  {
+    "Name": "University of Kansas"
+  },
+  {
+    "Name": "University of Kentucky"
+  },
+  {
+    "Name": "University of La Verne"
+  },
+  {
+    "Name": "University of Louisiana at Lafayette"
+  },
+  {
+    "Name": "University of Louisiana at Monroe"
+  },
+  {
+    "Name": "University of Louisville"
+  },
+  {
+    "Name": "University of Maine"
+  },
+  {
+    "Name": "University of Maine at Presque Isle"
+  },
+  {
+    "Name": "University of Maine, Farmington"
+  },
+  {
+    "Name": "University of Mary"
+  },
+  {
+    "Name": "University of Mary Hardin-Baylor"
+  },
+  {
+    "Name": "University of Mary Washington"
+  },
+  {
+    "Name": "University of Maryland-College Park"
+  },
+  {
+    "Name": "University of Maryland, Eastern Shore"
+  },
+  {
+    "Name": "University of Massachusetts"
+  },
+  {
+    "Name": "University of Memphis"
+  },
+  {
+    "Name": "University of Miami"
+  },
+  {
+    "Name": "University of Michigan"
+  },
+  {
+    "Name": "University of Minnesota"
+  },
+  {
+    "Name": "University of Minnesota-Crookston"
+  },
+  {
+    "Name": "University of Minnesota-Duluth"
+  },
+  {
+    "Name": "University of Minnesota-Morris"
+  },
+  {
+    "Name": "University of Mississippi"
+  },
+  {
+    "Name": "University of Missouri"
+  },
+  {
+    "Name": "University of Missouri-St. Louis"
+  },
+  {
+    "Name": "University of Montana"
+  },
+  {
+    "Name": "University of Montevallo"
+  },
+  {
+    "Name": "University of Nebraska"
+  },
+  {
+    "Name": "University of Nebraska-Kearney"
+  },
+  {
+    "Name": "University of Nebraska-Omaha"
+  },
+  {
+    "Name": "University of Nevada"
+  },
+  {
+    "Name": "University of New England"
+  },
+  {
+    "Name": "University of New Hampshire"
+  },
+  {
+    "Name": "University of New Haven"
+  },
+  {
+    "Name": "University of New Mexico"
+  },
+  {
+    "Name": "University of New Orleans"
+  },
+  {
+    "Name": "University of North Alabama"
+  },
+  {
+    "Name": "University of North Carolina"
+  },
+  {
+    "Name": "University of North Dakota"
+  },
+  {
+    "Name": "University of North Florida"
+  },
+  {
+    "Name": "University of North Georgia"
+  },
+  {
+    "Name": "University of North Texas"
+  },
+  {
+    "Name": "University of Northern Colorado"
+  },
+  {
+    "Name": "University of Northern Iowa"
+  },
+  {
+    "Name": "University of Northwestern-St. Paul"
+  },
+  {
+    "Name": "University of Notre Dame"
+  },
+  {
+    "Name": "University of Oklahoma"
+  },
+  {
+    "Name": "University of Oregon"
+  },
+  {
+    "Name": "University of Pennsylvania"
+  },
+  {
+    "Name": "University of Pittsburgh"
+  },
+  {
+    "Name": "University of Pittsburgh-Greensburg"
+  },
+  {
+    "Name": "University of Pittsburgh-Johnstown"
+  },
+  {
+    "Name": "University of Pittsburgh, Bradford"
+  },
+  {
+    "Name": "University of Portland"
+  },
+  {
+    "Name": "University of Puerto Rico-Bayamon"
+  },
+  {
+    "Name": "University of Puerto Rico-Mayaguez Campus"
+  },
+  {
+    "Name": "University of Puerto Rico-Rio Piedras"
+  },
+  {
+    "Name": "University of Puerto Rico, Cayey"
+  },
+  {
+    "Name": "University of Puerto Rico, Humacao"
+  },
+  {
+    "Name": "University of Puget Sound"
+  },
+  {
+    "Name": "University of Redlands"
+  },
+  {
+    "Name": "University of Rhode Island"
+  },
+  {
+    "Name": "University of Richmond"
+  },
+  {
+    "Name": "University of Rochester"
+  },
+  {
+    "Name": "University of Saint Joseph (Conn.)"
+  },
+  {
+    "Name": "University of San Diego"
+  },
+  {
+    "Name": "University of San Francisco"
+  },
+  {
+    "Name": "University of Scranton"
+  },
+  {
+    "Name": "University of Sioux Falls"
+  },
+  {
+    "Name": "University of South Alabama"
+  },
+  {
+    "Name": "University of South Carolina"
+  },
+  {
+    "Name": "University of South Carolina Aiken"
+  },
+  {
+    "Name": "University of South Carolina Upstate"
+  },
+  {
+    "Name": "University of South Dakota"
+  },
+  {
+    "Name": "University of South Florida"
+  },
+  {
+    "Name": "University of Southern California"
+  },
+  {
+    "Name": "University of Southern Indiana"
+  },
+  {
+    "Name": "University of Southern Maine"
+  },
+  {
+    "Name": "University of St. Francis (Ill.)"
+  },
+  {
+    "Name": "University of St. Thomas (Minn.)"
+  },
+  {
+    "Name": "University of Tampa"
+  },
+  {
+    "Name": "University of Tennessee"
+  },
+  {
+    "Name": "University of Tennessee at Chattanooga"
+  },
+  {
+    "Name": "University of Tennessee at Martin"
+  },
+  {
+    "Name": "University of Texas"
+  },
+  {
+    "Name": "University of Texas at Arlington"
+  },
+  {
+    "Name": "University of Texas at Dallas"
+  },
+  {
+    "Name": "University of Texas at El Paso"
+  },
+  {
+    "Name": "University of Texas at San Antonio"
+  },
+  {
+    "Name": "University of Texas at Tyler"
+  },
+  {
+    "Name": "University of Texas Rio Grande Valley"
+  },
+  {
+    "Name": "University of the District of Columbia"
+  },
+  {
+    "Name": "University of the Incarnate Word"
+  },
+  {
+    "Name": "University of the Ozarks"
+  },
+  {
+    "Name": "University of the Pacific"
+  },
+  {
+    "Name": "University of Toledo"
+  },
+  {
+    "Name": "University of Utah"
+  },
+  {
+    "Name": "University of Valley Forge"
+  },
+  {
+    "Name": "University of Vermont"
+  },
+  {
+    "Name": "University of Virginia"
+  },
+  {
+    "Name": "University of Washington"
+  },
+  {
+    "Name": "University of West Alabama"
+  },
+  {
+    "Name": "University of West Florida"
+  },
+  {
+    "Name": "University of West Georgia"
+  },
+  {
+    "Name": "University of Wisconsin-Eau Claire"
+  },
+  {
+    "Name": "University of Wisconsin-La Crosse"
+  },
+  {
+    "Name": "University of Wisconsin-Oshkosh"
+  },
+  {
+    "Name": "University of Wisconsin-Platteville"
+  },
+  {
+    "Name": "University of Wisconsin-River Falls"
+  },
+  {
+    "Name": "University of Wisconsin-Stout"
+  },
+  {
+    "Name": "University of Wisconsin-Superior"
+  },
+  {
+    "Name": "University of Wisconsin-Whitewater"
+  },
+  {
+    "Name": "University of Wisconsin, Green Bay"
+  },
+  {
+    "Name": "University of Wisconsin, Madison"
+  },
+  {
+    "Name": "University of Wisconsin, Milwaukee"
+  },
+  {
+    "Name": "University of Wisconsin, Parkside"
+  },
+  {
+    "Name": "University of Wyoming"
+  },
+  {
+    "Name": "UNLV"
+  },
+  {
+    "Name": "Upper Iowa University"
+  },
+  {
+    "Name": "Urbana University"
+  },
+  {
+    "Name": "Ursinus College"
+  },
+  {
+    "Name": "Ursuline College"
+  },
+  {
+    "Name": "Utah State University"
+  },
+  {
+    "Name": "Utah Valley University"
+  },
+  {
+    "Name": "Utica College"
+  },
+  {
+    "Name": "Valdosta State University"
+  },
+  {
+    "Name": "Valparaiso University"
+  },
+  {
+    "Name": "Vanderbilt University"
+  },
+  {
+    "Name": "Vassar College"
+  },
+  {
+    "Name": "Villanova University"
+  },
+  {
+    "Name": "Virginia Commonwealth University"
+  },
+  {
+    "Name": "Virginia Military Institute"
+  },
+  {
+    "Name": "Virginia State University"
+  },
+  {
+    "Name": "Virginia Tech"
+  },
+  {
+    "Name": "Virginia Union University"
+  },
+  {
+    "Name": "Virginia Wesleyan College"
+  },
+  {
+    "Name": "Virginia's College at Wise"
+  },
+  {
+    "Name": "Wabash College"
+  },
+  {
+    "Name": "Wagner College"
+  },
+  {
+    "Name": "Wake Forest University"
+  },
+  {
+    "Name": "Walsh University"
+  },
+  {
+    "Name": "Wartburg College"
+  },
+  {
+    "Name": "Washburn University of Topeka"
+  },
+  {
+    "Name": "Washington Adventist University"
+  },
+  {
+    "Name": "Washington and Jefferson College"
+  },
+  {
+    "Name": "Washington and Lee University"
+  },
+  {
+    "Name": "Washington College"
+  },
+  {
+    "Name": "Washington State University"
+  },
+  {
+    "Name": "Washington University (Missouri)"
+  },
+  {
+    "Name": "Wayne State College"
+  },
+  {
+    "Name": "Wayne State University"
+  },
+  {
+    "Name": "Waynesburg University"
+  },
+  {
+    "Name": "Weber State University"
+  },
+  {
+    "Name": "Webster University"
+  },
+  {
+    "Name": "Wellesley College"
+  },
+  {
+    "Name": "Wells College"
+  },
+  {
+    "Name": "Wentworth Institute of Technology"
+  },
+  {
+    "Name": "Wesley College"
+  },
+  {
+    "Name": "Wesleyan College"
+  },
+  {
+    "Name": "Wesleyan University"
+  },
+  {
+    "Name": "West Chester Univ. of Pennsylvania"
+  },
+  {
+    "Name": "West Liberty University"
+  },
+  {
+    "Name": "West Texas A&M University"
+  },
+  {
+    "Name": "West Virginia State University"
+  },
+  {
+    "Name": "West Virginia Univ. Inst. of Tech."
+  },
+  {
+    "Name": "West Virginia University"
+  },
+  {
+    "Name": "West Virginia Wesleyan College"
+  },
+  {
+    "Name": "Western Carolina University"
+  },
+  {
+    "Name": "Western Connecticut State University"
+  },
+  {
+    "Name": "Western Illinois University"
+  },
+  {
+    "Name": "Western Kentucky University"
+  },
+  {
+    "Name": "Western Michigan University"
+  },
+  {
+    "Name": "Western New England University"
+  },
+  {
+    "Name": "Western New Mexico University"
+  },
+  {
+    "Name": "Western Oregon University"
+  },
+  {
+    "Name": "Western State Colorado University"
+  },
+  {
+    "Name": "Western Washington University"
+  },
+  {
+    "Name": "Westfield State University"
+  },
+  {
+    "Name": "Westminster College (Mo.)"
+  },
+  {
+    "Name": "Westminster College (Pa.)"
+  },
+  {
+    "Name": "Wheaton College (Ill.)"
+  },
+  {
+    "Name": "Wheaton College (Mass.)"
+  },
+  {
+    "Name": "Wheeling Jesuit University"
+  },
+  {
+    "Name": "Wheelock College"
+  },
+  {
+    "Name": "Whitman College"
+  },
+  {
+    "Name": "Whittier College"
+  },
+  {
+    "Name": "Whitworth University"
+  },
+  {
+    "Name": "Wichita State University"
+  },
+  {
+    "Name": "Widener University"
+  },
+  {
+    "Name": "Wilkes University"
+  },
+  {
+    "Name": "Willamette University"
+  },
+  {
+    "Name": "William Jewell College"
+  },
+  {
+    "Name": "William Paterson University"
+  },
+  {
+    "Name": "William Peace University"
+  },
+  {
+    "Name": "William Penn College"
+  },
+  {
+    "Name": "William Smith College"
+  },
+  {
+    "Name": "Williams College"
+  },
+  {
+    "Name": "Wilmington College"
+  },
+  {
+    "Name": "Wilmington University"
+  },
+  {
+    "Name": "Wilson College"
+  },
+  {
+    "Name": "Wingate University"
+  },
+  {
+    "Name": "Winona State University"
+  },
+  {
+    "Name": "Winston-Salem State University"
+  },
+  {
+    "Name": "Winthrop University"
+  },
+  {
+    "Name": "Wisconsin Lutheran College"
+  },
+  {
+    "Name": "Wittenberg University"
+  },
+  {
+    "Name": "Wofford College"
+  },
+  {
+    "Name": "Worcester Polytechnic Institute"
+  },
+  {
+    "Name": "Worcester State University"
+  },
+  {
+    "Name": "Wright State University"
+  },
+  {
+    "Name": "Xavier University"
+  },
+  {
+    "Name": "Yale University"
+  },
+  {
+    "Name": "Yeshiva University"
+  },
+  {
+    "Name": "York College (N.Y.)"
+  },
+  {
+    "Name": "York College (Pa.)"
+  },
+  {
+    "Name": "Young Harris College"
+  },
+  {
+    "Name": "Youngstown State University"
+  }
+]
