@@ -11,23 +11,22 @@
     <section class="content">
       <div class="row">
         <div class="col-md-3">
-          @if($alumni->count() === 0)
-            <div class="alert alert-danger alert-dismissible">
+          @if($alumni->count() === 0 && $emails->count() === 0)
+            <div class="alert alert-success alert-dismissible">
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                <h4><i class="icon fa fa-ban"></i>No email list</h4>
-                It appears there is nobody on your email list. Please create that list via the button below or encourage your alumni
-                to sign up to this site via email address.
+                <h4>No Email Recipients</h4>
+                <a data-toggle="modal" data-target="#emailStart" > Click here</a> to learn how to get started sending emails.
             </div>
           @else
-              <a data-toggle="modal" data-target="#modal-default-event" class="btn btn-primary btn-block margin-bottom">Compose Email</a>
+              <a data-toggle="modal" data-target="#composeEmail" class="btn btn-primary btn-block margin-bottom">Compose Email</a>
           @endif
           <a href="/coach/email/editlist" class="btn btn-primary btn-block margin-bottom">Edit Email List</a>
   
-        <!-- MODAL -->
-        <div class="modal fade" id="modal-default-event">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="box box-info">
+            <!-- MODAL -->
+            <div class="modal fade" id="composeEmail">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="box box-info">
                     <form action="/coach/email" method="POST">
                         <div class="modal-header">
                             <div class="row">
@@ -61,9 +60,6 @@
                     </form>
                   </div>
                   <!-- /.box -->
-                  
-                
-                      
                 </div>
                 <!-- /.modal-content -->
               </div>
@@ -71,6 +67,48 @@
             </div>
             <!-- /.modal -->
           
+            <!-- MODAL -->
+            <div class="modal fade" id="emailStart">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="box box-info">
+                        <div class="modal-header">
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <h3 class="modal-title">Get started sending emails</h3>
+                                </div>
+
+                            </div>
+                        </div>
+                    
+                        <div class="modal-body">
+                            <div class="box-body">
+                                <div class="form-group">
+                                  <ol>
+                                    <li class='form-group'>
+                                        Send email with link <a href="">alumspot.com/register</a> to the alumni you would like to invite to register for your AlumSpot page.
+                                        Registered alumni will be added to your recipient list.
+                                    </li>
+                                    <li class='form-group'>Add any unregistered alumni or other relevant email addresses to your email list via the 'Edit Email List' button.</li>
+                                    <li class='form-group'>Click 'Compose Email' to send customizable emails through AlumSpot!</li>
+                                  </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="row" align="center">
+                            Copy the following registration link into an email:<br>
+                            <a href="#">alumspotdev.localhost/register</a>
+                            </div>  
+                        </div>
+                    </div>
+                    <!-- /.box -->
+                </div>
+                <!-- /.modal-content -->
+              </div>
+              <!-- /.modal-dialog -->
+            </div>
+            <!-- /.modal -->
           
           <div class="box box-solid">
             <div class="box-header with-border">
