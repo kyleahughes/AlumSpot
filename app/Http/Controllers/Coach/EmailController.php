@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Mail;
 use AlumSpotDev\Mail\Standard;
 use AlumSpotDev\Http\Controllers\Controller;
 use AlumSpotDev\Activity;
+use AlumSpotDev\Elist;
 
 class EmailController extends Controller
 {
@@ -34,8 +35,9 @@ class EmailController extends Controller
         //retrieve all events ordered by earliest created_at column
         $emails = Email::where('users_id', '=', Auth::user()->id)->orderBy('created_at', 'desc')->get();
         $alumni = Alumni::where('programs_id', '=', Auth::user()->programs_id)->get();
+        $elist = Elist::where('programs_id', '=', Auth::user()->programs_id)->get();
         
-        return view('Coach.emails.index', compact('emails', 'alumni'));
+        return view('Coach.emails.index', compact('emails', 'alumni', 'elist'));
     }
 
     /**
@@ -54,18 +56,20 @@ class EmailController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store()
+    public function store(Request $request)
     {
         //validation for the events
         $this->validate(request(), [
             'subject' => 'required|min:3',
-            'body' => 'required|max:300',
+            'body' => 'required',
+            'recipient' => 'required'
         ]);
         
         //create and save the event with these established fields
         $email = Email::create([
             'subject' => request('subject'), 
-            'body' => request('body'), 
+            'body' => request('body'),
+            'recipient' => request('recipient'), 
             'users_id' => Auth::user()->id,
             'programs_id' => Auth::user()->programs_id,
         ]);
@@ -79,11 +83,26 @@ class EmailController extends Controller
         
         $programsid = Auth::user()->programs_id;
         $user = Auth::user();
-        $alumni = Alumni::where('programs_id', '=', $programsid)->pluck('email');
         
-        //send email
-        Mail::to($alumni)->send(new Standard($user, $email));
+        //group all alumni recipients
+        $alumnireg = Alumni::where('programs_id', '=', $programsid)->pluck('email');
+        $alumnielist = Elist::where('programs_id', '=', $programsid)->where('group', '=', 'Alumni')->pluck('email');
+        $alumni = $alumnireg->merge($alumnielist);
+        //recipient collection decleration for acq. and all recip
+        $acquaintances = Elist::where('programs_id', '=', $programsid)->where('group', '=', 'Acquaintance')->pluck('email');
+        $all = $alumni->merge($acquaintances);
         
+        
+        //send email based on recipient input
+        if($request->input('recipient') === 'All') {
+            Mail::to($all)->send(new Standard($user, $email));
+        }
+        else if($request->input('recipient') === 'Alumni') {
+            Mail::to($alumni)->send(new Standard($user, $email));
+        }
+        else if($request->input('recipient') === 'Acquaintances') {
+            Mail::to($acquaintances)->send(new Standard($user, $email));
+        }
         
         return redirect('/coach/emailCenter');
     }

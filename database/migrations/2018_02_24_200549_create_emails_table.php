@@ -19,6 +19,7 @@ class CreateEmailsTable extends Migration
             $table->integer('programs_id');
             $table->string('subject');
             $table->text('body');
+            $table->string('recipient');
             $table->timestamps();
         });
     }

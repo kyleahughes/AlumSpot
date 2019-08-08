@@ -11,7 +11,7 @@
     <section class="content">
       <div class="row">
         <div class="col-md-3">
-          @if($alumni->count() === 0 && $emails->count() === 0)
+          @if($alumni->count() === 0 && $elist->count() === 0)
             <div class="alert alert-success alert-dismissible">
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
                 <h4>No Email Recipients</h4>
@@ -31,23 +31,27 @@
                         <div class="modal-header">
                             <div class="row">
                                 <div class="form-group col-md-6">
-                                    <div class="form-group">
-                                        <h3 class="modal-title">Create Email</h3>
-                                    </div>
-                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject of Email">
-                                </div>
-
+                                    <h3 class="modal-title">Create Email</h3>
+                                </div>  
                             </div>
                         </div>
                     
                         <div class="modal-body">
 
                             <div class="box-body">
-
                                 {{ csrf_field() }}
-
+                                
                                 <div class="form-group">
-                                  <textarea class="textarea" placeholder="Body" name="body" id="body"
+                                    <label for="recipient">Select Recipients: </label><br>
+                                    <input type="radio" name="recipient" value="All">&nbsp;All&emsp;
+                                    <input type="radio" name="recipient" value="Alumni">&nbsp;Alumni&emsp;
+                                    <input type="radio" name="recipient" value="Acquaintances">&nbsp;Acquaintances&emsp;
+                                </div>
+                                <div class="form-group">
+                                    <label>Subject</label><input type="text" class="form-control" id="subject" name="subject" placeholder="Subject of Email...">
+                                </div>
+                                <div class="form-group">
+                                    <label>Body</label><textarea class="textarea" placeholder="Body of the email..." name="body" id="body"
                                             style="width: 100%; height: 125px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
                                 </div>
 
@@ -55,7 +59,7 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="submit" class="pull-right btn btn-lg btn-primary">Send</button>
+                            <button onclick="return confirm('Are you sure you want to send this email?')" type="submit"  class="pull-right btn btn-lg btn-primary">Send</button>
                         </div>
                     </form>
                   </div>

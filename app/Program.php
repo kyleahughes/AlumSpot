@@ -37,4 +37,9 @@ class Program extends Model
     public function comment(){
         return $this->hasMany(Comment::class, 'programs_id');
     }
+    
+    //links program to many Elists
+    public function elist(){
+        return $this->hasMany(Comment::class, 'programs_id');
+    }
 }

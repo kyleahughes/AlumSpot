@@ -1,5 +1,5 @@
 @component('mail::message')
-# {{ $user->program->type }} {{ $user->program->sport }} Alumni,
+# {{ $user->program->type }} {{ $user->program->sport }} Community,
 
 {{ $email->body }}
 

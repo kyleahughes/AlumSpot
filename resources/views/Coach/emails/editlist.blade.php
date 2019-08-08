@@ -30,10 +30,10 @@
                                     <tr><td>There are currently no alumni registered</td></tr>
                                 @else
                                     @foreach($alumni as $alumnis)
-                                        <tr>
-                                            <td>{{ $alumnis->first_name }} {{ $alumnis->last_name }}&emsp;<img class="img-circle" src="/alumni/{{ $alumnis->avatar }}" alt="User Avatar"></td>
-                                            <td>{{ $alumnis->email }}</td>
-                                        </tr>
+                                    <tr>
+                                        <td><img class="img-circle" height="30" src="/alumni/{{ $alumnis->avatar }}" alt="User Avatar">{{ $alumnis->first_name }} {{ $alumnis->last_name }}&emsp;</td>
+                                        <td>{{ $alumnis->email }}</td>
+                                    </tr>
                                     @endforeach
                                 @endif
                             </tbody>
@@ -85,7 +85,7 @@
                                             <td>{{ $elists->email }}</td>
                                             <td>{{ $elists->group }}</td>
                                             <td></td>
-                                            <td class="pull-right-container"><a onclick="return confirm('Are you sure you want to delete this event?')" href="/coach/delete/elist/{{ $elists->id }}" style="color: red;"><i class="fas fa-trash-alt"></i></a></td>
+                                            <td class="pull-right-container"><a onclick="return confirm('Are you sure you want to delete this email address?')" href="/coach/delete/elist/{{ $elists->id }}" style="color: red;"><i class="fas fa-trash-alt"></i></a></td>
                                         </tr>
                                     @endforeach
                                 @endif
@@ -135,14 +135,14 @@
                         <div class="box-body">
                             <div class="form-group">
                                 <label for="group">Assign these emails to a group</label>
-                                <select name="group" id="job_id" class="form-control">
+                                <select name="group" class="form-control">
                                     <option selected disabled>Select</option>
                                     <option value="Alumni">Alumni</option>
                                     <option value="Acquaintance">Acquaintance</option>
                                 </select>
                             </div>
                             <div class="form-group">
-                              <textarea class="textarea" placeholder="example@aol.com, alumspot@aol.com, baseball@aol.com, ...." name="email[]"
+                              <textarea class="textarea" placeholder="example@aol.com, alumspot@aol.com, baseball@aol.com, ...." name="email" type="email"
                                         style="width: 100%; height: 125px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
                             </div>
                             @include('errors')

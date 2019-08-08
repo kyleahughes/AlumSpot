@@ -59,6 +59,8 @@
         Route::get('/email/create', 'Coach\EmailController@create');
         Route::post('/email', 'Coach\EmailController@store');
         Route::get('/email/editlist', 'Coach\ElistController@index');
+        Route::post('/email/add', 'Coach\ElistController@store');
+        Route::get('/delete/elist/{elist}', 'Coach\ElistController@destroy');
         //comment routes
         Route::post('/{event}/comment/event', 'Coach\CommentsController@storeEvent');
         Route::get('/delete/comment/{comment}', 'Coach\CommentsController@delete');

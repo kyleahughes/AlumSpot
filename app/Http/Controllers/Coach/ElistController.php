@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Auth;
 use AlumSpotDev\Http\Controllers\Controller;
 use AlumSpotDev\Alumni;
 use AlumSpotDev\Elist;
+use Illuminate\Support\Facades\Validator;
 
 class ElistController extends Controller
 {
@@ -52,21 +53,28 @@ class ElistController extends Controller
      */
     public function store(Request $request)
     {
-        //validate the form
-        $this->validate(request(), [
-            'email' => 'required|email',
-            'password' => 'required|confirmed',
-        ]);
-
-        //create and save the coach
-        $user = User::create([
-            'schools_id' => $school->id, 
-            'programs_id' => $program->id, 
-            'first_name' => request('first_name'), 
-            'last_name' => request('last_name'), 
-            'email' => request('email'), 
-            'password' => bcrypt(request('password'))
-        ]); 
+        
+        //take textarea of emails and create an array
+        $emailer = explode(", ", $request->input('email'));
+        
+        //validate emails coming in 
+        foreach ($emailer as $emails) {
+            $this->validate($request, [
+                'email.*' => 'email'
+            ]);
+        }
+        
+        foreach($emailer as $emails) {
+            Elist::create([
+                'users_id' => Auth::user()->id, 
+                'programs_id' => Auth::user()->programs_id,
+                'email' => $emails, 
+                'group' => request('group'),
+            ]);   
+        }
+        
+        return back();
+        
     }
 
     /**
@@ -111,6 +119,8 @@ class ElistController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Elist::where('id', '=', $id)->delete();
+        
+        return back();
     }
 }

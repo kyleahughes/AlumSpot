@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Email extends Model
 {
     //fillable for these values only
-    protected $fillable = ['body', 'subject', 'users_id', 'alumnis_id', 'programs_id'];
+    protected $fillable = ['body', 'subject', 'recipient', 'users_id', 'alumnis_id', 'programs_id'];
     
     public function coach() {
         $this->belongsTo(User::class, 'users_id');
