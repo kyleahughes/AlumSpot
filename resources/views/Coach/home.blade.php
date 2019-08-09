@@ -96,20 +96,30 @@
                   </thead>
                   <tbody>
                   
-                  @foreach ($event as $events)
-                      <tr>
-                        <td><a href="#">{{ $events->title }}</a></td>
-                        <td>{{ \Carbon\Carbon::parse($events->datetime)->toFormattedDateString() }}</td>
-                        <td>
-                          <div class="sparkbar" data-color="#00a65a" data-height="20">100</div>
-                        </td>
-                        @if($events->datetime < now())
-                            <td><span class="label label-success">Passed</span></td>
-                        @else
-                            <td><span class="label label-warning">Upcoming</span></td>
-                        @endif
-                      </tr>
-                  @endforeach
+                  @if($event->count() === 0)
+                    <tr>
+                      <td>You have not yet scheduled any events</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  @else 
+                      
+                      @foreach ($event as $events)
+                          <tr>
+                            <td><a href="#">{{ $events->title }}</a></td>
+                            <td>{{ \Carbon\Carbon::parse($events->datetime)->toFormattedDateString() }}</td>
+                            <td>
+                              <div class="sparkbar" data-color="#00a65a" data-height="20">100</div>
+                            </td>
+                            @if($events->datetime < now())
+                                <td><span class="label label-success">Passed</span></td>
+                            @else
+                                <td><span class="label label-warning">Upcoming</span></td>
+                            @endif
+                          </tr>
+                      @endforeach
+                    @endif
                   </tbody>
                 </table>
               </div>

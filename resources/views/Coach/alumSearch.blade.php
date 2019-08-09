@@ -23,9 +23,13 @@
                     <span class="sr-only">Toggle Dropdown</span>
                   </button>
                   <ul class="dropdown-menu" role="menu">
+                    @if($industry->count() === 0)
+                    <li>No Alumni</li>
+                    @else 
                     @foreach($industry as $industrys)
                       <li><a href="/coach/alumSearch/industry/{{ $industrys }}">{{ $industrys }}</a></li>
                     @endforeach
+                    @endif
                   </ul>
                 </div>
               </div>
@@ -41,9 +45,13 @@
                     <span class="sr-only">Toggle Dropdown</span>
                   </button>
                   <ul class="dropdown-menu" role="menu">
+                    @if($gradYear->count() === 0)
+                    <li>No Alumni</li>
+                    @else 
                     @foreach($gradYear as $gradYears)
                       <li><a href="/coach/alumSearch/gradYear/{{ $gradYears }}">{{ $gradYears }}</a></li>
                     @endforeach
+                    @endif
                   </ul>
                 </div>
               </div>
@@ -58,9 +66,13 @@
                     <span class="sr-only">Toggle Dropdown</span>
                   </button>
                   <ul class="dropdown-menu" role="menu">
+                    @if($company->count() === 0)
+                    <li>No Alumni</li>
+                    @else 
                     @foreach($company as $companys)
                       <li><a href="/coach/alumSearch/company/{{ $companys }}">{{ $companys }}</a></li>
                     @endforeach
+                    @endif
                   </ul>
                 </div>
               </div>
@@ -79,6 +91,27 @@
             <!-- /.box-body -->
           </div>
           <!-- /.box -->
+            @if($industry->count() === 0)
+                <div class="col-md-4">
+                    <!-- Widget: user widget style 1 -->
+                    <div class="box box-widget widget-user">
+                      <!-- Add the bg color to the header using any of the bg-* classes -->
+                      <div class="widget-user-header bg-aqua-active">
+                        <h3 class="widget-user-username">No Alumni Registered yet.</h3>
+                      </div>
+                      
+                      <div class="box-footer">
+                      <div class="row">
+                        <div class="border-right">
+                          <div class="description-block">
+                              <h5 class="description-header">Email this link to your alumni and tell them to register!<br><a>alumspot.com/register</a></h5>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                </div>
+            @else 
             @foreach ($alumni as $alumnis)
               <div class="col-md-4">
                 <!-- Widget: user widget style 1 -->
@@ -125,6 +158,7 @@
               </div>
               <!-- /.col -->
             @endforeach
+            @endif
         </div>
 </section>
 @endsection

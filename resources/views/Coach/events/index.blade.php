@@ -117,91 +117,103 @@
                   <th>Description</th>
                   <th>Created By</th>
                 </tr>
-                @foreach ($event as $events)
+                
+                @if($event->count() === 0)
                     <tr>
-                      <td><a data-toggle="modal" data-target="#modal-default-{{ $events->id }}">{{ $events->title }}</a></td>
-                      <td>{{ $events->datetime }}</td>
-                      <td>number attending</td>
-                      <td>{{ $events->body }}</td>
-                      <td>{{ $events->coach->first_name }} {{ $events->coach->last_name }}</td>
-                      <td class="pull-right-container"><a onclick="return confirm('Are you sure you want to delete this event?')" href="/coach/delete/event/{{ $events->id }}" style="color: red;"><i class="fas fa-trash-alt"></i></a></td>
+                        <td>You have not yet scheduled any events. <b>Click above to schedule a new event</b></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
                     </tr>
-                    
-                    <!-- MODAL -->
-                    <div class="modal fade" id="modal-default-{{ $events->id }}">
-                      <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                              <div class="pull-left">
-                                <h4 class="modal-title"><b>Created By:</b>&nbsp;&nbsp;&nbsp;<a href="/alumni/alumSearch/{{ $events->coach->id }}"><img src="/coach/{{ $events->coach->avatar }}" class="img-circle" height="40">{{ $events->coach->first_name }} {{ $events->coach->last_name }}</a></h4>
-                              </div>
-                              <div class="pull-right">
-                                <b>{{ $events->created_at->format('M d, Y h:i A') }}</b>
-                              </div>
-                          </div>
-                          <div class="modal-body">
-                              <p><b>Description:</b></p>
-                            <p>{{ $events->body }}</p>
-                          </div>
-                          <hr>
-                          <!-- COMMENTS -->
-                          <div class="content">
-                              <h3><i class="far fa-comments"></i>&emsp;<span>Comments</span></h3>
-                              <div class="comment">
-                                  <ul class="list-group">
-                                  @foreach($events->comment as $comments)
-                                     <li class="list-group-item">
-                                        @if($comments->users_id === null)
-                                         <strong>
-                                             <a href="/coach/alumSearch/{{ $comments->alumni->id }}">{{ $comments->alumni->first_name }} {{ $comments->alumni->last_name }} </a>
-                                         </strong>
-                                         @else
-                                         <strong>
-                                             <a href="#">{{ $comments->coach->first_name }} {{ $comments->coach->last_name }} </a>
-                                         </strong>
-                                         @endif
-                                         <span class="text-muted">
-                                           {{ $comments->created_at->diffForHumans() }}:&nbsp;  
-                                         </span>
-                                         {{ $comments->body }}
-                                         <span class='pull-right'>
-                                            <a onclick="return confirm('Are you sure you want to delete this comment?')" href="/coach/delete/comment/{{ $comments->id }}" style="color: red;">
-                                                <i class="fas fa-trash-alt"></i>
-                                            </a>
-                                         </span>
-                                     </li>
-                                  @endforeach
-                                  </ul>
-                              </div>
-                          
-                              <div class="card">
-                                  <div class="card-block">
-                                      <form method="POST" action="/coach/{{ $events->id }}/comment/event">
-                                          {{ csrf_field() }}
-                                          <div class="form-group">
-                                              <textarea name="body" placeholder="Your comment here.." class="form-control" required></textarea>
-                                          </div>
-                                          <div class="form-goup">
-                                            <button type="submit" class="btn btn-primary">Add Comment</button>
-                                          </div>
-                                          @include('errors')
-                                      </form>
+                @else 
+                
+                    @foreach ($event as $events)
+                        <tr>
+                          <td><a data-toggle="modal" data-target="#modal-default-{{ $events->id }}">{{ $events->title }}</a></td>
+                          <td>{{ $events->datetime }}</td>
+                          <td>number attending</td>
+                          <td>{{ $events->body }}</td>
+                          <td>{{ $events->coach->first_name }} {{ $events->coach->last_name }}</td>
+                          <td class="pull-right-container"><a onclick="return confirm('Are you sure you want to delete this event?')" href="/coach/delete/event/{{ $events->id }}" style="color: red;"><i class="fas fa-trash-alt"></i></a></td>
+                        </tr>
+
+                        <!-- MODAL -->
+                        <div class="modal fade" id="modal-default-{{ $events->id }}">
+                          <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                  <div class="pull-left">
+                                    <h4 class="modal-title"><b>Created By:</b>&nbsp;&nbsp;&nbsp;<a href="/alumni/alumSearch/{{ $events->coach->id }}"><img src="/coach/{{ $events->coach->avatar }}" class="img-circle" height="40">{{ $events->coach->first_name }} {{ $events->coach->last_name }}</a></h4>
+                                  </div>
+                                  <div class="pull-right">
+                                    <b>{{ $events->created_at->format('M d, Y h:i A') }}</b>
                                   </div>
                               </div>
+                              <div class="modal-body">
+                                  <p><b>Description:</b></p>
+                                <p>{{ $events->body }}</p>
+                              </div>
+                              <hr>
+                              <!-- COMMENTS -->
+                              <div class="content">
+                                  <h3><i class="far fa-comments"></i>&emsp;<span>Comments</span></h3>
+                                  <div class="comment">
+                                      <ul class="list-group">
+                                      @foreach($events->comment as $comments)
+                                         <li class="list-group-item">
+                                            @if($comments->users_id === null)
+                                             <strong>
+                                                 <a href="/coach/alumSearch/{{ $comments->alumni->id }}">{{ $comments->alumni->first_name }} {{ $comments->alumni->last_name }} </a>
+                                             </strong>
+                                             @else
+                                             <strong>
+                                                 <a href="#">{{ $comments->coach->first_name }} {{ $comments->coach->last_name }} </a>
+                                             </strong>
+                                             @endif
+                                             <span class="text-muted">
+                                               {{ $comments->created_at->diffForHumans() }}:&nbsp;  
+                                             </span>
+                                             {{ $comments->body }}
+                                             <span class='pull-right'>
+                                                <a onclick="return confirm('Are you sure you want to delete this comment?')" href="/coach/delete/comment/{{ $comments->id }}" style="color: red;">
+                                                    <i class="fas fa-trash-alt"></i>
+                                                </a>
+                                             </span>
+                                         </li>
+                                      @endforeach
+                                      </ul>
+                                  </div>
+
+                                  <div class="card">
+                                      <div class="card-block">
+                                          <form method="POST" action="/coach/{{ $events->id }}/comment/event">
+                                              {{ csrf_field() }}
+                                              <div class="form-group">
+                                                  <textarea name="body" placeholder="Your comment here.." class="form-control" required></textarea>
+                                              </div>
+                                              <div class="form-goup">
+                                                <button type="submit" class="btn btn-primary">Add Comment</button>
+                                              </div>
+                                              @include('errors')
+                                          </form>
+                                      </div>
+                                  </div>
+                              </div>
+
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
+                              </div>
+
+                            </div>
+                            <!-- /.modal-content -->
                           </div>
-                              
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
-                          </div>
-                          
+                          <!-- /.modal-dialog -->
                         </div>
-                        <!-- /.modal-content -->
-                      </div>
-                      <!-- /.modal-dialog -->
-                    </div>
-                    <!-- /.modal -->
-                    
-                @endforeach
+                        <!-- /.modal -->
+
+                    @endforeach
+                @endif
               </table>
             </div>
             <!-- /.box-body -->

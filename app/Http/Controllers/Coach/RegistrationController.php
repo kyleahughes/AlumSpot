@@ -79,7 +79,7 @@ class RegistrationController extends Controller
         ]);
 
         //create and save the program
-        $program = Program::create([
+        $programs = Program::create([
             'school' => request('school'),
             'sport' => request('sport'),
             'type' => request('type'),
@@ -89,7 +89,7 @@ class RegistrationController extends Controller
         //create and save the coach
         $user = User::create([
             'schools_id' => $school->id, 
-            'programs_id' => $program->id, 
+            'programs_id' => $programs->id, 
             'first_name' => request('first_name'), 
             'last_name' => request('last_name'), 
             'email' => request('email'), 

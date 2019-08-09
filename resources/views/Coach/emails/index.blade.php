@@ -168,49 +168,59 @@
               <div class="table-responsive mailbox-messages">
                 <table class="table table-hover table-striped">
                   <tbody>
-                  @foreach ($emails as $email)
-                  <tr>
-                    <td><input type="checkbox"></td>
-                    <td class="mailbox-name"><a data-toggle="modal" data-target="#modal-default-{{ $email->id }}">{{ $email->subject }}</a></td>
-                    <td class="mailbox-subject">{{ $email->body }}</td>
-                    <td class="mailbox-attachment"></td>
-                    <td class="mailbox-date">{{ $email->created_at->diffForHumans() }}</td>
-                  </tr>
-                  
-                  <!-- MODAL -->
-                    <div class="modal fade" id="modal-default-{{ $email->id }}">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header" style="color:#C0C0C0; background-color: #E8E8E8;">
-                              <h3 class="modal-title text-center">{{ Auth::user()->school->name }}</h3>
-                          </div>
-                          <div class="modal-body">
-                              <div class="margin-bottom" style="padding-left: 45px;">
-                                  <h4><b>{{ Auth::user()->program->type }} {{ Auth::user()->program->sport }} Alumni,</b></h4>
-                                  <br />
-                                  <p style="color:gray;">
-                                      {{ $email->body }}
-                                  </p>
-                                  <br />
-                                  <p style="color:gray">
-                                      Thanks,<br />
-                                      {{ Auth::user()->first_name }} {{ Auth::user()->last_name }}
+                   @if($emails->count() === 0)
+                      <tr>
+                          <td>You have not yet sent any emails through AlumSpot</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                      </tr>
+                  @else 
+                      @foreach ($emails as $email)
+                      <tr>
+                        <td><input type="checkbox"></td>
+                        <td class="mailbox-name"><a data-toggle="modal" data-target="#modal-default-{{ $email->id }}">{{ $email->subject }}</a></td>
+                        <td class="mailbox-subject">{{ $email->body }}</td>
+                        <td class="mailbox-attachment"></td>
+                        <td class="mailbox-date">{{ $email->created_at->diffForHumans() }}</td>
+                      </tr>
+
+                      <!-- MODAL -->
+                        <div class="modal fade" id="modal-default-{{ $email->id }}">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header" style="color:#C0C0C0; background-color: #E8E8E8;">
+                                  <h3 class="modal-title text-center">{{ Auth::user()->school->name }}</h3>
+                              </div>
+                              <div class="modal-body">
+                                  <div class="margin-bottom" style="padding-left: 45px;">
+                                      <h4><b>{{ Auth::user()->program->type }} {{ Auth::user()->program->sport }} Alumni,</b></h4>
+                                      <br />
+                                      <p style="color:gray;">
+                                          {{ $email->body }}
+                                      </p>
+                                      <br />
+                                      <p style="color:gray">
+                                          Thanks,<br />
+                                          {{ Auth::user()->first_name }} {{ Auth::user()->last_name }}
+                                      </p>
+                                  </div>
+                              </div>   
+                              <div class="modal-footer" style="color:#B0B0B0; background-color: #E8E8E8;">
+                                  <p class="text-center">
+                                      © 2018 AlumSpot. All rights reserved.
                                   </p>
                               </div>
-                          </div>   
-                          <div class="modal-footer" style="color:#B0B0B0; background-color: #E8E8E8;">
-                              <p class="text-center">
-                                  © 2018 AlumSpot. All rights reserved.
-                              </p>
+
+                            </div>
+                            <!-- /.modal-content -->
                           </div>
-                          
+                          <!-- /.modal-dialog -->
                         </div>
-                        <!-- /.modal-content -->
-                      </div>
-                      <!-- /.modal-dialog -->
-                    </div>
-                    <!-- /.modal -->
-                  @endforeach
+                        <!-- /.modal -->
+                      @endforeach
+                  @endif
                   </tbody>
                 </table>
                 <!-- /.table -->
