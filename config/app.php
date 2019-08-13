@@ -163,6 +163,7 @@ return [
         AlumSpotDev\Providers\BroadcastServiceProvider::class,
         AlumSpotDev\Providers\EventServiceProvider::class,
         AlumSpotDev\Providers\RouteServiceProvider::class,
+        AlumSpotDev\Providers\ValidateServiceProvider::class,
 
     ],
 

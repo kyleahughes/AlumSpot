@@ -69,7 +69,7 @@ class RegistrationController extends Controller
             //user validation fields
             'first_name' => 'required',
             'last_name' => 'required',
-            'email' => 'required|email',
+            'email' => 'required|unique:Users|email',
             'password' => 'required|confirmed',
         ]);
 

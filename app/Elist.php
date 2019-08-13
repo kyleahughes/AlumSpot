@@ -8,7 +8,7 @@ class Elist extends Model
 {
     //fillable = the fields we are allowing to be passed through the events form 
     //guarded = the fields we are not allowing to be passed through the form
-    protected $fillable = ['email', 'users_id', 'programs_id', 'group'];
+    protected $fillable = ['emails', 'users_id', 'programs_id', 'group'];
     
     //makes event belong to a coach
     public function coach() {

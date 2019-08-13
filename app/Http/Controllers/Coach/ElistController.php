@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Auth;
 use AlumSpotDev\Http\Controllers\Controller;
 use AlumSpotDev\Alumni;
 use AlumSpotDev\Elist;
-use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Session;
 
 class ElistController extends Controller
 {
@@ -55,20 +55,17 @@ class ElistController extends Controller
     {
         
         //take textarea of emails and create an array
-        $emailer = explode(", ", $request->input('email'));
+        $emailer = explode(", ", $request->input('emails'));
         
-        //validate emails coming in 
-        foreach ($emailer as $emails) {
-            $this->validate($request, [
-                'email.*' => 'email'
-            ]);
-        }
+        $request->validate([
+            'emails' => 'email_array',
+        ]);
         
         foreach($emailer as $emails) {
             Elist::create([
                 'users_id' => Auth::user()->id, 
                 'programs_id' => Auth::user()->programs_id,
-                'email' => $emails, 
+                'emails' => $emails, 
                 'group' => request('group'),
             ]);   
         }

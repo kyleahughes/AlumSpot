@@ -18,7 +18,7 @@ class CreateElistsTable extends Migration
             $table->timestamps();
             $table->integer('users_id');
             $table->integer('programs_id');
-            $table->string('email');
+            $table->string('emails');
             $table->string('group');
         });
     }

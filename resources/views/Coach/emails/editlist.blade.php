@@ -82,7 +82,7 @@
                                 @else
                                     @foreach($elist as $elists)
                                         <tr>
-                                            <td>{{ $elists->email }}</td>
+                                            <td>{{ $elists->emails }}</td>
                                             <td>{{ $elists->group }}</td>
                                             <td></td>
                                             <td class="pull-right-container"><a onclick="return confirm('Are you sure you want to delete this email address?')" href="/coach/delete/elist/{{ $elists->id }}" style="color: red;"><i class="fas fa-trash-alt"></i></a></td>
@@ -114,7 +114,7 @@
           <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="box box-info">
-                <form action="/coach/email/add" method="POST">
+                <form action="/coach/email/elist" method="POST">
                     {{ csrf_field() }}
                     <div class="modal-header">
                         <div class="row col-md-12">
@@ -142,10 +142,10 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                              <textarea class="textarea" placeholder="example@aol.com, alumspot@aol.com, baseball@aol.com, ...." name="email" type="email"
-                                        style="width: 100%; height: 125px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                              <textarea class="textarea" placeholder="example@aol.com, alumspot@aol.com, baseball@aol.com, ...." name="emails" type="text"
+                                        style="width: 100%; height: 125px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">{{ old('emails') }}</textarea>
                             </div>
-                            @include('errors')
+                            
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -160,7 +160,7 @@
           <!-- /.modal-dialog -->
         </div>
         <!-- /.modal -->
-        
+        @include('errors')
     </section>
 
     <script>
@@ -175,5 +175,11 @@
           'autoWidth'   : false
         })
        })
+       
+        @if(!empty(Session::get('email_error')) && Session::get('email_error') == 1)
+        $(function() {
+            $('#addEmail').modal('show');
+        });
+        @endif
     </script>
   @endsection

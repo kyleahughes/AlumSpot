@@ -112,6 +112,8 @@ return [
     'unique'               => 'The :attribute has already been taken.',
     'uploaded'             => 'The :attribute failed to upload.',
     'url'                  => 'The :attribute format is invalid.',
+    'email_array'          => "One of the emails you entered is not a valid email address. Please go over your list.",
+    
 
     /*
     |--------------------------------------------------------------------------

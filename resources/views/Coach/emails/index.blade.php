@@ -20,7 +20,7 @@
           @else
               <a data-toggle="modal" data-target="#composeEmail" class="btn btn-primary btn-block margin-bottom">Compose Email</a>
           @endif
-          <a href="/coach/email/editlist" class="btn btn-primary btn-block margin-bottom">Edit Email List</a>
+          <a href="/coach/email/elist" class="btn btn-primary btn-block margin-bottom">Edit Email List</a>
   
             <!-- MODAL -->
             <div class="modal fade" id="composeEmail">
