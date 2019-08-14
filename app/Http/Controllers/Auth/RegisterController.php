@@ -1,9 +1,9 @@
 <?php
 
-namespace AlumSpotDev\Http\Controllers\Auth;
+namespace AlumSpot\Http\Controllers\Auth;
 
-use AlumSpotDev\User;
-use AlumSpotDev\Http\Controllers\Controller;
+use AlumSpot\User;
+use AlumSpot\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -59,7 +59,7 @@ class RegisterController extends Controller
      * Create a new user instance after a valid registration.
      *
      * @param  array  $data
-     * @return \AlumSpotDev\User
+     * @return \AlumSpot\User
      */
     protected function create(array $data)
     {

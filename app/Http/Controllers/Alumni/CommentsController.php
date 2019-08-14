@@ -1,13 +1,13 @@
 <?php
 
-namespace AlumSpotDev\Http\Controllers\Alumni;
+namespace AlumSpot\Http\Controllers\Alumni;
 
 use Illuminate\Http\Request;
-use AlumSpotDev\Fundraiser;
-use AlumSpotDev\Event;
-use AlumSpotDev\Comment;
+use AlumSpot\Fundraiser;
+use AlumSpot\Event;
+use AlumSpot\Comment;
 use Illuminate\Support\Facades\Auth;
-use AlumSpotDev\Http\Controllers\Controller;
+use AlumSpot\Http\Controllers\Controller;
 
 
 class CommentsController extends Controller

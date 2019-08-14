@@ -1,9 +1,9 @@
 <?php
 
-namespace AlumSpotDev\Http\Controllers;
+namespace AlumSpot\Http\Controllers;
 
 use Illuminate\Http\Request;
-use AlumSpotDev\School;
+use AlumSpot\School;
 
 class SchoolController extends Controller
 {

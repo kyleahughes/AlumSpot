@@ -1,8 +1,8 @@
 <?php
 
-namespace AlumSpotDev\Http\Controllers\Auth;
+namespace AlumSpot\Http\Controllers\Auth;
 
-use AlumSpotDev\Http\Controllers\Controller;
+use AlumSpot\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ResetsPasswords;
 
 class ResetPasswordController extends Controller

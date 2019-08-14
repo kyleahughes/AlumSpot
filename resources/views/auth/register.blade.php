@@ -50,7 +50,7 @@
                 <div class='tab' id='Coach' style='background-color: #cccccc; display: none;'>
                     <div class='card-body'>
                         <form action="/coach/register" method="POST">
-                          {{ csrf_field() }}
+                          @csrf
                           
                           <div class='form-group has-feedback'>
                               <div class='row'>
@@ -62,7 +62,7 @@
                                             $schoolname = $names['Name'];
                                             echo "<option " . "value='" . $schoolname . "'>" . $schoolname . "</option>";
                                           }
-                                          ?>
+                                        ?>
                                     </select>
                                     <a href='#' class='text-sm'>Don't see your school?</a>
                                 </div>

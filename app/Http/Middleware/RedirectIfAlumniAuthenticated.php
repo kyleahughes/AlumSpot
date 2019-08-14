@@ -1,6 +1,6 @@
 <?php
 
-namespace AlumSpotDev\Http\Middleware;
+namespace AlumSpot\Http\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Auth;

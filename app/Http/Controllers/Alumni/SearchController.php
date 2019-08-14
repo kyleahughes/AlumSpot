@@ -1,12 +1,12 @@
 <?php
 
-namespace AlumSpotDev\Http\Controllers\Alumni;
+namespace AlumSpot\Http\Controllers\Alumni;
 
 use Illuminate\Http\Request;
-use AlumSpotDev\Http\Controllers\Controller;
+use AlumSpot\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
-use AlumSpotDev\Alumni;
-use AlumSpotDev\User;
+use AlumSpot\Alumni;
+use AlumSpot\User;
 
 class SearchController extends Controller
 {

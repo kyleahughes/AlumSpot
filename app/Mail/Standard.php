@@ -1,13 +1,13 @@
 <?php
 
-namespace AlumSpotDev\Mail;
+namespace AlumSpot\Mail;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
-use AlumSpotDev\User;
-use AlumSpotDev\Email;
+use AlumSpot\User;
+use AlumSpot\Email;
 use Illuminate\Support\Facades\Auth;
 
 class Standard extends Mailable

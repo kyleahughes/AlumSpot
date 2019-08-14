@@ -1,13 +1,13 @@
 <?php
 
-namespace AlumSpotDev\Http\Controllers\Coach;
+namespace AlumSpot\Http\Controllers\Coach;
 
 use Illuminate\Http\Request;
-use AlumSpotDev\Event;
-use AlumSpotDev\Comment;
-use AlumSpotDev\Activity;
+use AlumSpot\Event;
+use AlumSpot\Comment;
+use AlumSpot\Activity;
 use Illuminate\Support\Facades\Auth;
-use AlumSpotDev\Http\Controllers\Controller;
+use AlumSpot\Http\Controllers\Controller;
 use Carbon\Carbon;
 
 class EventController extends Controller

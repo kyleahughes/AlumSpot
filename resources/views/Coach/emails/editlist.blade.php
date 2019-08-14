@@ -62,8 +62,10 @@
                             <div class="col-md-3 pull-right">
                             <a data-toggle="modal" data-target="#addEmail" class="btn btn-primary btn-block margin-bottom">Add Emails</a>
                             </div>
+                            
                         </div>
                         <!-- /.box-header -->
+                        <div class="col-md-12">@include('errors')</div>
                     </div>
                     <div class="box-body">
                         <table id="example2" class="table table-bordered table-hover">
@@ -160,7 +162,6 @@
           <!-- /.modal-dialog -->
         </div>
         <!-- /.modal -->
-        @include('errors')
     </section>
 
     <script>
@@ -175,11 +176,5 @@
           'autoWidth'   : false
         })
        })
-       
-        @if(!empty(Session::get('email_error')) && Session::get('email_error') == 1)
-        $(function() {
-            $('#addEmail').modal('show');
-        });
-        @endif
     </script>
   @endsection

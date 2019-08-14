@@ -1,6 +1,6 @@
 <?php
 
-namespace AlumSpotDev\Notifications;
+namespace AlumSpot\Notifications;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Notification;

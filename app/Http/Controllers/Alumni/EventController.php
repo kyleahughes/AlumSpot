@@ -1,10 +1,10 @@
 <?php
 
-namespace AlumSpotDev\Http\Controllers\Alumni;
+namespace AlumSpot\Http\Controllers\Alumni;
 
 use Illuminate\Http\Request;
-use AlumSpotDev\Event;
-use AlumSpotDev\Http\Controllers\Controller;
+use AlumSpot\Event;
+use AlumSpot\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 
 class EventController extends Controller

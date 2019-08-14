@@ -43,9 +43,19 @@
                                 
                                 <div class="form-group">
                                     <label for="recipient">Select Recipients: </label><br>
+                                    <!--If alumni or elist is empty disable the radio button-->
                                     <input type="radio" name="recipient" value="All">&nbsp;All&emsp;
-                                    <input type="radio" name="recipient" value="Alumni">&nbsp;Alumni&emsp;
+                                    @if($alumfull->count() === 0)
+                                        <input type="radio" name="recipient" disabled value="Alumni">&nbsp;Alumni&emsp;
+                                    @else
+                                        <input type="radio" name="recipient" value="Alumni">&nbsp;Alumni&emsp;
+                                    @endif
+                                    
+                                    @if($acquaintances->count() === 0)
+                                    <input type="radio" name="recipient" disabled value="Acquaintances">&nbsp;Acquaintances&emsp;
+                                    @else
                                     <input type="radio" name="recipient" value="Acquaintances">&nbsp;Acquaintances&emsp;
+                                    @endif
                                 </div>
                                 <div class="form-group">
                                     <label>Subject</label><input type="text" class="form-control" id="subject" name="subject" placeholder="Subject of Email...">

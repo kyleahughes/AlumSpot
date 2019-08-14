@@ -77,7 +77,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => AlumSpotDev\User::class,
+            'model' => AlumSpot\User::class,
         ],
 
         'alumnis' => [

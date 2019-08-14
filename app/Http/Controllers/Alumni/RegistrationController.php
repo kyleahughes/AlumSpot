@@ -1,15 +1,15 @@
 <?php
 
-namespace AlumSpotDev\Http\Controllers\Alumni;
+namespace AlumSpot\Http\Controllers\Alumni;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use AlumSpotDev\Alumni;
-use AlumSpotDev\Program;
-use AlumSpotDev\School;
-use AlumSpotDev\Mail\WelcomeAlumni;
+use AlumSpot\Alumni;
+use AlumSpot\Program;
+use AlumSpot\School;
+use AlumSpot\Mail\WelcomeAlumni;
 use Illuminate\Support\Facades\Mail;
-use AlumSpotDev\Http\Controllers\Controller;
+use AlumSpot\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Session;
 
 class RegistrationController extends Controller
@@ -35,7 +35,7 @@ class RegistrationController extends Controller
         //retrieve all schools
         $alumSchool = School::all();
         
-        //retrieve all schools
+        //retrieve all schools from json and sort them
         $string = file_get_contents("../storage/JSON/universities.json");
         $school = json_decode($string, true);
         sort($school);
@@ -46,7 +46,7 @@ class RegistrationController extends Controller
         sort($sport);
         
         //pass the event instance through to the view
-        return view('auth.register', compact('school', 'sport', 'alumSchool'));
+        return view('auth/register', compact('school', 'sport', 'alumSchool'));
     }
 
     /**

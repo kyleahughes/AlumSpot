@@ -1,16 +1,16 @@
 <?php
 
-namespace AlumSpotDev\Http\Controllers\Coach;
+namespace AlumSpot\Http\Controllers\Coach;
 
 use Illuminate\Http\Request;
-use AlumSpotDev\Email;
+use AlumSpot\Email;
 use Illuminate\Support\Facades\Auth;
-use AlumSpotDev\Alumni;
+use AlumSpot\Alumni;
 use Illuminate\Support\Facades\Mail;
-use AlumSpotDev\Mail\Standard;
-use AlumSpotDev\Http\Controllers\Controller;
-use AlumSpotDev\Activity;
-use AlumSpotDev\Elist;
+use AlumSpot\Mail\Standard;
+use AlumSpot\Http\Controllers\Controller;
+use AlumSpot\Activity;
+use AlumSpot\Elist;
 
 class EmailController extends Controller
 {
@@ -32,12 +32,21 @@ class EmailController extends Controller
      */
     public function index()
     {
-        //retrieve all events ordered by earliest created_at column
+        //retrieve all emails to be listed
         $emails = Email::where('users_id', '=', Auth::user()->id)->orderBy('created_at', 'desc')->get();
+        //show all alumni
         $alumni = Alumni::where('programs_id', '=', Auth::user()->programs_id)->get();
+        //show all additional emails
         $elist = Elist::where('programs_id', '=', Auth::user()->programs_id)->get();
         
-        return view('Coach.emails.index', compact('emails', 'alumni', 'elist'));
+        //group all alumni emails from additional list and registered users
+        $alumnireg = Alumni::where('programs_id', '=', Auth::user()->programs_id)->get();
+        $alumnielist = Elist::where('programs_id', '=', Auth::user()->programs_id)->where('group', '=', 'Alumni')->get();
+        $alumfull = $alumnireg->merge($alumnielist);
+        //retrieve all emails from additional list that are not alumni or registered users
+        $acquaintances = Elist::where('programs_id', '=', Auth::user()->programs_id)->where('group', '=', 'Acquaintance')->get();
+        
+        return view('Coach.emails.index', compact('emails', 'alumni', 'elist', 'alumfull', 'acquaintances'));
     }
 
     /**
@@ -86,10 +95,10 @@ class EmailController extends Controller
         
         //group all alumni recipients
         $alumnireg = Alumni::where('programs_id', '=', $programsid)->pluck('email');
-        $alumnielist = Elist::where('programs_id', '=', $programsid)->where('group', '=', 'Alumni')->pluck('email');
+        $alumnielist = Elist::where('programs_id', '=', $programsid)->where('group', '=', 'Alumni')->pluck('emails');
         $alumni = $alumnireg->merge($alumnielist);
         //recipient collection decleration for acq. and all recip
-        $acquaintances = Elist::where('programs_id', '=', $programsid)->where('group', '=', 'Acquaintance')->pluck('email');
+        $acquaintances = Elist::where('programs_id', '=', $programsid)->where('group', '=', 'Acquaintance')->pluck('emails');
         $all = $alumni->merge($acquaintances);
         
         

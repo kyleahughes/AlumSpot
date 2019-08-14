@@ -1,9 +1,9 @@
 <?php
 
-namespace AlumSpotDev;
+namespace AlumSpot;
 
 use Illuminate\Database\Eloquent\Model;
-use AlumSpotDev\User;
+use AlumSpot\User;
 
 class Event extends Model
 {

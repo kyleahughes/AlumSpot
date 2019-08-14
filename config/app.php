@@ -158,12 +158,12 @@ return [
         /*
          * Application Service Providers...
          */
-        AlumSpotDev\Providers\AppServiceProvider::class,
-        AlumSpotDev\Providers\AuthServiceProvider::class,
-        AlumSpotDev\Providers\BroadcastServiceProvider::class,
-        AlumSpotDev\Providers\EventServiceProvider::class,
-        AlumSpotDev\Providers\RouteServiceProvider::class,
-        AlumSpotDev\Providers\ValidateServiceProvider::class,
+        AlumSpot\Providers\AppServiceProvider::class,
+        AlumSpot\Providers\AuthServiceProvider::class,
+        AlumSpot\Providers\BroadcastServiceProvider::class,
+        AlumSpot\Providers\EventServiceProvider::class,
+        AlumSpot\Providers\RouteServiceProvider::class,
+        AlumSpot\Providers\ValidateServiceProvider::class,
 
     ],
 

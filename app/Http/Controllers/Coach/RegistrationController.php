@@ -1,15 +1,15 @@
 <?php
 
-namespace AlumSpotDev\Http\Controllers\Coach;
+namespace AlumSpot\Http\Controllers\Coach;
 
 use Illuminate\Http\Request;
-use AlumSpotDev\User;
+use AlumSpot\User;
 use Illuminate\Support\Facades\Auth;
-use AlumSpotDev\Mail\WelcomeCoach;
+use AlumSpot\Mail\WelcomeCoach;
 use Illuminate\Support\Facades\Mail;
-use AlumSpotDev\Http\Controllers\Controller;
-use AlumSpotDev\School;
-use AlumSpotDev\Program;
+use AlumSpot\Http\Controllers\Controller;
+use AlumSpot\School;
+use AlumSpot\Program;
 use Illuminate\Support\Facades\Session;
 
 class RegistrationController extends Controller
@@ -71,8 +71,11 @@ class RegistrationController extends Controller
             'last_name' => 'required',
             'email' => 'required|unique:Users|email',
             'password' => 'required|confirmed',
+            'school' => 'required',
+            'sport' => 'required',
+            'type' => 'required',
         ]);
-
+        
         //create and save the school
         $school = School::firstOrCreate([
             'name' => request('school')

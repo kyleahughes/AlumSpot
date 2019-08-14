@@ -1,6 +1,6 @@
 <?php
 
-namespace AlumSpotDev\Http\Middleware;
+namespace AlumSpot\Http\Middleware;
 
 use Illuminate\Cookie\Middleware\EncryptCookies as Middleware;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace AlumSpotDev\Console;
+namespace AlumSpot\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;

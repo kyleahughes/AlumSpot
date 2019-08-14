@@ -1,6 +1,6 @@
 <?php
 
-namespace AlumSpotDev\Http\Controllers;
+namespace AlumSpot\Http\Controllers;
 
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;

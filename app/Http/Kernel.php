@@ -1,6 +1,6 @@
 <?php
 
-namespace AlumSpotDev\Http;
+namespace AlumSpot\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
@@ -16,9 +16,9 @@ class Kernel extends HttpKernel
     protected $middleware = [
         \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
         \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
-        \AlumSpotDev\Http\Middleware\TrimStrings::class,
+        \AlumSpot\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
-        \AlumSpotDev\Http\Middleware\TrustProxies::class,
+        \AlumSpot\Http\Middleware\TrustProxies::class,
     ];
 
     /**
@@ -28,12 +28,12 @@ class Kernel extends HttpKernel
      */
     protected $middlewareGroups = [
         'web' => [
-            \AlumSpotDev\Http\Middleware\EncryptCookies::class,
+            \AlumSpot\Http\Middleware\EncryptCookies::class,
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
             \Illuminate\Session\Middleware\StartSession::class,
             // \Illuminate\Session\Middleware\AuthenticateSession::class,
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
-            \AlumSpotDev\Http\Middleware\VerifyCsrfToken::class,
+            \AlumSpot\Http\Middleware\VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
 
@@ -56,9 +56,9 @@ class Kernel extends HttpKernel
         'bindings' => \Illuminate\Routing\Middleware\SubstituteBindings::class,
         'cache.headers' => \Illuminate\Http\Middleware\SetCacheHeaders::class,
         'can' => \Illuminate\Auth\Middleware\Authorize::class,
-        'guest' => \AlumSpotDev\Http\Middleware\RedirectIfAuthenticated::class,
+        'guest' => \AlumSpot\Http\Middleware\RedirectIfAuthenticated::class,
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
-        'alumni_guest' => \AlumSpotDev\Http\Middleware\RedirectIfAlumniAuthenticated::class,
+        'alumni_guest' => \AlumSpot\Http\Middleware\RedirectIfAlumniAuthenticated::class,
     ];
 }

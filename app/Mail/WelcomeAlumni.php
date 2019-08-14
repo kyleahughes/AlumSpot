@@ -1,12 +1,12 @@
 <?php
 
-namespace AlumSpotDev\Mail;
+namespace AlumSpot\Mail;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
-use AlumSpotDev\Alumni;
+use AlumSpot\Alumni;
 
 class WelcomeAlumni extends Mailable
 {

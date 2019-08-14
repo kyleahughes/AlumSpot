@@ -1,6 +1,6 @@
 <?php
 
-namespace AlumSpotDev\Providers;
+namespace AlumSpot\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Validator;

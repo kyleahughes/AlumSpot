@@ -1,14 +1,14 @@
 <?php
 
-namespace AlumSpotDev\Http\Controllers\Coach;
+namespace AlumSpot\Http\Controllers\Coach;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Auth;
-use AlumSpotDev\Alumni;
-use AlumSpotDev\Event;
+use AlumSpot\Alumni;
+use AlumSpot\Event;
 use Image;
-use AlumSpotDev\Http\Controllers\Controller;
+use AlumSpot\Http\Controllers\Controller;
 
 class MainController extends Controller
 {

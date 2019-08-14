@@ -1,10 +1,10 @@
 <?php
 
-namespace AlumSpotDev\Http\Controllers\Alumni;
+namespace AlumSpot\Http\Controllers\Alumni;
 
 use Illuminate\Http\Request;
-use AlumSpotDev\Http\Controllers\Controller;
-use AlumSpotDev\Activity;
+use AlumSpot\Http\Controllers\Controller;
+use AlumSpot\Activity;
 use Illuminate\Support\Facades\Auth;
 
 class ActivityController extends Controller

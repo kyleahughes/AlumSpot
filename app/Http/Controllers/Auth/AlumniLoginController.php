@@ -1,9 +1,9 @@
 <?php
 
-namespace AlumSpotDev\Http\Controllers\Auth;
+namespace AlumSpot\Http\Controllers\Auth;
 
 use Illuminate\Http\Request;
-use AlumSpotDev\Http\Controllers\Controller;
+use AlumSpot\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 
 class AlumniLoginController extends Controller
