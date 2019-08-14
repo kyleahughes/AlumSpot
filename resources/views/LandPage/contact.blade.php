@@ -9,7 +9,7 @@ AlumSpot - Contact
     <div class='m-4 row justify-content-center'>  
       <!-- Contact Form -->
       <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-      
+      <p>testing commit</p>
         <div class="col-lg-8 mb-4">
           <div class='row mb-4'>
               <h3 class='float-left mr-auto'>Send us a Message</h3>
