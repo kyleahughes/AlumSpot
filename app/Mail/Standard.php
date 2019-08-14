@@ -40,6 +40,6 @@ class Standard extends Mailable
         
         return $this->from($coachEmail)->
                 subject($this->email->subject)->
-                markdown('emails.standard');
+                markdown('Emails.standard');
     }
 }
