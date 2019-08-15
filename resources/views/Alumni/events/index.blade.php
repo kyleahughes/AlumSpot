@@ -55,7 +55,11 @@
                             <div class="modal-content">
                               <div class="modal-header">
                                   <div class="pull-left">
+                                      @if($rsvpUser === null)
                                       <a href="/alumni/event/rsvp/{{ $events->id }}" class="btn btn-primary">RSVP Now</a>
+                                      @else
+                                      <h3><b>You are registered for this event!</b></h3>
+                                      @endif
                                   </div>
                                   <div class="pull-right">
                                       <h4 class="modal-title"><b>Attending:</b> {{ $rsvpEvent->where('events_id', '=', $events->id)->count() }}</h4>

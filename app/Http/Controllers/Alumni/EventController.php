@@ -33,9 +33,10 @@ class EventController extends Controller
         //retrieve all events ordered by earliest created_at column
         $event = Event::where('programs_id', '=', Auth::guard('alumni')->user()->programs_id)->orderBy('datetime', 'desc')->get();
         $rsvpEvent = RSVPEvent::where('programs_id', '=', Auth::guard('alumni')->user()->programs_id)->get();
+        $rsvpUser = RSVPEvent::where('users_id', '=', Auth::guard('alumni')->user()->id)->get();
         
         //pass the event instance through to the view
-        return view('Alumni/events/index', compact('event', 'rsvpEvent'));
+        return view('Alumni/events/index', compact('event', 'rsvpEvent', 'rsvpUser'));
     }
 
     /**
