@@ -82,7 +82,7 @@ return [
 
         'alumnis' => [
             'driver' => 'eloquent',
-            'model' => AlumSpotDev\Alumni::class,
+            'model' => AlumSpot\Alumni::class,
         ],
         
         // 'users' => [

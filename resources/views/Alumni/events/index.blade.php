@@ -43,8 +43,8 @@
                     @foreach ($event as $events)
                         <tr>
                           <td><a data-toggle="modal" data-target="#modal-default-{{ $events->id }}">{{ $events->title }}</a></td>
-                          <td>{{ $events->date->toFormattedDateString() }}</td>
-                          <td>number attending</td>
+                          <td>{{ $events->datetime }}</td>
+                          <td>{{ $rsvpEvent->where('events_id', '=', $events->id)->count() }}</td>
                           <td>{{ $events->body }}</td>
                           <td><a href="/coach/alumSearch/coach/{{ $events->coach->id }}"><img src="/coach/{{ $events->coach->avatar }}" class="img-circle" height="40">{{ $events->coach->first_name }} {{ $events->coach->last_name }}</a></td>
                         </tr>
@@ -55,10 +55,10 @@
                             <div class="modal-content">
                               <div class="modal-header">
                                   <div class="pull-left">
-                                    <h4 class="modal-title"><b>Created By:</b>&nbsp;&nbsp;&nbsp;<a href="/coach/alumSearch/{{ $events->coach->id }}"><img src="/coach/{{ $events->coach->avatar }}" class="img-circle" height="40">{{ $events->coach->first_name }} {{ $events->coach->last_name }}</a></h4>
+                                      <a href="/alumni/event/rsvp/{{ $events->id }}" class="btn btn-primary">RSVP Now</a>
                                   </div>
                                   <div class="pull-right">
-                                    <b>{{ $events->created_at->format('M d, Y h:i A') }}</b>
+                                      <h4 class="modal-title"><b>Attending:</b> {{ $rsvpEvent->where('events_id', '=', $events->id)->count() }}</h4>
                                   </div>
                               </div>
                               <div class="modal-body">

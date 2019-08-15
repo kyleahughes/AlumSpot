@@ -56,6 +56,7 @@ return array(
     'AlumSpot\\Providers\\EventServiceProvider' => $baseDir . '/app/Providers/EventServiceProvider.php',
     'AlumSpot\\Providers\\RouteServiceProvider' => $baseDir . '/app/Providers/RouteServiceProvider.php',
     'AlumSpot\\Providers\\ValidateServiceProvider' => $baseDir . '/app/Providers/ValidateServiceProvider.php',
+    'AlumSpot\\RSVPEvent' => $baseDir . '/app/RSVPEvent.php',
     'AlumSpot\\School' => $baseDir . '/app/School.php',
     'AlumSpot\\User' => $baseDir . '/app/User.php',
     'Carbon\\Carbon' => $vendorDir . '/nesbot/carbon/src/Carbon/Carbon.php',

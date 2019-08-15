@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 use AlumSpot\Event;
 use AlumSpot\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
+use AlumSpot\RSVPEvent;
+use AlumSpot\Program;
+use AlumSpot\User;
 
 class EventController extends Controller
 {
@@ -28,10 +31,11 @@ class EventController extends Controller
     public function index()
     {
         //retrieve all events ordered by earliest created_at column
-        $event = Event::where('programs_id', '=', Auth::guard('alumni')->user()->programs_id)->orderBy('date', 'desc')->get();
+        $event = Event::where('programs_id', '=', Auth::guard('alumni')->user()->programs_id)->orderBy('datetime', 'desc')->get();
+        $rsvpEvent = RSVPEvent::where('programs_id', '=', Auth::guard('alumni')->user()->programs_id)->get();
         
         //pass the event instance through to the view
-        return view('Alumni/events/index', compact('event'));
+        return view('Alumni/events/index', compact('event', 'rsvpEvent'));
     }
 
     /**
@@ -45,14 +49,26 @@ class EventController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * lets alumni RSVP to Event
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store()
+    public function store(Event $event)
     {
+        //receive program id and user id
+        $program_id = Program::where('id', '=', Auth::guard('alumni')->user()->programs_id)->value('id');
+        $user_id = User::where('programs_id', '=', $program_id)->value('id');
         
+        //create and save the rsvp event
+        RSVPEvent::create([
+            'users_id' => $user_id, 
+            'programs_id' =>  $program_id,
+            'events_id' => $event->id, 
+            'alumnis_id' => Auth::guard('alumni')->user()->id, 
+        ]);
+        
+        return back();
     }
 
     /**

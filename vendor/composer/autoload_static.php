@@ -411,6 +411,7 @@ class ComposerStaticInit2c18307b7900ef50a795b2ec7c2856bd
         'AlumSpot\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'AlumSpot\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
         'AlumSpot\\Providers\\ValidateServiceProvider' => __DIR__ . '/../..' . '/app/Providers/ValidateServiceProvider.php',
+        'AlumSpot\\RSVPEvent' => __DIR__ . '/../..' . '/app/RSVPEvent.php',
         'AlumSpot\\School' => __DIR__ . '/../..' . '/app/School.php',
         'AlumSpot\\User' => __DIR__ . '/../..' . '/app/User.php',
         'Carbon\\Carbon' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Carbon.php',
