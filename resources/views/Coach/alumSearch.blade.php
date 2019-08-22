@@ -23,12 +23,14 @@
                     <span class="sr-only">Toggle Dropdown</span>
                   </button>
                   <ul class="dropdown-menu" role="menu">
-                    @if($industry->count() === 0)
-                    <li>No Alumni</li>
-                    @else 
-                    @foreach($industry as $industrys)
-                      <li><a href="/coach/alumSearch/industry/{{ $industrys }}">{{ $industrys }}</a></li>
-                    @endforeach
+                    @if($alumni->count() === 0)
+                        <li>No Alumni</li>
+                    @elseif($industry->count() === 0)
+                        <li>No Industries</li>
+                    @else
+                        @foreach($industry as $industrys)
+                          <li><a href="/coach/alumSearch/industry/{{ $industrys }}">{{ $industrys }}</a></li>
+                        @endforeach
                     @endif
                   </ul>
                 </div>
@@ -45,12 +47,14 @@
                     <span class="sr-only">Toggle Dropdown</span>
                   </button>
                   <ul class="dropdown-menu" role="menu">
-                    @if($gradYear->count() === 0)
-                    <li>No Alumni</li>
-                    @else 
-                    @foreach($gradYear as $gradYears)
-                      <li><a href="/coach/alumSearch/gradYear/{{ $gradYears }}">{{ $gradYears }}</a></li>
-                    @endforeach
+                    @if($alumni->count() === 0)
+                        <li>No Alumni</li>
+                    @elseif($gradYear->count() === 0)
+                        <li>No Grad Years</li>
+                    @else
+                        @foreach($gradYear as $gradYears)
+                          <li><a href="/coach/alumSearch/gradYear/{{ $gradYears }}">{{ $gradYears }}</a></li>
+                        @endforeach
                     @endif
                   </ul>
                 </div>
@@ -66,12 +70,14 @@
                     <span class="sr-only">Toggle Dropdown</span>
                   </button>
                   <ul class="dropdown-menu" role="menu">
-                    @if($company->count() === 0)
-                    <li>No Alumni</li>
-                    @else 
-                    @foreach($company as $companys)
-                      <li><a href="/coach/alumSearch/company/{{ $companys }}">{{ $companys }}</a></li>
-                    @endforeach
+                    @if($alumni->count() === 0)
+                        <li>No Alumni</li>
+                    @elseif($company->count() === 0)
+                        <li>No Companies</li>
+                    @else
+                        @foreach($company as $companys)
+                          <li><a href="/coach/alumSearch/company/{{ $companys }}">{{ $companys }}</a></li>
+                        @endforeach
                     @endif
                   </ul>
                 </div>

@@ -9,6 +9,7 @@ use AlumSpot\Alumni;
 use AlumSpot\Event;
 use Image;
 use AlumSpot\Http\Controllers\Controller;
+use AlumSpot\RSVPEvent;
 
 class MainController extends Controller
 {
@@ -40,11 +41,12 @@ class MainController extends Controller
         $industries = Alumni::where('programs_id', '=', $programsid)->distinct('industry')->count('industry');
         $companies = Alumni::where('programs_id', '=', $programsid)->distinct('company')->count('company');
         $states = Alumni::where('programs_id', '=', $programsid)->distinct('state')->count('state');
+        $rsvpEvent = RSVPEvent::where('programs_id', '=', Auth::user()->programs_id)->get();
         
         //retrieve all events ordered by earliest created_at column
         $event = Event::where('programs_id', '=', $programsid)->orderBy('datetime', 'desc')->get();
         
-        return view('Coach/home', compact('event', 'industries', 'companies', 'states'));
+        return view('Coach/home', compact('event', 'industries', 'companies', 'states', 'rsvpEvent'));
     }
 
     /**

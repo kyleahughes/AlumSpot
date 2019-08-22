@@ -61,7 +61,7 @@
                       <h4>Emails</h4>
                     </div>
                     <div class="icon">
-                      <i class="ion-person-add"></i>
+                      <i class="far fa-envelope"></i>
                     </div>
                     <a href="#" class="small-box-footer">
                       View <i class="fa fa-arrow-circle-right"></i>
@@ -108,11 +108,11 @@
                       @foreach ($event as $events)
                           <tr>
                             <td><a href="#">{{ $events->title }}</a></td>
-                            <td>{{ \Carbon\Carbon::parse($events->datetime)->toFormattedDateString() }}</td>
+                            <td>{{ \Carbon\Carbon::parse($events->datetime)->toDayDateTimeString() }}</td>
                             <td>
-                              <div class="sparkbar" data-color="#00a65a" data-height="20">100</div>
+                              <div class="sparkbar" data-color="#00a65a" data-height="20">{{ $rsvpEvent->where('events_id', '=', $events->id)->count() }}</div>
                             </td>
-                            @if($events->datetime < now())
+                            @if($events->datetime <= now())
                                 <td><span class="label label-success">Passed</span></td>
                             @else
                                 <td><span class="label label-warning">Upcoming</span></td>

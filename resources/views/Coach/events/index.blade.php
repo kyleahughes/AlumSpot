@@ -90,22 +90,12 @@
         <!-- /.modal -->
 </div> 
 <!-- /.row -->
-
+<div class='container-fluid'>
 <div class="row">
-        <div class="col-xs-12">
+        <div class="col-xs-4">
           <div class="box">
             <div class="box-header">
               <h3>Events</h3>
-
-              <div class="box-tools">
-                <div class="input-group" style="width: 150px;">
-                  <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
-
-                  <div class="input-group-btn">
-                    <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
-                  </div>
-                </div>
-              </div>
             </div>
             <!-- /.box-header -->
             <div class="box-body table-responsive no-padding">
@@ -114,11 +104,9 @@
                   <th>Title</th>
                   <th>Date</th>
                   <th>Attending</th>
-                  <th>Description</th>
-                  <th>Created By</th>
                 </tr>
                 
-                @if($event->count() === 0)
+                @if($upcomingEvent->count() === 0)
                     <tr>
                         <td>You have not yet scheduled any events. <b>Click above to schedule a new event</b></td>
                       <td></td>
@@ -128,14 +116,11 @@
                     </tr>
                 @else 
                 
-                    @foreach ($event as $events)
+                    @foreach ($upcomingEvent as $events)
                         <tr>
                           <td><a data-toggle="modal" data-target="#modal-default-{{ $events->id }}">{{ $events->title }}</a></td>
-                          <td>{{ $events->datetime }}</td>
-                          <td>number attending</td>
-                          <td>{{ $events->body }}</td>
-                          <td>{{ $events->coach->first_name }} {{ $events->coach->last_name }}</td>
-                          <td class="pull-right-container"><a onclick="return confirm('Are you sure you want to delete this event?')" href="/coach/delete/event/{{ $events->id }}" style="color: red;"><i class="fas fa-trash-alt"></i></a></td>
+                          <td>{{ \Carbon\Carbon::parse($events->datetime)->toFormattedDateString() }}</td>
+                          <td>{{ $rsvpEvent->where('events_id', '=', $events->id)->count() }}</td>
                         </tr>
 
                         <!-- MODAL -->
@@ -220,8 +205,28 @@
           </div>
           <!-- /.box -->
         </div>
+    
+        <div class="container">
+            <div class="row" >
+                <div class="col-xs-7" >
+                    <div class="panel panel-default" >
+                        <div class="panel-heading">Full Calendar Example</div>
+
+                        <div class="panel-body" align="center">
+                            {!! $calendar->calendar() !!}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
       </div>
+</div>
 </div>
 
 @endsection
 
+@section('script')
+    {!! $calendar->script() !!}
+@endsection

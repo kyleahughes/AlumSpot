@@ -7,6 +7,16 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
+            @if(Auth::user())
+            <li class="nav-item">
+              <a class="nav-link" href="/coach/home">Home</a>
+            </li>
+            
+            @elseif(Auth::guard('alumni')->user())
+            <li class="nav-item">
+              <a class="nav-link" href="/alumni/home">Home</a>
+            </li>
+            @else
             <li class="nav-item">
               <a class="nav-link" href="#">About</a>
             </li>
@@ -22,6 +32,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/login">Login</a>
             </li>
+            @endif
           </ul>
         </div>
       </div>

@@ -43,7 +43,7 @@
                     @foreach ($event as $events)
                         <tr>
                           <td><a data-toggle="modal" data-target="#modal-default-{{ $events->id }}">{{ $events->title }}</a></td>
-                          <td>{{ $events->datetime }}</td>
+                          <td>{{ $events->datetime->toDayDatetimeString() }}</td>
                           <td>{{ $rsvpEvent->where('events_id', '=', $events->id)->count() }}</td>
                           <td>{{ $events->body }}</td>
                           <td><a href="/coach/alumSearch/coach/{{ $events->coach->id }}"><img src="/coach/{{ $events->coach->avatar }}" class="img-circle" height="40">{{ $events->coach->first_name }} {{ $events->coach->last_name }}</a></td>

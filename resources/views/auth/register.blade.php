@@ -141,6 +141,7 @@
                         <form action="/alumni/register" method="POST">
                           {{ csrf_field() }}  
 
+                          <input type="hidden" name="tz" id="tz">
                           <div class='form-group has-feedback'>
                               <div class='row'>
                                 <div class='col-md-4'>

@@ -8,7 +8,9 @@ use AlumSpot\Comment;
 use AlumSpot\Activity;
 use Illuminate\Support\Facades\Auth;
 use AlumSpot\Http\Controllers\Controller;
-use Carbon\Carbon;
+use Calendar;
+use AlumSpot\RSVPEvent;
+use Carbon;
 
 class EventController extends Controller
 {
@@ -30,11 +32,34 @@ class EventController extends Controller
      */
     public function index()
     {
+        $eventArray = [];
         //retrieve all events ordered by earliest created_at column
-        $event = Event::where('programs_id', '=', Auth::user()->programs_id)->orderBy('datetime', 'desc')->get();
+        $mytime = Carbon\Carbon::now()->toDateTimeString();
+        $event = Event::where('programs_id', '=', Auth::user()->programs_id)->orderBy('datetime', 'asc')->get();
+        $upcomingEvent = Event::where('programs_id', '=', Auth::user()->programs_id)->where('datetime', '>=', $mytime)->orderBy('datetime', 'asc')->get();
+        $rsvpEvent = RSVPEvent::where('programs_id', '=', Auth::user()->programs_id)->get();
+        
+        if($event->count()) {
+            foreach ($event as $key => $value) {
+                $eventArray[] = Calendar::event(
+                    $value->title,
+                    true,
+                    new \DateTime($value->datetime),
+                    new \DateTime($value->datetime.' +1 day'),
+                    null,
+                    // Add color and link on event
+	                [
+	                    'color' => '#f05050',
+	                    'url' => '/coach/event/view',
+	                ]
+                );
+            }
+        }
+        
+        $calendar = Calendar::addEvents($eventArray);
         
         //pass the event instance through to the view
-        return view('Coach/events/index', compact('event'));
+        return view('Coach/events/index', compact('event', 'calendar', 'rsvpEvent', 'upcomingEvent'));
     }
 
 

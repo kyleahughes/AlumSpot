@@ -153,6 +153,7 @@ return [
         
         Intervention\Image\ImageServiceProvider::class,
         Laravel\Socialite\SocialiteServiceProvider::class,
+        MaddHatter\LaravelFullcalendar\ServiceProvider::class,
         
 
         /*
@@ -216,6 +217,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         //custom added
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
+        'Calendar' => MaddHatter\LaravelFullcalendar\Facades\Calendar::class,
         
     ],
 
