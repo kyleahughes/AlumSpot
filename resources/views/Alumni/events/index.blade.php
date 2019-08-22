@@ -58,7 +58,7 @@
                                       @if($rsvpUser === null)
                                       <a href="/alumni/event/rsvp/{{ $events->id }}" class="btn btn-primary">RSVP Now</a>
                                       @else
-                                      <h3><b>You are registered for this event!</b></h3>
+                                      <h4><b>You are registered for this event!</b></h4>
                                       @endif
                                   </div>
                                   <div class="pull-right">

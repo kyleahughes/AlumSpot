@@ -91,7 +91,7 @@
             <!-- /.box-body -->
           </div>
           <!-- /.box -->
-            @if($industry->count() === 0)
+            @if($alumni->count() === 0)
                 <div class="col-md-4">
                     <!-- Widget: user widget style 1 -->
                     <div class="box box-widget widget-user">
