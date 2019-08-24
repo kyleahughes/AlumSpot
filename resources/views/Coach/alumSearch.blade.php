@@ -6,13 +6,8 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header"> 
-                <div class="form-group"><h2>Alumni</h2></div>
-                <div class="input-group input-group-sm form-group" style="width: 30%">
-                  <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
-                  <div class="input-group-btn">
-                    <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
-                  </div>
-                </div>
+                <div class="form-group" align="center"><h2>Registered Alumni</h2></div>
+                <hr>
 
             <div class='col-md-3'>
               <div class="form-group">
@@ -166,5 +161,6 @@
             @endforeach
             @endif
         </div>
+    </div>
 </section>
 @endsection
