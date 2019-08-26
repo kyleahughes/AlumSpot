@@ -34,7 +34,7 @@
         <div class="col-lg-4">
           <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
             <div class="features-icons-icon d-flex">
-              <i class="icon-screen-desktop m-auto text-primary"></i>
+              <i class="icon-user-follow m-auto text-primary"></i>
             </div>
             <h3>Sign Up</h3>
             <p class="lead mb-0">Sign up for an account, pick your school and sport.</p>
@@ -43,7 +43,7 @@
         <div class="col-lg-4">
           <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
             <div class="features-icons-icon d-flex">
-              <i class="icon-layers m-auto text-primary"></i>
+              <i class="icon-envelope-letter m-auto text-primary"></i>
             </div>
             <h3>Invite</h3>
             <p class="lead mb-0">Send an email to your alumni asking them to join and fill out their profile.</p>
@@ -52,7 +52,7 @@
         <div class="col-lg-4">
           <div class="features-icons-item mx-auto mb-0 mb-lg-3">
             <div class="features-icons-icon d-flex">
-              <i class="icon-check m-auto text-primary"></i>
+              <i class="icon-people m-auto text-primary"></i>
             </div>
             <h3>Connect</h3>
             <p class="lead mb-0">Your entire network is now free to connect and build stronger relationships.</p>
