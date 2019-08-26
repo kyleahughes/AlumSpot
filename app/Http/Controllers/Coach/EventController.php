@@ -50,7 +50,7 @@ class EventController extends Controller
                     // Add color and link on event
 	                [
 	                    'color' => '#f05050',
-	                    'url' => '/coach/event/view',
+                            'url' => '/coach/event/' . $value->id,
 	                ]
                 );
             }
@@ -106,7 +106,8 @@ class EventController extends Controller
      */
     public function show(Event $event)
     {
-        return view('Coach/events/individual', compact('event'));
+        
+        return view('Coach/events/show', compact('event'));
     }
 
     /**

@@ -95,7 +95,7 @@
         <div class="col-xs-4">
           <div class="box">
             <div class="box-header">
-              <h3>Events</h3>
+              <h3>Upcoming Events</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body table-responsive no-padding">
@@ -108,7 +108,7 @@
                 
                 @if($upcomingEvent->count() === 0)
                     <tr>
-                        <td>You have not yet scheduled any events. <b>Click above to schedule a new event</b></td>
+                      <td>You have not yet scheduled any events. <b>Click above to schedule a new event</b></td>
                       <td></td>
                       <td></td>
                       <td></td>
@@ -118,85 +118,10 @@
                 
                     @foreach ($upcomingEvent as $events)
                         <tr>
-                          <td><a data-toggle="modal" data-target="#modal-default-{{ $events->id }}">{{ $events->title }}</a></td>
+                          <td><a href="/coach/event/{{ $events->id }}">{{ $events->title }}</a></td>
                           <td>{{ \Carbon\Carbon::parse($events->datetime)->toFormattedDateString() }}</td>
                           <td>{{ $rsvpEvent->where('events_id', '=', $events->id)->count() }}</td>
                         </tr>
-
-                        <!-- MODAL -->
-                        <div class="modal fade" id="modal-default-{{ $events->id }}">
-                          <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                  <div class="pull-left">
-                                    <h4 class="modal-title"><b>Created By:</b>&nbsp;&nbsp;&nbsp;<a href="/alumni/alumSearch/{{ $events->coach->id }}"><img src="/coach/{{ $events->coach->avatar }}" class="img-circle" height="40">{{ $events->coach->first_name }} {{ $events->coach->last_name }}</a></h4>
-                                  </div>
-                                  <div class="pull-right">
-                                    <b>{{ $events->created_at->format('M d, Y h:i A') }}</b>
-                                  </div>
-                              </div>
-                              <div class="modal-body">
-                                  <p><b>Description:</b></p>
-                                <p>{{ $events->body }}</p>
-                              </div>
-                              <hr>
-                              <!-- COMMENTS -->
-                              <div class="content">
-                                  <h3><i class="far fa-comments"></i>&emsp;<span>Comments</span></h3>
-                                  <div class="comment">
-                                      <ul class="list-group">
-                                      @foreach($events->comment as $comments)
-                                         <li class="list-group-item">
-                                            @if($comments->users_id === null)
-                                             <strong>
-                                                 <a href="/coach/alumSearch/{{ $comments->alumni->id }}">{{ $comments->alumni->first_name }} {{ $comments->alumni->last_name }} </a>
-                                             </strong>
-                                             @else
-                                             <strong>
-                                                 <a href="#">{{ $comments->coach->first_name }} {{ $comments->coach->last_name }} </a>
-                                             </strong>
-                                             @endif
-                                             <span class="text-muted">
-                                               {{ $comments->created_at->diffForHumans() }}:&nbsp;  
-                                             </span>
-                                             {{ $comments->body }}
-                                             <span class='pull-right'>
-                                                <a onclick="return confirm('Are you sure you want to delete this comment?')" href="/coach/delete/comment/{{ $comments->id }}" style="color: red;">
-                                                    <i class="fas fa-trash-alt"></i>
-                                                </a>
-                                             </span>
-                                         </li>
-                                      @endforeach
-                                      </ul>
-                                  </div>
-
-                                  <div class="card">
-                                      <div class="card-block">
-                                          <form method="POST" action="/coach/{{ $events->id }}/comment/event">
-                                              {{ csrf_field() }}
-                                              <div class="form-group">
-                                                  <textarea name="body" placeholder="Your comment here.." class="form-control" required></textarea>
-                                              </div>
-                                              <div class="form-goup">
-                                                <button type="submit" class="btn btn-primary">Add Comment</button>
-                                              </div>
-                                              @include('errors')
-                                          </form>
-                                      </div>
-                                  </div>
-                              </div>
-
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
-                              </div>
-
-                            </div>
-                            <!-- /.modal-content -->
-                          </div>
-                          <!-- /.modal-dialog -->
-                        </div>
-                        <!-- /.modal -->
-
                     @endforeach
                 @endif
               </table>
