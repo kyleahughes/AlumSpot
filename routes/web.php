@@ -18,7 +18,6 @@
 
     Auth::routes();
     Route::get('/', 'LandPageController@index')->name('home');
-    Route::get('/contact', 'LandPageController@contact');
     
     Route::group(['middleware' => 'alumni_guest'], function(){
         Route::get('/alumni/login', 'Auth\AlumniLoginController@showLoginForm')->name('alumni.login');

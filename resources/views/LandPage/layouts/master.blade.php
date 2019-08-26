@@ -4,37 +4,38 @@
 
   <head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>@yield('title', 'AlumSpot')</title>
+  <title>AlumSpot</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="/css/bootStrapLandPage.css" rel="stylesheet">
-    
-    <!-- Custom styles for this template -->
-    <link href="/css/landpage.css" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <!-- Bootstrap core CSS -->
+  <link href="css/landpage/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="css/landpage/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="css/landpage/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/landpage/landing-page.min.css" rel="stylesheet">
     
     
   </head>
 
   <body>
       
-    @include('LandPage.layouts.nav')
+    @include('LandPage.layouts.navbar')
         
     @yield('content')
         
     @include('LandPage.layouts.footer')
         
     <!-- Bootstrap core JavaScript -->
-    <script src="/js/LandPage/JQuery.js"></script>
-    <script src="/js/LandPage/BootStrap.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="js/LandPage/jquery/jquery.min.js"></script>
+    <script src="js/LandPage/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script>
         function openLog(event, tabName) {
             var i, x, tablinks;
@@ -50,30 +51,6 @@
             event.currentTarget.className += " active"; 
         }
     </script>
-        
-    <!--Face SDK login window-->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '{your-app-id}',
-          cookie     : true,
-          xfbml      : true,
-          version    : '{latest-api-version}'
-        });
-
-        FB.AppEvents.logPageView();   
-
-      };
-
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "https://connect.facebook.net/en_US/sdk.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
-    </script>
-    
     
   </body>
 

@@ -2,98 +2,156 @@
 
 
 @section('content')
-    <header>
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-          <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active" style="background-image: url('cityScape.jpg')">
-              <div class="carousel-caption d-none d-md-block" style="color: black; background-color: rgb(211,211,211,.7); border-radius: 100px;">
-              <h3>Connect with Alumni</h3>
-              <p>Regiser to join your team's exclusive alumni network</p>
-            </div>
-          </div>
-          <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('field.jpg');  box-shadow: 0px 0px 300px 20px white inset;">
-            <div class="carousel-caption d-none d-md-block" style="color: black; background-color: rgb(211,211,211,.7); border-radius: 100px;">
-              <h3>Stay updated</h3>
-              <p>Remain up to date with program and alumni events</p>
-            </div>
-          </div>
-          <!-- Slide Three - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('donate.jpg')">
-            <div class="carousel-caption d-none d-md-block" style="color: black; background-color: rgb(211,211,211,.7); border-radius: 100px;">
-              <h3>Donate & Challenge</h3>
-              <p>Donate directly to the program through fundraisers and team challenges</p>
-            </div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </header>
-
-    <!-- Page Content -->
+  <!-- Masthead -->
+  <header class="masthead text-white text-center">
+    <div class="overlay"></div>
     <div class="container">
-
-      <!-- Features Section -->
-      <div class="row m-4">
-        <div class="col-lg-6">
-          <h2>Register Your Team</h2>
-          <p>As a coach, you can register your team and let your alumni connect through your new alumni group</p>
-          <ul>
-            <li>Keep track of alumni and career paths</li>
-            <li>Directly collect donations through fundraisers</li>
-            <li>Create events for alumni to attend</li>
-            <li>Update alumni about the program</li>
-          </ul>
-          <p>Once you create your team's page, alumni will be able to register for your program and create their own profiles.</p>
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h1 class="mb-5">We're working on a better way to maintain an active alumni network.</h1>
         </div>
-        <div class="col-lg-6">
-          <img class="img-fluid rounded" src="chartNetwork.jpg" alt="">
-        </div>
-      </div>
-      <!-- /.row -->
-      
-      <hr>
-      
-      <!-- Features Section -->
-      <div class="row m-4">
-        <div class="col-lg-6">
-          <img class="img-fluid rounded" src="alumGroup.jpg" alt="">
-        </div>
-        <div class="col-lg-6">
-          <h2>Register As An Alumni</h2>
-          <p>As a coach, you can register your team and let your alumni connect through your new alumni group</p>
-          <ul>
-            <li>Create a profile to connect with other alumni</li>
-            <li>Donate directly to your team</li>
-            <li>Stay updated with events and team news</li>
-            <li>Create fundraising challenges for the team</li>
-          </ul>
-          <p>Your coach needs to create your team's group page in order to register for the site. If you want your team to have a site, reach out to your head coach!</p>
-        </div>
-      </div>
-      <!-- /.row -->
-
-      <hr>
-
-      <div class='mb-4 row justify-content-center'>
-      <!-- Call to Action Section -->
-        <div class="col-md-4">
-          <a class="btn btn-lg btn-secondary btn-block" href="#">Frequently Asked Questions</a>
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+          <form>
+            <div class="form-row">
+              <div class="col-10 col-md-9 mb-2 mb-md-0">
+                <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
+              </div>
+              <div class="col-12 col-md-4">
+                <button type="submit" class="btn btn-block btn-lg btn-primary">Get early access</button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
-    <!-- /.container -->
+  </header>
+
+  <!-- Icons Grid -->
+  <section class="features-icons bg-light text-center">
+    <h2 class="mb-5">How does AlumSpot Work?</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+            <div class="features-icons-icon d-flex">
+              <i class="icon-screen-desktop m-auto text-primary"></i>
+            </div>
+            <h3>Sign Up</h3>
+            <p class="lead mb-0">Sign up for an account, pick your school and sport.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+            <div class="features-icons-icon d-flex">
+              <i class="icon-layers m-auto text-primary"></i>
+            </div>
+            <h3>Invite</h3>
+            <p class="lead mb-0">Send an email to your alumni asking them to join and fill out their profile.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+            <div class="features-icons-icon d-flex">
+              <i class="icon-check m-auto text-primary"></i>
+            </div>
+            <h3>Connect</h3>
+            <p class="lead mb-0">Your entire network is now free to connect and build stronger relationships.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image Showcases -->
+  <section class="showcase">
+    <div class="container-fluid p-0">
+      <div class="row no-gutters">
+
+        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('landpage/Artboard1.png');"></div>
+        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+          <h2>Member Profiles</h2>
+          <p class="lead mb-0"><h5>Members create their own profiles.</h5></p>
+          <p>- Members create their own profiles with personal and professional information</p>
+          <p>- Members have access to the entire network's contact information</p>
+          <p>- Secure logins ensure that your members' personal information stays within your network</p>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6 text-white showcase-img" style="background-image: url('landpage/Artboard1.png');"></div>
+        <div class="col-lg-6 my-auto showcase-text">
+          <h2>Events</h2>
+          <p class="lead mb-0"><h5>Create events, collect RSVP's and manage attendees all from one spot.</h5></p>
+          <p>- Coaches can create and manage events</p>
+          <p>- Collect RSVP's and see who will be attending</p>
+          <p>- Collect donations or have members pay for tickets right through the platform</p>
+          <p>- Send emails to the attendees and build buzz or let them know if anything changes
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('landpage/Artboard1.png');"></div>
+        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+          <h2>Email Center</h2>
+          <p class="lead mb-0"><h5>AlumSpot makes it easy for you to send emails and maintain consistant communication with your members.</h5></p>
+          <p>- Create and send emails right through the platform</p>
+          <p>- Separate your alumni list into groups for more targeted comunications</p>
+          <p>- Collect donations or have members pay for tickets right through the platform</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials text-center bg-light">
+    <div class="container">
+      <h2 class="mb-5">AlumSpot is the easiest way for you to create and maintain an active alumni network online.</h2>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="landpage/GettyImages-1.jpg" alt="">
+            <h5>Foster Better Communications</h5>
+            <p class="font-weight-light mb-0">With everybody's information in one place, players and alumni have access to the entire network.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="landpage/vince-fleming-aZVpxRydiJk-unsplash.jpg" alt="">
+            <h5>Unlock the Power of Your Network</h5>
+            <p class="font-weight-light mb-0">A strong alumni network is a powerful asset for any program.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="landpage/GettyImages-954142634.jpg" alt="">
+            <h5>Get the Band Back Together</h5>
+            <p class="font-weight-light mb-0">Create events and manage the attendees with a few clicks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="call-to-action text-white text-center">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h2 class="mb-4">Ready to get started? Sign up now!</h2>
+        </div>
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+          <form>
+            <div class="form-row">
+              <div class="col-12 col-md-9 mb-2 mb-md-0">
+                <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
+              </div>
+              <div class="col-12 col-md-3">
+                <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
 @endsection

@@ -4,6 +4,7 @@
 <div class='container' style='margin-bottom: 90px;'>
     <!-- Page Heading/Breadcrumbs -->
     <h1 class="mt-4 mb-3 text-center">Select Login User Type</h1>
+    <p class="mt-4 mb-3 text-center">New User? <a href="/register">Register Here</a></p>
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
