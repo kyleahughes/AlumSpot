@@ -76,7 +76,7 @@
         Route::get('/profile', 'Coach\MainController@profile')->name('coach.profile');
         Route::post('/profile', 'Coach\MainController@update');
         //event routes
-        Route::get('/event/view', 'Coach\EventController@index')->name('coach.events');
+        Route::get('/event', 'Coach\EventController@index')->name('coach.events');
         Route::post('/event', 'Coach\EventController@store');
         Route::get('/delete/event/{event}', 'Coach\EventController@delete');
         Route::get('/event/{event}', 'Coach\EventController@show')->name('coach.eventview');

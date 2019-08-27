@@ -25,9 +25,8 @@ class Event extends Model
         return $this->hasMany(Comment::class, 'events_id');
     }
     
-//    
-//    //makes event belong to an alumni
-//    public function alumni() {
-//        return $this->belongsTo(Alumni::class);
-//    }
+    public function rsvpEvent() {
+        return $this->hasMany(RSVPEvent::class, 'events_id');
+    }
+    
 }

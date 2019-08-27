@@ -37,6 +37,7 @@ class EventController extends Controller
         $mytime = Carbon\Carbon::now()->toDateTimeString();
         $event = Event::where('programs_id', '=', Auth::user()->programs_id)->orderBy('datetime', 'asc')->get();
         $upcomingEvent = Event::where('programs_id', '=', Auth::user()->programs_id)->where('datetime', '>=', $mytime)->orderBy('datetime', 'asc')->get();
+        $pastEvent = Event::where('programs_id', '=', Auth::user()->programs_id)->where('datetime', '<', $mytime)->orderBy('datetime', 'desc')->get();
         $rsvpEvent = RSVPEvent::where('programs_id', '=', Auth::user()->programs_id)->get();
         
         if($event->count()) {
@@ -59,7 +60,7 @@ class EventController extends Controller
         $calendar = Calendar::addEvents($eventArray);
         
         //pass the event instance through to the view
-        return view('Coach/events/index', compact('event', 'calendar', 'rsvpEvent', 'upcomingEvent'));
+        return view('Coach/events/index', compact('event', 'calendar', 'rsvpEvent', 'upcomingEvent', 'pastEvent'));
     }
 
 
@@ -106,8 +107,9 @@ class EventController extends Controller
      */
     public function show(Event $event)
     {
+        $rsvpEvent = RSVPEvent::where('events_id', '=', $event->id)->get();
         
-        return view('Coach/events/show', compact('event'));
+        return view('Coach/events/show', compact('event', 'rsvpEvent'));
     }
 
     /**

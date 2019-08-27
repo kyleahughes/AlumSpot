@@ -51,4 +51,9 @@ class Alumni extends Authenticatable
         return $this->hasMany(Comment::class);
     }
     
+    //links alumni to many events
+    public function rsvpEvent(){
+        return $this->hasMany(RSVPEvent::class, 'alumnis_id');
+    }
+    
 }
