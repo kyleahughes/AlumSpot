@@ -30,7 +30,7 @@
             <div class="box-body">
               <div class="row">
                 <div class="col-md-10">
-                  <p><b>DESCRIPTION</b></p><br>
+                  <p><b>DESCRIPTIONnew</b></p><br>
                   {{ $event->body }}
                 </div>
                 <!-- /.col -->
