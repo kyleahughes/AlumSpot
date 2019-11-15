@@ -105,7 +105,8 @@
         Route::post('/profile', 'Alumni\MainController@update');
         //event routes
         Route::get('/event/view', 'Alumni\EventController@index');
-        Route::get('/event/rsvp/{event}', 'Alumni\EventController@store');
+        Route::post('/event/rsvp/{event}', 'Alumni\EventController@store');
+        Route::get('/event/{event}', 'Alumni\EventController@show')->name('alumni.eventview');
     });
 
 

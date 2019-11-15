@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\Auth;
 use AlumSpot\RSVPEvent;
 use AlumSpot\Program;
 use AlumSpot\User;
+use Calendar;
+use Carbon;
 
 class EventController extends Controller
 {
@@ -30,13 +32,35 @@ class EventController extends Controller
      */
     public function index()
     {
+        $eventArray = [];
         //retrieve all events ordered by earliest created_at column
-        $event = Event::where('programs_id', '=', Auth::guard('alumni')->user()->programs_id)->orderBy('datetime', 'desc')->get();
+        $mytime = Carbon\Carbon::now()->toDateTimeString();
+        $event = Event::where('programs_id', '=', Auth::guard('alumni')->user()->programs_id)->orderBy('datetime', 'asc')->get();
+        $upcomingEvent = Event::where('programs_id', '=', Auth::guard('alumni')->user()->programs_id)->where('datetime', '>=', $mytime)->orderBy('datetime', 'asc')->get();
+        $pastEvent = Event::where('programs_id', '=', Auth::guard('alumni')->user()->programs_id)->where('datetime', '<', $mytime)->orderBy('datetime', 'desc')->get();
         $rsvpEvent = RSVPEvent::where('programs_id', '=', Auth::guard('alumni')->user()->programs_id)->get();
-        $rsvpUser = RSVPEvent::where('users_id', '=', Auth::guard('alumni')->user()->id)->get();
+        
+        if($event->count()) {
+            foreach ($event as $key => $value) {
+                $eventArray[] = Calendar::event(
+                    $value->title,
+                    true,
+                    new \DateTime($value->datetime),
+                    new \DateTime($value->datetime.' +1 day'),
+                    null,
+                    // Add color and link on event
+	                [
+	                    'color' => '#f05050',
+                            'url' => '/alumni/event/' . $value->id,
+	                ]
+                );
+            }
+        }
+        
+        $calendar = Calendar::addEvents($eventArray);
         
         //pass the event instance through to the view
-        return view('Alumni/events/index', compact('event', 'rsvpEvent', 'rsvpUser'));
+        return view('Alumni/events/index', compact('event', 'calendar', 'rsvpEvent', 'upcomingEvent', 'pastEvent'));
     }
 
     /**
@@ -80,7 +104,9 @@ class EventController extends Controller
      */
     public function show(Event $event)
     {
-        return view('Alumni/events/individual', compact('event'));
+        $rsvpEvent = RSVPEvent::where('events_id', '=', $event->id)->get();
+        
+        return view('Alumni/events/show', compact('event', 'rsvpEvent'));
     }
 
     /**

@@ -1,14 +1,17 @@
-@extends('Coach.layouts.master')
+@extends('Alumni.layouts.master')
 
 @section('content')    
 
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        {{ $event->title }}
+          <form method="POST" action="/alumni/event/rsvp/{{ $event->id }}">
+             {{ csrf_field() }}
+             <button type="submit" class="btn btn-primary">RSVP to Event</button>
+          </form>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="/coach/event"><i class="far fa-arrow-alt-circle-left"></i> Events</a></li>
+        <li><a href="/alumni/event"><i class="far fa-arrow-alt-circle-left"></i> Events</a></li>
         <li class="active">View</li>
       </ol>
     </section>
@@ -30,7 +33,7 @@
             <div class="box-body">
               <div class="row">
                 <div class="col-md-10">
-                  <p><b>DESCRIPTIONnew</b></p><br>
+                  <h1><b>{{ $event->title }}</b></h1><br>
                   {{ $event->body }}
                 </div>
                 <!-- /.col -->
@@ -49,7 +52,7 @@
                                  <li class="list-group-item">
                                     @if($comments->users_id === null)
                                      <strong>
-                                         <a href="/coach/alumSearch/{{ $comments->alumni->id }}">{{ $comments->alumni->first_name }} {{ $comments->alumni->last_name }} </a>
+                                         <a href="/alumni/alumSearch/{{ $comments->alumni->id }}">{{ $comments->alumni->first_name }} {{ $comments->alumni->last_name }} </a>
                                      </strong>
                                      @else
                                      <strong>
@@ -61,7 +64,7 @@
                                      </span>
                                      {{ $comments->body }}
                                      <span class='pull-right'>
-                                        <a onclick="return confirm('Are you sure you want to delete this comment?')" href="/coach/delete/comment/{{ $comments->id }}" style="color: red;">
+                                        <a onclick="return confirm('Are you sure you want to delete this comment?')" href="/alumni/delete/comment/{{ $comments->id }}" style="color: red;">
                                             <i class="fas fa-trash-alt"></i>
                                         </a>
                                      </span>
@@ -72,7 +75,7 @@
 
                           <div class="card">
                               <div class="card-block">
-                                  <form method="POST" action="/coach/{{ $event->id }}/comment/event">
+                                  <form method="POST" action="/alumni/{{ $event->id }}/comment/event">
                                       {{ csrf_field() }}
                                       <div class="form-group">
                                           <textarea name="body" placeholder="Your comment here.." class="form-control" required></textarea>
