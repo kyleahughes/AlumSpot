@@ -93,6 +93,7 @@
             <!-- /.box-body -->
         </div>
           </div>
+    </div>
           <!-- /.box -->
             @if($alumni->count() === 0)
                 <div class="col-md-4">
@@ -167,8 +168,6 @@
             <!-- /.col -->
             
             @endif
-        
-    </div>
-    </div>
+    
 </section>
 @endsection
