@@ -114,8 +114,9 @@
                     </div>
                 </div>
             @else 
-            @foreach ($alumni as $alumnis)
             <div class="row">
+            @foreach ($alumni as $alumnis)
+            
               <div class="col-md-4">
                 <!-- Widget: user widget style 1 -->
                 <div class="box box-widget widget-user">
@@ -160,8 +161,9 @@
                 <!-- /.widget-user -->
               </div>
               <!-- /.col -->
-            </div>
+            
             @endforeach
+            </div>
             @endif
         </div>
     </div>
