@@ -2,7 +2,8 @@
 
 @section('content')
 <section class='content'>
-    <div class="row layout-boxed">
+    <div class="row">
+        <div class="layout-boxed">
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header"> 
@@ -115,11 +116,8 @@
                 </div>
             @else 
             @foreach ($alumni as $alumnis)
-            <div class="container">
-                <div class="row">
+            <div class="row">
                 <div class="col-md-4">
-                
-              
                 <!-- Widget: user widget style 1 -->
                 <div class="box box-widget widget-user">
                   <!-- Add the bg color to the header using any of the bg-* classes -->
@@ -164,10 +162,10 @@
               </div>
               <!-- /.col -->
             </div>
-            </div>
             @endforeach
             @endif
         </div>
+    </div>
     </div>
 </section>
 @endsection
