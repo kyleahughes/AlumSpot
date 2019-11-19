@@ -115,8 +115,9 @@
                 </div>
             @else 
             @foreach ($alumni as $alumnis)
-            <div class="container">
-              <div class="col-md-4">
+            <div class="col-md-4">
+                <div class="container">
+              
                 <!-- Widget: user widget style 1 -->
                 <div class="box box-widget widget-user">
                   <!-- Add the bg color to the header using any of the bg-* classes -->
