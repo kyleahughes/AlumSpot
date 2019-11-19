@@ -91,6 +91,7 @@
              <!--/.box-header-->
             </div>
             <!-- /.box-body -->
+        </div>
           </div>
           <!-- /.box -->
             @if($alumni->count() === 0)
@@ -164,7 +165,7 @@
             </div>
             @endforeach
             @endif
-        </div>
+        
     </div>
     </div>
 </section>
