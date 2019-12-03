@@ -54,20 +54,22 @@
                                      <strong>
                                          <a href="/alumni/alumSearch/{{ $comments->alumni->id }}">{{ $comments->alumni->first_name }} {{ $comments->alumni->last_name }} </a>
                                      </strong>
-                                     @else
+                                    @else
                                      <strong>
                                          <a href="#">{{ $comments->coach->first_name }} {{ $comments->coach->last_name }} </a>
                                      </strong>
-                                     @endif
+                                    @endif
                                      <span class="text-muted">
                                        {{ $comments->created_at->diffForHumans() }}:&nbsp;  
                                      </span>
                                      {{ $comments->body }}
+                                    @if($comments->users_id === Auth::user()->id
                                      <span class='pull-right'>
                                         <a onclick="return confirm('Are you sure you want to delete this comment?')" href="/alumni/delete/comment/{{ $comments->id }}" style="color: red;">
                                             <i class="fas fa-trash-alt"></i>
                                         </a>
                                      </span>
+                                    @endif
                                  </li>
                               @endforeach
                               </ul>

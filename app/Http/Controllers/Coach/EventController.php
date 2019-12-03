@@ -96,7 +96,7 @@ class EventController extends Controller
             'users_id' => Auth::user()->id
         ]);
         
-        return redirect('/coach/event/view');
+        return redirect('/coach/event');
     }
 
     /**

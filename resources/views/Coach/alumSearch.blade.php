@@ -40,7 +40,7 @@
                             </button>
                             <ul class="dropdown-menu">
                               @foreach($industry as $industrys)
-                                <li><a href="/alumni/alumSearch/industry/{{ $industrys }}">{{ $industrys }}</a></li>
+                                <li><a href="/coach/alumSearch/industry/{{ $industrys }}">{{ $industrys }}</a></li>
                               @endforeach
                             </ul>
                         </div>
@@ -55,7 +55,7 @@
                         </button>
                         <ul class="dropdown-menu">
                           @foreach($gradYear as $gradYears)
-                            <li><a href="/alumni/alumSearch/gradYear/{{ $gradYears }}">{{ $gradYears }}</a></li>
+                            <li><a href="/coach/alumSearch/gradYear/{{ $gradYears }}">{{ $gradYears }}</a></li>
                           @endforeach
                         </ul>
                     </div>
@@ -70,7 +70,7 @@
                         </button>
                         <ul class="dropdown-menu">
                           @foreach($company as $companys)
-                            <li><a href="/alumni/alumSearch/company/{{ $companys }}">{{ $companys }}</a></li>
+                            <li><a href="/coach/alumSearch/company/{{ $companys }}">{{ $companys }}</a></li>
                           @endforeach
                         </ul>
                     </div>
@@ -81,7 +81,7 @@
                 <div class="col-sm-3 col-xs-6">
                   <div class="description-block">
                     <div class="form-group">
-                        <a href="/alumni/alumSearch" class="btn btn-default btn-block">Show All</a>
+                        <a href="/coach/alumSearch" class="btn btn-default btn-block">Show All</a>
                     </div> 
                     <!-- /. mult select -->
                   </div>
