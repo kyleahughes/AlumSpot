@@ -65,7 +65,7 @@
         Route::get('/delete/comment/{comment}', 'Coach\CommentsController@delete');
         //alumni search routes
         Route::get('/alumSearch', 'Coach\SearchController@index')->name('coach.alumSearch');
-        Route::get('/alumSearch/{alumni}', 'alumni\SearchController@showAlum');
+        Route::get('/alumSearch/{alumni}', 'Coach\SearchController@show');
         Route::get('/alumSearch/industry/{industry}', 'Coach\SearchController@filterIndustry');
         Route::get('/alumSearch/company/{company}', 'Coach\SearchController@filterCompany');
         Route::get('/alumSearch/gradYear/{gradYear}', 'Coach\SearchController@filterGradYear');
