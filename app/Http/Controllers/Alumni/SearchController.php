@@ -35,7 +35,7 @@ class SearchController extends Controller
         $gradYear = Alumni::whereNotNull('gradYear')->orderBy('gradYear', 'asc')->pluck('gradYear')->unique();
         $company = Alumni::whereNotNull('company')->orderBy('company', 'asc')->pluck('company')->unique();
         
-        return view('Alumni/searchDummy', compact('alumni', 'industry', 'gradYear', 'company'));
+        return view('Alumni/alumSearch', compact('alumni', 'industry', 'gradYear', 'company'));
     }
     
     public function filterIndustry($industrys)
