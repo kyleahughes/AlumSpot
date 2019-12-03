@@ -120,7 +120,7 @@
                 @foreach ($alumni as $alumnis)
                     <li>
                       <img src="/alumni/{{ $alumnis->avatar }}" alt="User Image">
-                      <a class="users-list-name" href="#">{{ $alumnis->first_name }} {{ $alumnis->last_name }}</a>
+                      <a class="users-list-name" href="/alumni/alumSearch/{{ $alumnis->id }}">{{ $alumnis->first_name }} {{ $alumnis->last_name }}</a>
                       <span class="users-list-date">Class of {{ $alumnis->gradYear }}</span>
                     </li>
                 @endforeach
