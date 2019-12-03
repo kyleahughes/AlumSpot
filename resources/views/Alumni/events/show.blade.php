@@ -63,7 +63,7 @@
                                        {{ $comments->created_at->diffForHumans() }}:&nbsp;  
                                      </span>
                                      {{ $comments->body }}
-                                    @if($comments->users_id === Auth::user()->id
+                                    @if($comments->alumni->id === Auth::guard('alumni')->user()->id)
                                      <span class='pull-right'>
                                         <a onclick="return confirm('Are you sure you want to delete this comment?')" href="/alumni/delete/comment/{{ $comments->id }}" style="color: red;">
                                             <i class="fas fa-trash-alt"></i>
