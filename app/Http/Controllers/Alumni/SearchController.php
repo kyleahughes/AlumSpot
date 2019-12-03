@@ -31,9 +31,9 @@ class SearchController extends Controller
         $programsid = Auth::guard('alumni')->user()->programs_id;
         $alumni = Alumni::where('programs_id', '=', $programsid)->orderBy('last_name', 'asc')->get();
         
-        $industry = Alumni::whereNotNull('industry')->orderBy('industry', 'asc')->pluck('industry')->unique();
-        $gradYear = Alumni::whereNotNull('gradYear')->orderBy('gradYear', 'asc')->pluck('gradYear')->unique();
-        $company = Alumni::whereNotNull('company')->orderBy('company', 'asc')->pluck('company')->unique();
+        $industry = Alumni::whereNotNull('industry')->where('programs_id', '=', $programsid)->orderBy('industry', 'asc')->pluck('industry')->unique();
+        $gradYear = Alumni::whereNotNull('gradYear')->where('programs_id', '=', $programsid)->orderBy('gradYear', 'asc')->pluck('gradYear')->unique();
+        $company = Alumni::whereNotNull('company')->where('programs_id', '=', $programsid)->orderBy('company', 'asc')->pluck('company')->unique();
         
         return view('Alumni/alumSearch', compact('alumni', 'industry', 'gradYear', 'company'));
     }

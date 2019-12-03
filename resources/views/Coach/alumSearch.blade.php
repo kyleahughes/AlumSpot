@@ -34,61 +34,46 @@
               <div class="row">
                 <div class="col-sm-3 col-xs-6">
                     <div class="description-block border-right">
-                        <div class="form-group">
-                          <div class="btn-group">
-                            <button type="button" class="btn btn-default">Search By Industry</button>
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Industry
                               <span class="caret"></span>
-                              <span class="sr-only">Toggle Dropdown</span>
                             </button>
-                            <ul class="dropdown-menu" role="menu">
+                            <ul class="dropdown-menu">
                               @foreach($industry as $industrys)
                                 <li><a href="/alumni/alumSearch/industry/{{ $industrys }}">{{ $industrys }}</a></li>
                               @endforeach
                             </ul>
-                          </div>
                         </div>
-                        <!-- /.form-group -->
                     </div>
                 </div>
                 <!-- /.col -->
                 <div class="col-sm-3 col-xs-6">
                   <div class="description-block border-right">
-                    <div class="form-group">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-default">Search By Grad Year</button>
-                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Grad Year
                           <span class="caret"></span>
-                          <span class="sr-only">Toggle Dropdown</span>
                         </button>
-                        <ul class="dropdown-menu" role="menu">
+                        <ul class="dropdown-menu">
                           @foreach($gradYear as $gradYears)
                             <li><a href="/alumni/alumSearch/gradYear/{{ $gradYears }}">{{ $gradYears }}</a></li>
                           @endforeach
                         </ul>
-                      </div>
                     </div>
-                    <!-- /.form-group -->
                   </div>
                 </div>
                 <!-- /.col -->
                 <div class="col-sm-3 col-xs-6">
                   <div class="description-block border-right">
-                    <div class="form-group">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-default">Search By Company</button>
-                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                            <span class="caret"></span>
-                            <span class="sr-only">Toggle Dropdown</span>
-                          </button>
-                          <ul class="dropdown-menu" role="menu">
-                            @foreach($company as $companys)
-                              <li><a href="/alumni/alumSearch/company/{{ $companys }}">{{ $companys }}</a></li>
-                            @endforeach
-                          </ul>
-                        </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Company
+                          <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          @foreach($company as $companys)
+                            <li><a href="/alumni/alumSearch/company/{{ $companys }}">{{ $companys }}</a></li>
+                          @endforeach
+                        </ul>
                     </div>
-                  <!-- /.form-group -->
                   </div>
                   <!-- /.description-block -->
                 </div>
