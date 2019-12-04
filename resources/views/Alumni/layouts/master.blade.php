@@ -59,11 +59,9 @@
 <script src="/js/Coach/adminlte.js"></script>
 <!-- Sparkline -->
 <script src="/js/Coach/sparkline.js"></script>
-<!-- jvectormap  
-<script src="plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
-<script src="plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>-->
-<!-- SlimScroll -->
-<script src="/js/Coach/slimscroll.js"></script>
+<!-- Jscoll -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="//unpkg.com/jscroll/dist/jquery.jscroll.min.js"></script>
 <!-- ChartJS -->
 <script src="/js/Coach/chart.js"></script>
 <!-- VUE CDN link -->

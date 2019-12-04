@@ -43,7 +43,7 @@
                     <div class="icon">
                       <i class="far fa-calendar-alt"></i>
                     </div>
-                    <a href="/coach/event/view" class="small-box-footer">
+                    <a href="/coach/event" class="small-box-footer">
                       View <i class="fa fa-arrow-circle-right"></i>
                     </a>
                   </div>
@@ -107,7 +107,7 @@
                       
                       @foreach ($event as $events)
                           <tr>
-                            <td><a href="#">{{ $events->title }}</a></td>
+                            <td><a href="/coach/event/{{ $events->id }}">{{ $events->title }}</a></td>
                             <td>{{ \Carbon\Carbon::parse($events->datetime)->toDayDateTimeString() }}</td>
                             <td>
                               <div class="sparkbar" data-color="#00a65a" data-height="20">{{ $rsvpEvent->where('events_id', '=', $events->id)->count() }}</div>
@@ -127,8 +127,8 @@
             </div>
             <!-- /.box-body -->
             <div class="box-footer clearfix">
-              <a href="/coach/event/view" class="btn btn-sm btn-info btn-flat pull-left">Create New Event</a>
-              <a href="/coach/event/view" class="btn btn-sm btn-default btn-flat pull-right">View All Events</a>
+              <a href="/coach/event" class="btn btn-sm btn-info btn-flat pull-left">Create New Event</a>
+              <a href="/coach/event" class="btn btn-sm btn-default btn-flat pull-right">View All Events</a>
             </div>
             <!-- /.box-footer -->
           </div>

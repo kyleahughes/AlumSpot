@@ -108,9 +108,8 @@
       <div class="row">
         <!-- Left col -->
         <div class="col-md-12">
-
           <!-- USERS LIST -->
-          <div class="box">
+          <div class="box" style="overflow-y: auto; height: 50%;">
             <div class="box-header with-border">
               <h3 class="box-title">Alumni Members</h3>
             </div>
@@ -130,7 +129,6 @@
             <!-- /.box-body -->
           </div>
           <!--/.box -->
-
         </div>
         <!-- /.col -->
       </div>
