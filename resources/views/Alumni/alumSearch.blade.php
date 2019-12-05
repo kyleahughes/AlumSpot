@@ -109,7 +109,7 @@
         <!-- Left col -->
         <div class="col-md-12">
           <!-- USERS LIST -->
-          <div class="box" style="overflow-y: scroll; height: auto;">
+          <div class="box">
             <div class="box-header with-border">
               <h3 class="box-title">Alumni Members</h3>
             </div>
@@ -125,9 +125,15 @@
                 @endforeach
               </ul>
               <!-- /.users-list -->
+              
             </div>
             <!-- /.box-body -->
-          </div>
+          
+            <div class="box-footer">
+               {{ $alumni->links() }} 
+            </div>
+              
+          </div>    
           <!--/.box -->
         </div>
         <!-- /.col -->

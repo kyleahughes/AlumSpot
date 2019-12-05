@@ -126,6 +126,9 @@
               <!-- /.users-list -->
             </div>
             <!-- /.box-body -->
+            <div class="box-footer">
+               {{ $alumni->links() }} 
+            </div>
           </div>
           <!--/.box -->
 

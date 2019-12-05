@@ -30,7 +30,7 @@ class SearchController extends Controller
     {
         //get list of alumni from the same school as the coach
         $programsid = Auth::user()->programs_id;
-        $alumni = Alumni::where('programs_id', '=', $programsid)->orderBy('last_name', 'asc')->get();
+        $alumni = Alumni::where('programs_id', '=', $programsid)->orderBy('last_name', 'asc')->paginate(8);
         
         $industry = Alumni::whereNotNull('industry')->where('programs_id', '=', $programsid)->orderBy('industry', 'asc')->pluck('industry')->unique();
         $gradYear = Alumni::whereNotNull('gradYear')->where('programs_id', '=', $programsid)->orderBy('gradYear', 'asc')->pluck('gradYear')->unique();

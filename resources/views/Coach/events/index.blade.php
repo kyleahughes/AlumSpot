@@ -41,6 +41,9 @@
               </table>
             </div>
             <!-- /.box-body -->
+            <div class="box-footer">
+               {{ $upcomingEvent->links() }} 
+            </div>
           </div>
           <!-- /. box -->
           <div class="box box-solid">
@@ -70,6 +73,9 @@
               </table>
             </div>
             <!-- /.box-body -->
+            <div class="box-footer">
+               {{ $pastEvent->links() }} 
+            </div>
           </div>
         </div>
         <!-- /.col -->

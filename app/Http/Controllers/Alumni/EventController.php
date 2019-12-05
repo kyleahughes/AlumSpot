@@ -36,8 +36,8 @@ class EventController extends Controller
         //retrieve all events ordered by earliest created_at column
         $mytime = Carbon\Carbon::now()->toDateTimeString();
         $event = Event::where('programs_id', '=', Auth::guard('alumni')->user()->programs_id)->orderBy('datetime', 'asc')->get();
-        $upcomingEvent = Event::where('programs_id', '=', Auth::guard('alumni')->user()->programs_id)->where('datetime', '>=', $mytime)->orderBy('datetime', 'asc')->get();
-        $pastEvent = Event::where('programs_id', '=', Auth::guard('alumni')->user()->programs_id)->where('datetime', '<', $mytime)->orderBy('datetime', 'desc')->get();
+        $upcomingEvent = Event::where('programs_id', '=', Auth::guard('alumni')->user()->programs_id)->where('datetime', '>=', $mytime)->orderBy('datetime', 'asc')->paginate(4);
+        $pastEvent = Event::where('programs_id', '=', Auth::guard('alumni')->user()->programs_id)->where('datetime', '<', $mytime)->orderBy('datetime', 'desc')->paginate(4);
         $rsvpEvent = RSVPEvent::where('programs_id', '=', Auth::guard('alumni')->user()->programs_id)->get();
         
         if($event->count()) {
