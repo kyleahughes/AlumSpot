@@ -7,6 +7,8 @@ use Illuminate\Support\Facades\Auth;
 use AlumSpot\Alumni;
 use AlumSpot\Program;
 use AlumSpot\School;
+use AlumSpot\User;
+use AlumSpot\Notifications\newUser;
 use AlumSpot\Mail\WelcomeAlumni;
 use Illuminate\Support\Facades\Mail;
 use AlumSpot\Http\Controllers\Controller;
@@ -70,17 +72,10 @@ class RegistrationController extends Controller
         //find program to store its id in user table
         $program = Program::where('schools_id', '=' ,request('schools_id'))->where('type', '=', request('type'))->where('sport', '=', request('sport'))->first();
        
-//        if($program === null) 
-//         {
-//            $noProgram = request('school');
-//            Session::flash('message2', $noProgram);
-//            return redirect()->back();
-//         }
-            if($program === null) {
-                Session::flash('message2');
-                return redirect()->back();
-            }
-         
+        if($program === null) {
+            Session::flash('message2');
+            return redirect()->back();
+        }
          
          
         //validate the form
@@ -107,6 +102,10 @@ class RegistrationController extends Controller
         
         //send welcome email
         Mail::to($alumni)->send(new WelcomeAlumni($alumni));
+        
+        //send notification email to coach
+        $user = User::where('programs_id', '=', $program->id)->first();
+        $user->notify(new newUser);
         
         // Redirect to home page
         return redirect('/alumni/profile');

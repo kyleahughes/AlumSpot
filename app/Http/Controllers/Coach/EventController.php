@@ -6,11 +6,14 @@ use Illuminate\Http\Request;
 use AlumSpot\Event;
 use AlumSpot\Comment;
 use AlumSpot\Activity;
+use AlumSpot\Notifications\Events;
+use AlumSpot\Alumni;
 use Illuminate\Support\Facades\Auth;
 use AlumSpot\Http\Controllers\Controller;
 use Calendar;
 use AlumSpot\RSVPEvent;
 use Carbon;
+use Illuminate\Support\Facades\Notification;
 
 class EventController extends Controller
 {
@@ -58,6 +61,9 @@ class EventController extends Controller
         }
         
         $calendar = Calendar::addEvents($eventArray);
+        
+        $alumni = Alumni::where('programs_id', '=', Auth::user()->programs_id)->get();
+        Notification::send($alumni, new Events);
         
         //pass the event instance through to the view
         return view('Coach/events/index', compact('event', 'calendar', 'rsvpEvent', 'upcomingEvent', 'pastEvent'));
