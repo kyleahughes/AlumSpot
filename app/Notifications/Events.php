@@ -6,6 +6,7 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Notification;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
+use AlumSpot\Alumni;
 
 class Events extends Notification
 {
@@ -55,7 +56,7 @@ class Events extends Notification
     public function toArray($notifiable)
     {
         return [
-            'new_event'
+            'new Event!'
         ];
     }
 }

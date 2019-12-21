@@ -31,9 +31,9 @@
                 <ul class="menu">
                   <li><!-- start message -->
                     <a href="#">
-                      @foreach (Auth::guard('alumni')->user()->unreadNotifications as $notification)
+                      @foreach(Auth::guard('alumni')->user()->notifications as $notification)
                       
-                        <li>{{ $notification->text }}</li>
+                        <li>{{ $notification->data[0] }}</li>
                           
                       @endforeach
                     </a>
