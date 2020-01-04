@@ -17,9 +17,10 @@ class Events extends Notification
      *
      * @return void
      */
-    public function __construct()
+    protected $event;
+    public function __construct($event)
     {
-        //
+        $this->event = $event;
     }
 
     /**
@@ -56,7 +57,8 @@ class Events extends Notification
     public function toArray($notifiable)
     {
         return [
-            'new Event!'
+            'events_id' => $this->event->id,
+            'Your program created a new event!'
         ];
     }
 }

@@ -22,24 +22,24 @@
           <li class="dropdown messages-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="far fa-envelope"></i>
-              <span class="label label-success">4</span>
+              <span class="label label-success">{{ Auth::guard('alumni')->user()->notifications->count() }}</span>
             </a>
             <ul class="dropdown-menu">
-              <li class="header">You have 4 messages</li>
+              <li class="header">You have {{ Auth::guard('alumni')->user()->notifications->count() }} messages</li>
               <li>
-                <!-- inner menu: contains the actual data -->
-                <ul class="menu">
-                  <li><!-- start message -->
-                    <a href="#">
-                      @foreach(Auth::guard('alumni')->user()->notifications as $notification)
-                      
-                        <li>{{ $notification->data[0] }}</li>
-                          
-                      @endforeach
-                    </a>
-                  </li>
-                  <!-- end message -->
-                </ul>
+                
+                  @foreach(Auth::guard('alumni')->user()->unreadNotifications as $notification)
+                    <!-- inner menu: contains the actual data -->
+                    <ul class="menu">
+                      <li>
+                          <a href="#">
+                           {{ $notification->data[0] }}
+                          </a>   
+                      </li>
+                    </ul>
+                  @endforeach
+                    
+                
               </li>
               <li class="footer"><a href="#">See All Messages</a></li>
             </ul>

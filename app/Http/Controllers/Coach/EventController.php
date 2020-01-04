@@ -61,12 +61,6 @@ class EventController extends Controller
         }
         
         $calendar = Calendar::addEvents($eventArray);
-        
-        $alumni = Alumni::where('programs_id', '=', Auth::user()->programs_id)->get();
-        
-        foreach($alumni as $alumnus){
-            $alumnus->notify(new Events($alumnus));
-        }
             
         //pass the event instance through to the view
         return view('Coach/events/index', compact('event', 'calendar', 'rsvpEvent', 'upcomingEvent', 'pastEvent'));
@@ -104,6 +98,13 @@ class EventController extends Controller
             'programs_id' => Auth::user()->programs_id,
             'users_id' => Auth::user()->id
         ]);
+        
+                
+        $alumni = Alumni::where('programs_id', '=', Auth::user()->programs_id)->get();
+
+        foreach($alumni as $alumnus){
+            $alumnus->notify(new Events($event));
+        }
         
         return redirect('/coach/event');
     }
