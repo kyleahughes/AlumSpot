@@ -58,6 +58,7 @@ class Events extends Notification
     {
         return [
             'events_id' => $this->event->id,
+            'events_title' => $this->event->title,
             'Your program created a new event!'
         ];
     }

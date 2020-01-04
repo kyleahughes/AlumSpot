@@ -24,16 +24,15 @@
               <i class="far fa-envelope"></i>
               <span class="label label-success">{{ Auth::guard('alumni')->user()->notifications->count() }}</span>
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu"> 
               <li class="header">You have {{ Auth::guard('alumni')->user()->notifications->count() }} messages</li>
               <li>
-                
                   @foreach(Auth::guard('alumni')->user()->unreadNotifications as $notification)
                     <!-- inner menu: contains the actual data -->
                     <ul class="menu">
                       <li>
                           <a href="#">
-                           {{ $notification->data[0] }}
+                              {{ $notification->data['events_title'] }}
                           </a>   
                       </li>
                     </ul>
