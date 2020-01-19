@@ -61,7 +61,7 @@ class EventController extends Controller
         }
         
         $calendar = Calendar::addEvents($eventArray);
-            
+        
         //pass the event instance through to the view
         return view('Coach/events/index', compact('event', 'calendar', 'rsvpEvent', 'upcomingEvent', 'pastEvent'));
     }
@@ -121,7 +121,7 @@ class EventController extends Controller
         
         return view('Coach/events/show', compact('event', 'rsvpEvent'));
     }
-
+    
     /**
      * Show the form for editing the specified resource.
      *

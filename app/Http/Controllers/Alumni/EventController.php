@@ -59,6 +59,9 @@ class EventController extends Controller
         
         $calendar = Calendar::addEvents($eventArray);
         
+        $user = Auth::guard('alumni')->user();
+        $user->unreadNotifications->markAsRead();
+        
         //pass the event instance through to the view
         return view('Alumni/events/index', compact('event', 'calendar', 'rsvpEvent', 'upcomingEvent', 'pastEvent'));
     }

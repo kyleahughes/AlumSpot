@@ -34,8 +34,11 @@
         <li>
           <a href="/alumni/event/view">
             <i class="far fa-calendar-alt"></i>&emsp;<span>Events</span>
-            <span class="pull-right-container">
+            @if(Auth::guard('alumni')->user()->unreadnotifications->count() > 0)
+            <span class="pull-right-container label label-success">
+                {{ Auth::guard('alumni')->user()->unreadnotifications->count() }}
             </span>
+            @endif
           </a>
         </li>
         <li>

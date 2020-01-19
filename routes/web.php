@@ -37,6 +37,7 @@
         Route::post('/register', 'Coach\RegistrationController@store');
         //Route to log coach out
         Route::get('/logout', 'Coach\RegistrationController@destroy');
+        Route::get('/payment', 'Coach\RegistrationController@pay');
     });
     
     Route::prefix('/alumni')->group(function() {

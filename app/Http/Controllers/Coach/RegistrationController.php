@@ -112,6 +112,12 @@ class RegistrationController extends Controller
         return redirect('coach/profile');
         
     }
+    
+    public function pay()
+    {
+        return view('auth/payment');
+    }
+    
     /**
      * Display the specified resource.
      *
