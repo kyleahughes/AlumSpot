@@ -109,7 +109,9 @@ class RegistrationController extends Controller
         Session::flash('welcome', 'Thanks for registering with AlumSpot!');
         
         // Redirect to home page
-        return redirect('coach/profile');
+        return view('auth/payment', [
+            'intent' => $user->createSetupIntent()
+        ]);
         
     }
     

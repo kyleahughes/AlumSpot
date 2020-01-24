@@ -1038,17 +1038,17 @@
     },
     {
         "name": "laravel/cashier",
-        "version": "v10.5.2",
-        "version_normalized": "10.5.2.0",
+        "version": "v10.5.3",
+        "version_normalized": "10.5.3.0",
         "source": {
             "type": "git",
             "url": "https://github.com/laravel/cashier.git",
-            "reference": "31c8ade4d2eead6c8f44f76025ac23bdcaaa144b"
+            "reference": "3c485612cfd22feaa550d99e78ade39f7c57b2f8"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/laravel/cashier/zipball/31c8ade4d2eead6c8f44f76025ac23bdcaaa144b",
-            "reference": "31c8ade4d2eead6c8f44f76025ac23bdcaaa144b",
+            "url": "https://api.github.com/repos/laravel/cashier/zipball/3c485612cfd22feaa550d99e78ade39f7c57b2f8",
+            "reference": "3c485612cfd22feaa550d99e78ade39f7c57b2f8",
             "shasum": ""
         },
         "require": {
@@ -1077,7 +1077,7 @@
         "suggest": {
             "ext-intl": "Allows for more locales besides the default \"en\" when formatting money values."
         },
-        "time": "2020-01-07T17:45:45+00:00",
+        "time": "2020-01-14T16:30:51+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {

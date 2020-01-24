@@ -51,7 +51,7 @@
             event.currentTarget.className += " active"; 
         }
     </script>
-    
+    @yield('script')
   </body>
 
 </html>

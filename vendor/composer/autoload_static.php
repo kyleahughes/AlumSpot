@@ -2352,6 +2352,8 @@ class ComposerStaticInit2c18307b7900ef50a795b2ec7c2856bd
         'Laravel\\Cashier\\Events\\WebhookHandled' => __DIR__ . '/..' . '/laravel/cashier/src/Events/WebhookHandled.php',
         'Laravel\\Cashier\\Events\\WebhookReceived' => __DIR__ . '/..' . '/laravel/cashier/src/Events/WebhookReceived.php',
         'Laravel\\Cashier\\Exceptions\\IncompletePayment' => __DIR__ . '/..' . '/laravel/cashier/src/Exceptions/IncompletePayment.php',
+        'Laravel\\Cashier\\Exceptions\\InvalidInvoice' => __DIR__ . '/..' . '/laravel/cashier/src/Exceptions/InvalidInvoice.php',
+        'Laravel\\Cashier\\Exceptions\\InvalidPaymentMethod' => __DIR__ . '/..' . '/laravel/cashier/src/Exceptions/InvalidPaymentMethod.php',
         'Laravel\\Cashier\\Exceptions\\InvalidStripeCustomer' => __DIR__ . '/..' . '/laravel/cashier/src/Exceptions/InvalidStripeCustomer.php',
         'Laravel\\Cashier\\Exceptions\\PaymentActionRequired' => __DIR__ . '/..' . '/laravel/cashier/src/Exceptions/PaymentActionRequired.php',
         'Laravel\\Cashier\\Exceptions\\PaymentFailure' => __DIR__ . '/..' . '/laravel/cashier/src/Exceptions/PaymentFailure.php',

@@ -1,38 +1,54 @@
+@extends('LandPage.layouts.master')
 
-<!DOCTYPE html>
-<html lang="en">
-
-  <head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Checkout</title>
-  <script src="https://js.stripe.com/v3/"></script>
-  <link rel="stylesheet" href="StripeElements.css">
+@section('content')
+<div class='container' style='margin-bottom: 90px;'>
     
-  </head>
+    <input id="card-holder-name" type="text">
 
-    <body>
+    <!-- Stripe Elements Placeholder -->
+    <div id="card-element"></div>
 
-        <!-- Use the CSS tab above to style your Element's container. -->
-        <div id="card-element" class="MyCardElement">
-          <!-- Elements will create input elements here -->
-        </div>
+    <button id="card-button" data-secret="{{ $intent->client_secret }}">
+        Update Payment Method
+    </button>
+    
+</div>
 
-        <!-- We'll put the error messages in this element -->
-        <div id="card-errors" role="alert"></div>
+@endsection
 
-        <button id="submit">Pay</button>
-        
-    </body>
+@section('script')
+<script src="https://js.stripe.com/v3/"></script>
+<script>
+    const stripe = Stripe('stripe-public-key');
 
-    <script>
-        // Set your publishable key: remember to change this to your live publishable key in production
-        // See your keys here: https://dashboard.stripe.com/account/apikeys
-        var stripe = Stripe('pk_test_0pGGHwWbKDRmR2pZdctnj56j');
-        var elements = stripe.elements();
-    </script>
-</html>
+    const elements = stripe.elements();
+    const cardElement = elements.create('card');
+
+    cardElement.mount('#card-element');
+    
+</script>
+
+<script>
+    const cardHolderName = document.getElementById('card-holder-name');
+    const cardButton = document.getElementById('card-button');
+    const clientSecret = cardButton.dataset.secret;
+
+    cardButton.addEventListener('click', async (e) => {
+        const { setupIntent, error } = await stripe.handleCardSetup(
+            clientSecret, cardElement, {
+                payment_method_data: {
+                    billing_details: { name: cardHolderName.value }
+                }
+            }
+        );
+
+        if (error) {
+            Please reenter your card information
+        } else {
+             The card has been verified successfully
+        }
+    });
+
+</script>
+
+@endsection

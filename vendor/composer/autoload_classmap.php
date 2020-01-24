@@ -1891,6 +1891,8 @@ return array(
     'Laravel\\Cashier\\Events\\WebhookHandled' => $vendorDir . '/laravel/cashier/src/Events/WebhookHandled.php',
     'Laravel\\Cashier\\Events\\WebhookReceived' => $vendorDir . '/laravel/cashier/src/Events/WebhookReceived.php',
     'Laravel\\Cashier\\Exceptions\\IncompletePayment' => $vendorDir . '/laravel/cashier/src/Exceptions/IncompletePayment.php',
+    'Laravel\\Cashier\\Exceptions\\InvalidInvoice' => $vendorDir . '/laravel/cashier/src/Exceptions/InvalidInvoice.php',
+    'Laravel\\Cashier\\Exceptions\\InvalidPaymentMethod' => $vendorDir . '/laravel/cashier/src/Exceptions/InvalidPaymentMethod.php',
     'Laravel\\Cashier\\Exceptions\\InvalidStripeCustomer' => $vendorDir . '/laravel/cashier/src/Exceptions/InvalidStripeCustomer.php',
     'Laravel\\Cashier\\Exceptions\\PaymentActionRequired' => $vendorDir . '/laravel/cashier/src/Exceptions/PaymentActionRequired.php',
     'Laravel\\Cashier\\Exceptions\\PaymentFailure' => $vendorDir . '/laravel/cashier/src/Exceptions/PaymentFailure.php',
