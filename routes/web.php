@@ -18,7 +18,8 @@
 
     Auth::routes();
     Route::get('/', 'LandPageController@index')->name('home');
-    
+    Route::get('/payment', 'Coach\PaymentController@index');
+    Route::post('/payment', 'Coach\PaymentController@store');
     Route::group(['middleware' => 'alumni_guest'], function(){
         Route::get('/alumni/login', 'Auth\AlumniLoginController@showLoginForm')->name('alumni.login');
         Route::post('/alumni/login', 'Auth\AlumniLoginController@login')->name('alumni.login.submit');
@@ -37,7 +38,6 @@
         Route::post('/register', 'Coach\RegistrationController@store');
         //Route to log coach out
         Route::get('/logout', 'Coach\RegistrationController@destroy');
-        Route::get('/payment', 'Coach\RegistrationController@pay');
     });
     
     Route::prefix('/alumni')->group(function() {

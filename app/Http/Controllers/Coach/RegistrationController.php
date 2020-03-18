@@ -105,21 +105,16 @@ class RegistrationController extends Controller
         //send welcome email
         Mail::to($user)->send(new WelcomeCoach($user));
 
+        $user->createAsStripeCustomer();
+        
         // flash message for user to finish filling out profile
         Session::flash('welcome', 'Thanks for registering with AlumSpot!');
         
         // Redirect to home page
-        return view('auth/payment', [
-            'intent' => $user->createSetupIntent()
-        ]);
+        return redirect('/payment');
         
     }
-    
-    public function pay()
-    {
-        return view('auth/payment');
-    }
-    
+
     /**
      * Display the specified resource.
      *
