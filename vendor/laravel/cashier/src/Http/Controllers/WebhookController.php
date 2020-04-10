@@ -7,6 +7,7 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Str;
+use Laravel\Cashier\Cashier;
 use Laravel\Cashier\Events\WebhookHandled;
 use Laravel\Cashier\Events\WebhookReceived;
 use Laravel\Cashier\Http\Middleware\VerifyWebhookSignature;
@@ -85,10 +86,10 @@ class WebhookController extends Controller
 
                 // Trial ending date...
                 if (isset($data['trial_end'])) {
-                    $trial_ends = Carbon::createFromTimestamp($data['trial_end']);
+                    $trialEnd = Carbon::createFromTimestamp($data['trial_end']);
 
-                    if (! $subscription->trial_ends_at || $subscription->trial_ends_at->ne($trial_ends)) {
-                        $subscription->trial_ends_at = $trial_ends;
+                    if (! $subscription->trial_ends_at || $subscription->trial_ends_at->ne($trialEnd)) {
+                        $subscription->trial_ends_at = $trialEnd;
                     }
                 }
 
@@ -207,13 +208,7 @@ class WebhookController extends Controller
      */
     protected function getUserByStripeId($stripeId)
     {
-        if ($stripeId === null) {
-            return;
-        }
-
-        $model = config('cashier.model');
-
-        return (new $model)->where('stripe_id', $stripeId)->first();
+        return Cashier::findBillable($stripeId);
     }
 
     /**

@@ -7,7 +7,7 @@ use AlumSpot\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use AlumSpot\User;
 use Laravel\Cashier\PaymentMethod;
-use Stripe\Stripe;
+use Stripe;
 
 class PaymentController extends Controller
 {
@@ -21,6 +21,7 @@ class PaymentController extends Controller
         $user = User::where('id', '=', Auth::user()->id)->first();
         
         return view('auth/payment', [
+            \Stripe\Stripe::setApiKey('sk_test_SajN5YVRVu0ZOehysMuLwkdm'),
             'intent' => $user->createSetupIntent()
         ]);
     }

@@ -11,6 +11,7 @@ use AlumSpot\Http\Controllers\Controller;
 use AlumSpot\School;
 use AlumSpot\Program;
 use Illuminate\Support\Facades\Session;
+use Stripe;
 
 class RegistrationController extends Controller
 {
@@ -104,6 +105,8 @@ class RegistrationController extends Controller
 
         //send welcome email
         Mail::to($user)->send(new WelcomeCoach($user));
+
+        \Stripe\Stripe::setApiKey('sk_test_SajN5YVRVu0ZOehysMuLwkdm');
 
         $user->createAsStripeCustomer();
         
